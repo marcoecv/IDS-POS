@@ -1,0 +1,318 @@
+@import url(http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext);
+/*
+PERSONAL
+*/
+body {
+    font-family: "Lato";
+}
+
+#personal .panel-body,
+#personal #status .panel-body {
+    padding-bottom: 3px;
+    padding-top: 3px;
+}
+#personal .form-control,
+#personal #status .form-control {
+    height: 30px;
+}
+#personal .panel,
+#personal #status .panel {
+    margin-bottom: 4px;
+}
+#personal .col-md-6 section {
+    height: 325px;
+}
+body.xs #personal .col-md-6 section {
+    height: auto;
+}
+body.xs #personal .col-sm-6 {
+    margin: 0;
+}
+#personal .table{
+    display: table;
+    padding:0;
+}
+#personal .wrap-table{
+    max-height:300px;
+    overflow-y: auto;
+}
+#personal .table-row{
+    display: table-row;
+    height: 35px;
+}
+#personal .table-row:nth-child(2n+2) {
+   background-color: #eee;
+}
+#personal .table-cell{
+    display: table-cell;
+    border: 1px solid #ccc;
+    padding: 2px;
+    vertical-align: middle;
+}
+#personal .table .table-cell{
+    width:16.66666%;
+}
+#personal .table .table-cell:nth-child(4){
+    width:calc(50% - 50px);
+}
+#personal .table .table-cell:last-child{
+    width:50px;
+    text-align: center;
+}
+#personal .table .table-cell .glyphicon{
+    font-size: 1.2em;
+    margin: 0 2px;
+}
+#personal #notes .table-row.new .table-cell,
+#personal #notes .table-row-edit .table-cell{
+    position:relative;
+    padding: 0;
+    height:35px;
+}
+#personal #notes .table-row.new input[type='text'],
+#personal #notes .table-row.new textarea,
+#personal #notes .table-row-edit input[type='text'],
+#personal #notes .table-row-edit textarea{
+    position:absolute;
+    top:0px;
+    height:100%;
+    width: 100%;
+    margin:0;
+    padding:0;
+    border:0;
+}
+#personal #notes .table-row textarea{
+    padding-top:8px;
+}
+body.xs #personal #notes .table-row.th,
+body.xs #personal #notes .new-table .table-row.th{
+    display: none;
+}
+body.xs #personal #notes .table-cell:before{
+    content: attr(data-th) ": ";
+    color: #222;
+    font-weight: 900;
+    width: 100px;
+    display: inline-block;
+    border-radius: 0;
+    padding: 10px 7px;
+}
+body.xs #personal #notes .table-cell,
+body.xs #personal #notes .new-table .table-cell, 
+body.xs #personal #notes .table .table-cell:last-child{
+    display: block;
+    width:100%;
+    text-align: left;
+}
+body.xs #personal #notes .new-table .table-cell{
+    overflow: hidden;
+}
+#status {
+    margin-bottom: 20px;
+}
+#status .btn-custom {
+    margin-right: 15px;
+}
+#status .wrap-status {
+    background: #25313c;
+    padding: 10px;
+    text-align: left;
+}
+#status .table {
+    margin-bottom: 0;
+}
+body.xs #status td {
+    width: 100%;
+}
+
+/*
+LIMITS
+*/
+#limits .panel-body {
+    height: 250px;
+}
+body.xs #limits .panel-body {
+    height: auto;
+}
+body.xs #limits #detailLimits {
+    display: none;
+}
+body.xs #limits .col-md-4 {
+    margin: 0;
+}
+#limits #fieldAgentDetailLimitsHeritage .btn {
+    border-radius: 2px;
+    border: none;
+    line-height: 31px;
+    margin: 5px;
+    padding: 5px 15px;
+    background: #25313c;
+    color: #fff;
+    -webkit-transition: all 300ms ease-in-out 0s;
+    -moz-transition: all 300ms ease-in-out 0s;
+    -o-transition: all 300ms ease-in-out 0s;
+    transition: all 300ms ease-in-out 0s;
+}
+#limits #fieldAgentDetailLimitsHeritage .btn:hover {
+    background: #384b5c;
+    color: #fff;
+}
+#limits #fieldAgentDetailLimitsHeritage ul {
+    width: 100%;
+}
+#limits #fieldAgentDetailLimitsHeritage li {
+    width: 14.28%;
+}
+body.xs #limits #fieldAgentDetailLimitsHeritage li {
+    width: 100%;
+}
+#limits #fieldAgentDetailLimitsHeritage li.active .btn {
+    background: #384b5c;
+    color: #fff;
+}
+/*
+PROMOTION
+*/
+
+#promotions .col-md-6 section {
+    height: 220px;
+}
+#promotions .form-horizontal > .form-group {
+    margin-bottom: 5px;
+    padding: 5px;
+    background: #eee;
+    border-radius: 2px;
+}
+body.xs #promotions .col-md-6 section {
+    height: auto;
+}
+body.xs #promotions .col-md-6,
+body.xs #promotions .col-xs-12 {
+    margin: 0;
+}
+/*
+WAGERS
+*/
+
+#wargers thead {
+    text-transform: uppercase;
+}
+body.xs #wargers #wagerreportpre tr {
+    border-bottom: 3px solid #515d69;
+}
+body.xs #wargers .responsive-data td:before {
+    display: inline-block;
+    width: 120px;
+}
+#wargers .ticketGameContestOutcome {
+    padding: 5px;
+}
+#wargers .ticketGameContestOutcome:nth-child(odd) {
+    background: #eee;
+}
+#wargers #detalle_transaccion,
+#wargers #tdDailyFigureList,
+#wargers #wrapTlbDetailWager {
+    text-align: right;
+}
+/*
+TRANSACTIONS
+*/
+
+#transcations button#edit,
+#transcations button#save,
+#transcations button#delete {
+    background: #fa5736;
+    box-shadow: none;
+    color: #eee;
+    -webkit-transition: all 200ms ease-in-out 0s;
+    -moz-transition: all 200ms ease-in-out 0s;
+    -o-transition: all 200ms ease-in-out 0s;
+    transition: all 200ms ease-in-out 0s;
+}
+#transcations button#edit:hover,
+#transcations button#save:hover,
+#transcations button#delete:hover {
+    background: #f72f06;
+    color: #fff;
+}
+body.xs #transcations button#edit,
+body.xs #transcations button#close,
+body.xs #transcations button#delete {
+    display: none;
+}
+body.xs #transcations button#save {
+    width: 100%;
+}
+#transcations button#close {
+    background: #25313c;
+    box-shadow: none;
+    color: #eee;
+    -webkit-transition: all 200ms ease-in-out 0s;
+    -moz-transition: all 200ms ease-in-out 0s;
+    -o-transition: all 200ms ease-in-out 0s;
+    transition: all 200ms ease-in-out 0s;
+}
+#transcations button#close:hover {
+    background: #a73434;
+    color: #fff;
+}
+#transcations #btnNewTransaction {
+    padding: 10px;
+    margin: 10px 0;
+}
+body.xs #transcations #btnNewTransaction {
+    padding: 10px 10px 15px 10px;
+}
+#transcations .wrap-bloc-transaction {
+    background: #f6f6f6;
+    margin: 20px 0;
+}
+#transcations .nav-transaction li:nth-child(n+3) {
+    float: right;
+}
+#transcations .nav-transaction li a {
+    width: 134px;
+    text-align: center;
+    height: 35px;
+}
+body.xs #transcations .nav-transaction li a {
+    width: 100%;
+    padding: 10px 20px 30px 20px;
+}
+body.xs #transcations .nav-transaction li {
+    width: 100%;
+    float: left;
+}
+#transcations .nav-tabs > li.active > a,
+#transcations .nav-tabs > li.active > a:focus,
+#transcations .nav-tabs > li.active > a:hover {
+    background: #384b5c;
+    color: #fff;
+}
+body.xs #transcations #div_principal .tabbable .nav li:nth-child(4) {
+    margin-bottom: 20px;
+}
+body.xs #transcations #detail_transaction table table td {
+    text-align: left;
+    display: block;
+    min-height: 40px;
+}
+body.xs #transcations .label-transaction {
+    background: #f35958;
+    color: #fff;
+}
+body.xs #transcations #cl1 {
+    margin-top: -18px;
+}
+body.xs #transcations .responsive-data td:before {
+    display: inline-block;
+    width: 120px;
+}
+#transcations #cl1 {
+    float: right;
+    margin: -40px 5px 0 0;
+    padding: 2px 5px;
+    border-radius: 2px;
+    background: #1462FC;
+}

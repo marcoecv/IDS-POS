@@ -1,0 +1,112 @@
+body, #divHeader{
+    background-color: #eee;
+}
+body.lg .scroller,
+body.md .scroller,
+body.sm .scroller{
+    margin-left: 0;
+}
+.myOffCanvas .left{
+    width:155px;
+}
+#sportsMenu .showOverview{
+    background-color: #1462FC;
+}
+#sportsMenu .sportPanel{
+    padding-left: 0;
+}
+#sportsMenu .groupLink .checkboxWrap .checkbox,
+#otherEventMenu .groupLink .checkboxWrap .checkbox{
+    margin-top: 1px;
+}
+#sportsMenu .sportPanel{
+    margin-top:1px;
+}
+#sportsMenu .showLines{
+    background: none;
+    background-color: #525c6e;
+    border: 0;
+    border-radius: 0;  
+}
+#sportsMenu .showLines:hover{
+     background-color: #525c6e;
+}
+
+#sportsMenu .iconPlus{
+    display:none;
+}
+#sportsMenu .panel-heading{
+    border-radius: 0;
+}
+#sportsMenu .sportPanel .panel-body{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    font-size: 11px;
+}
+#sportsMenu .groupList .groupLink:hover{
+    background-color: #ddd;
+}
+#sportsMenu .groupList .list-group-item a{
+    color:#222;
+}
+#sportsMenu .list-group-item{
+    margin-bottom:0;
+}
+#sportsMenu .groupList .list-group-item{
+    border-bottom-width:0;
+    padding-left:3px;
+}
+#sportsMenu .squaredCategory {
+  width: 20px;
+  position: relative;
+  margin: 20px auto;
+}
+#sportsMenu .squaredCategory label {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(top, #222 0%, #45484d 100%);
+    border-radius: 4px;
+    /*box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,.4);*/
+}
+#sportsMenu .squaredCategory label:after {
+    content: '';
+    width: 12px;
+    height: 7px;
+    position: absolute;
+    top: 5px;
+    left: 4px;
+    border: 4px solid #1462FC;
+    border-top: none;
+    border-right: none;
+    background: transparent;
+    opacity: 0;
+    transform: rotate(-45deg);
+}
+
+#sportsMenu .squaredCategory label:hover::after {  
+      opacity: 0.3;
+}
+  
+#sportsMenu .squaredCategory input[type=checkbox] {
+    visibility: hidden;
+}
+
+#sportsMenu .squaredCategory input[type=checkbox]:checked + label:after {
+    opacity: 1;
+}
+
+.table-games .selection{
+    /*
+    background-color: #ccc;
+    border-color: #ccc;
+    color: #000;
+    */
+}
+
+/* end .squaredThree */
+
+

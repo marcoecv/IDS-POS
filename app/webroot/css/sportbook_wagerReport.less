@@ -1,0 +1,481 @@
+@import url(http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext);
+@import (reference) "/sportbook/getLessVariables";
+
+body {
+    font-family: "Lato";
+}
+
+#reports table.responsive-data {
+}
+
+#reports table {
+    border: none;
+    margin: 0px auto;
+}
+
+body.xs #reports table.responsive-data .one-row, body.sm #reports table.responsive-data .one-row {
+    text-align: left;
+    display: block;
+    font-size: 14px;
+    width: auto;
+}
+
+body.xs #ahr_Table .cell-data,
+body.sm #ahr_Table .cell-data {
+    display: block;
+}
+
+body.xs #ahr_Table .trReportDetail .show-data,
+body.sm #ahr_Table .trReportDetail .show-data {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+body.xs #ahr_Table .trReportDetail .show-data,
+body.sm #ahr_Table .trReportDetail .show-data a{
+    float: right;
+}
+
+body.xs #ahr_Table .trReportDetail .show-data:before,
+body.sm #ahr_Table .trReportDetail .show-data:before {
+    content: attr(data-th) ": ";
+    color: @color-betslip-selections-messages;
+    width: 40%;
+    display: inline-block;
+    border-radius: 0;
+    padding: 0px 7px;
+    margin-right: 5px;
+}
+
+body.xs #br_headerTable .cell-data,
+body.sm #br_headerTable .cell-data {
+    display: block;
+    text-align: right;
+    padding-right: 5px;
+}
+
+body.xs #br_headerTable .trReportDetail .show-data,
+body.sm #br_headerTable .trReportDetail .show-data {
+    display: block;
+    width: auto;
+    height: 100%;
+}
+
+body.xs #br_headerTable .trReportDetail .show-data:before,
+body.sm #br_headerTable .trReportDetail .show-data:before {
+    content: attr(data-th) ": ";
+    width: 40%;
+    display: inline-block;
+    border-radius: 0;
+    padding: 0px 7px;
+    margin-right: 5px;
+    color: white;
+    background-color: @color-Menus;
+    text-align: left;
+    float: left;
+}
+
+#reports table.responsive-data .one-row, #reports table.responsive-data .agent-id, #reports table.responsive-data .customer-id, #reports table.responsive-data .cell-data, #reports table.responsive-data .subTotalReport td, #reports table.responsive-data .totalReport td, #reports table.responsive-data .headerReport td, #reports table.responsive-data .headerReport2 td, #reports table.responsive-data .subheaderReport td {
+    display: table-cell;
+}
+
+body.xs #reports table td, body.sm #reports table td {
+    text-align: left;
+}
+#reports table td {
+    text-align: center;
+    vertical-align: middle;
+    height: 42px;
+}
+body.xs .responsive-data td, body.sm .responsive-data td {
+    padding: 0;
+    vertical-align: middle;
+}
+
+body.xs #reports table.responsive-data .cell-data.hide-data, body.sm #reports table.responsive-data .cell-data.hide-data {
+    display: none;
+}
+
+#ahr_headerTable .cell-data {
+    color: white;
+    background-color: #2F3C42;
+    border-color: #2F3C42;
+}
+
+body.xs #ahr_headerTable .cell-data,
+body.sm #ahr_headerTable .cell-data {
+    display: table-cell;
+}
+
+#reports table.responsive-data .one-row, #reports table.responsive-data .agent-id, #reports table.responsive-data .customer-id, #reports table.responsive-data .cell-data, #reports table.responsive-data .subTotalReport td, #reports table.responsive-data .totalReport td, #reports table.responsive-data .headerReport td, #reports table.responsive-data .headerReport2 td, #reports table.responsive-data .subheaderReport td {
+    display: table-cell;
+}
+body.xs #reports table td, body.sm #reports table td {
+    text-align: left;
+}
+#reports table td {
+    text-align: center;
+    vertical-align: middle;
+    height: 42px;
+}
+body.xs .responsive-data td, body.sm .responsive-data td {
+    padding: 0;
+    vertical-align: middle;
+}
+
+body.xs #reports table.responsive-data .one-row td{
+    width: auto;
+}
+
+#reports table.responsive-data td::before {
+    width: auto;
+    /* width: 100px; */
+}
+
+body.xs #reports .wrap-info .info-col1, body.xs #reports .wrap-info .info-col2, body.xs #reports .wrap-info .info-col3, body.xs #reports .wrap-info .info-col4, body.sm #reports .wrap-info .info-col1, body.sm #reports .wrap-info .info-col2, body.sm #reports .wrap-info .info-col3, body.sm #reports .wrap-info .info-col4 {
+    text-align: right;
+    height: 20px;
+    padding: 2px;
+    color: black;
+    font: 13px Arial, sans-serif;
+    display: inline-block;
+    top: 0;
+    /* padding-right: 10px; */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+body.xs #reports .wrap-info.wrap-info-3col, body.xs #reports .wrap-info.wrap-info-4col, body.sm #reports .wrap-info.wrap-info-3col, body.sm #reports .wrap-info.wrap-info-4col {
+    width: 70%;
+}
+body.xs #reports .wrap-info, body.sm #reports .wrap-info {
+    display: block;
+    position: relative;
+    vertical-align: top;
+    float: right;
+    margin-top: 0px;
+    margin-right: 5px;
+}
+
+body.xs #loadPendings,
+body.xs #loadGraded,
+body.xs #loadOpenBets{
+    width: 32.7%;
+}
+
+#reports .wrap-info {
+    display: none;
+}
+
+body.xs #reports .wrap-info .info-col1, body.sm #reports .wrap-info .info-col1 {
+    /* left: -60px; */
+    /* right: 150px; */
+    width: 45%;
+    float:right;
+}
+
+body.xs #reports .wrap-info .info-col2, body.sm #reports .wrap-info .info-col2 {
+    /* left: -60px; */
+    /* right: 150px; */
+    width: 45%;
+    float:right;
+}
+
+body.xs #reports .wrap-info .glyphicon, body.sm #reports .wrap-info .glyphicon {
+    width: 10%;
+    float:right;
+    padding-left: 10px;
+}
+
+body.lg #reports .wrap-info-title {
+    display: none !important;
+}
+
+body.lg #reports .wagerReportTypeSelector{
+    margin-bottom: 10px;
+}
+
+#reports .col-lg-6 label,
+#reports .col-md-6 label,
+#reports .col-sm-6 label,
+#reports .col-xs-6 label,
+#reports .col-lg-5 label,
+#reports .col-md-5 label,
+#reports .col-sm-5 label,
+#reports .col-xs-5 label,
+#reports .col-lg-4 label,
+#reports .col-md-4 label,
+#reports .col-sm-4 label,
+#reports .col-xs-4 label,
+#reports .col-lg-3 label,
+#reports .col-md-3 label,
+#reports .col-sm-3 label,
+#reports .col-xs-3 label,
+#reports .col-lg-2 label,
+#reports .col-md-2 label,
+#reports .col-sm-2 label,
+#reports .col-xs-2 label {
+    padding-top: 7px;
+    padding-right: 5px;
+    height: 34px;
+    padding: 8px 12px;
+    line-height: 1;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    border-right: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+
+#ahr_all{
+    height: 45px;
+    width: 49%;
+    font-size: 14px;
+}
+
+#ahr_freePlays{
+    height: 45px;
+    width: 50%;
+    font-size: 14px;
+}
+
+body.xs #reports .panel-body {
+    padding: 0px;
+}
+
+
+
+
+
+
+
+
+#wagersReport{
+    position: relative;
+}
+
+#wagersReport .item{
+    background-color: @color-betslip-panel-default;
+}
+
+#wagersReport .ticketNumber{
+    background-color: @color-Menus;
+    color: white;
+}
+
+
+#wagersReport .detailsWrap .panel-default > .pannel-heading-1{
+    background-color: @color-Menus;
+}
+
+#wagersReport div{
+    text-align: left;
+}
+
+#wagersReport .paginationWrap{
+    text-align: center;
+}
+
+
+#wagersReport .overlay{
+    background-color: black;
+    opacity: 0.2;
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    background-image: url("/images/loading.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+}
+/*************************************Pending Report*****************************************************/
+.wpr_headerWagerDiv{
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    background-color: @color-Menus;
+    border-radius: 7px 7px 0px 0px;
+}
+.wpr_headerWagerDiv a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+.wpr_headerWagerDiv a:hover{
+    color: #D3DBE9;
+}
+#wpr_accordion{
+    height: 800px;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.borderedWagerDiv{
+    margin: 3px;
+    border-radius: 7px;
+    height: auto;
+    margin-top: 15px;
+}
+
+.rightFloatDiv{
+    float: right;
+    width: 50%;
+    height: 100%
+}
+
+.leftFloatDiv{
+    float: left;
+    width: 50%;
+    height: 100%
+}
+
+.rightFloatDiv2{
+    float: right;
+    width: 40%;
+    height: 100%
+}
+
+.leftFloatDiv2{
+    float: left;
+    width: 59%;
+    height: 100%
+}
+
+.wpr_contentWagerDiv{
+    overflow: hidden;
+}
+.separator {
+	height: 10px;
+	width: 100%;
+	border-bottom: 1px solid @color-Buttons-White;
+	display: block;
+	margin: 15px 0;
+}
+.wager-description-dot{
+    width: 5px;
+    height: 5px;
+    position: relative;
+    top: 8px;
+    float: left;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+/***************************************Account History Report*******************************************/
+#ahr_headerTableDiv{
+    width: 100%;
+    color: white;
+    background-color: @color-Menus;
+}
+
+#ahr_headerTable{
+    width: 98%;
+}
+#ahr_headerTable tr th{
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#ahr_tableDiv{
+    width: 100%;
+    height: 600px;
+    overflow-y: scroll;
+}
+
+#ahr_Table{
+    width: 100%;
+}
+#ahr_Table tr:hover{
+    background-color: @color-Buttons-White;
+}
+#ahr_Table tr td{
+    padding: 3px;
+    border: solid 1px @color-Buttons-White;
+}
+
+.ahr_docNumtd{
+    width: 15%;
+    text-align: center;
+}
+.ahr_datetd{
+    width: 20%;
+}
+.ahr_desctd{
+    width: 30%;
+}
+.ahr_amounttd{
+    width: 10%;
+    text-align: center;
+}
+.ahr_balancetd{
+    width: 10%;
+    text-align: center;
+}
+.ahr_wagerDetailstd{
+    width: 10%;
+    text-align: center;
+}
+
+.ahr_wagerDetailstd a:hover{
+    color: @color-MenusHover;
+}
+.ahr_docNumth{
+    width: 15%;
+}
+.ahr_dateth{
+    width: 20%;
+}
+.ahr_descth{
+    width: 30%;
+}
+.ahr_amountth{
+    width: 10%;
+}
+.ahr_balanceth{
+    width: 10%;
+}
+.ahr_wagerDetailsth{
+    width: 10%;
+}
+
+.tdm_contentWagerDiv{
+    min-height: 125px;
+}
+
+/***************************************Weekly Balance Repor************************************************/
+
+#br_headerTable{
+    width: 100%
+}
+
+#br_headerTable thead tr th{
+    color: white;
+    background-color: @color-Menus;
+    padding: 5px;
+    text-align: center;
+}
+
+body.xs #br_headerTable tbody tr td,
+body.sm #br_headerTable tbody tr td
+{
+    padding: 0px;
+}
+
+#br_headerTable tbody tr td{
+    padding: 4px;
+    text-align: center;
+    border: solid 1px @color-Buttons-White;
+}
+
+#tdm_accordion{
+    height: 450px;
+    overflow-y: scroll;
+}
+
+.plus-sgin-wager-report{
+    cursor:pointer;
+}

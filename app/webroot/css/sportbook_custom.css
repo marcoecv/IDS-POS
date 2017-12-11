@@ -1,0 +1,230 @@
+@import url(http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext);
+
+body {
+    font-family: "Lato";
+}
+
+body.xs .subGroupSelector {
+    /*z-index: 800;*/
+    margin-top: 0px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    overflow: hidden;
+    float: left;
+    background-color: #FFFFFF;
+}
+
+body.xs .buttonsWrap {
+    cursor: move;
+    /*z-index: 999;*/
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    overflow: hidden;
+    float: left;
+}
+
+body.xs .buttonsWrap button {
+    float: left;
+    margin-right: 2px;
+    padding: 0px 0px;
+}
+
+body.xs .buttonsWrap .btn-success {
+    border: 1px solid #FA5736;
+    background: #FA5736;
+}
+
+body.xs .btn-primary-orange,
+body.xs .btn-primary-orange:hover,
+body.xs .btn-primary-orange:focus {
+    height: 45px;
+    width: 70px;
+    background-image: none;
+    background-color: #FA5736;
+    border-color: #FA5736;
+    color: #FFFFFF;
+    border-radius: 5px;
+}
+
+body.xs .btn-primary-white,
+body.xs .btn-primary-white:hover,
+body.xs .btn-primary-white:focus {
+    height: 45px;
+    width: 66px;
+    position: relative;
+    background-image: none;
+    background-color: #CBCCCC;
+    border-color: #CBCCCC;
+    border-left-color: #BFBFBF;
+    border-right-color: #BFBFBF;
+    border-bottom-color: #BFBFBF;
+    color: #848484;
+    font-weight: 300;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:focus {
+    background-image: none;
+    background-color: #313C42;
+    border-color: #313C42;
+}
+
+body.xs .btn-success-white,
+body.xs .btn-success-white:focus,
+body.xs .btn-success-white:hover {
+    position: relative;
+    height: 45px;
+    background-image: none;
+    background-color: #FFFFFF;
+    border-color: #FFFFFF;
+    color: #333333;
+    font-weight: 800;
+}
+
+body.xs .btn-success-white:before,
+body.xs .btn-success-white:focus:before,
+body.xs .btn-success-white:hover:before {
+    content: url("../../images/icon_arrow_orange.png");
+}
+
+.acceptChangesSelection {
+    float: right;
+}
+
+#betslip .selection .messages .message .btn-success,
+#betslip .selection .messages .message .btn-success:focus,
+#betslip .selection .messages .message .btn-success:hover {
+    height: 30px;
+    width: 30%;
+}
+
+.btn-success,
+.btn-success:focus,
+.btn-success:hover {
+    background-image: none;
+    background-color: #FA5736;
+    border-color: #FA5736;
+}
+
+body.xs .group .title .label {
+    width: 90%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+body.xs .panel-title {
+    font-size: 12px;
+    padding-top: 3px;
+}
+
+.panel-default > .pannel-heading-1,
+.panel-default > .pannel-heading-2,
+.group .title {
+    background-color: #2F3C42;
+}
+
+#betsWrap .group .title {
+    background-color: #2F3C42;
+}
+
+#sportsMenu .btn-continue {
+    background: none;
+    background-color: #C0C0C0;
+    border-color: #C0C0C0;
+    filter: none;
+}
+
+#sportsMenu .btn-continue:hover {
+    background: none;
+    background-color: #FA5736;
+    border-color: #FA5736;
+    color: white;
+}
+
+#sportsMenu .showLines {
+    height: 32px;
+    font-size: 13px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: white;
+    border: 1px solid #F4F4F4;
+    background: #F4F4F4;
+
+}
+
+#sportsMenu .showLines:hover {
+    height: 32px;
+    font-size: 13px;
+    font-weight: 900;
+    text-transform: uppercase;
+    background-image: none;
+    color: white;
+    border: 1px solid #419641;
+    background: #2F3C42;
+
+}
+
+.table-games tbody tr.odd {
+    background-color: #DDDDDD;
+}
+
+body.xs .table-games tbody tr.odd {
+    background-color: #FFFFFF;
+}
+
+#betslip .betslipTypeSelector .option {
+    background-color: #DDDDDD;
+    border-color: #DDDDDD;
+}
+
+#userbar {
+    background: none;
+    background-color: #2F3C42;
+    filter: none;
+}
+
+#userbar .nav li:hover {
+    background-color: #596368;
+}
+
+#userbar .nav li.info {
+    background-color: #222;
+}
+
+.btn-primary.disabled,
+.btn-primary.disabled:focus {
+    background-color: #bdbdbd;
+    border-color: #bdbdbd;
+    color: #848484;
+}
+
+.navbar-custom .nav li a .mainMenuLi {
+    width: 100%;
+    background: none;
+    background-color: #CBCCCC;
+    color: #333;
+    margin-top: 15px;
+}
+
+.navbar-custom .nav li a .mainMenuLi .mainMenuContent {
+    text-align: center;
+}
+
+.navbar-custom .nav li a .mainMenuLi:hover,
+.navbar-custom .nav li.active a .mainMenuLi {
+    width: 100%;
+    background: none;
+    background-color: #FA5736;
+    color: white;
+    margin-top: 15px;
+}
+
+#content {
+    position: relative;
+}

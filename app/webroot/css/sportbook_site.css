@@ -1,0 +1,413 @@
+@import url(http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext);
+
+body {
+    font-family: "Lato";
+}
+
+body.xs #tableHeaderButton .betTypeSelector .spreadSelectorLi,
+body.xs #tableHeaderButton .betTypeSelector .moneylineSelectorLi,
+body.xs #tableHeaderButton .betTypeSelector .totalSelectorLi,
+body.xs #tableHeaderButton .betTypeSelector .teamtotalSelectorLi{
+    float: left;
+    margin-right: 2px;
+}
+
+body.xs #tableHeaderButton{
+    width: 100%;
+}
+
+body.xs #trNameHeaderButton label{
+    float: right;
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-right: 10px;
+    font-size: 12px;
+    font-weight: 900;
+}
+
+body.xs,
+body.sm
+{
+    overflow-y: scroll; /* has to be scroll, not auto */
+    overflow-x: hidden; /* has to be scroll, not auto */
+    -webkit-overflow-scrolling: touch;
+}
+
+body.xs #btnBackTop,
+body.sm #btnBackTop{
+    width: 100%;
+    height: 50px;
+}
+body.xs #betslipPanelBody{
+    padding: 2px;
+}
+
+body.xs #addOpenBetWrap{
+    margin-bottom: 2px;
+}
+
+body.xs #addOpenBet{
+    height: 50px;
+}
+
+body.xs #openTeaserSelector{
+    height: 50px;
+    width: 100%;
+}
+
+body.xs #betslipPanelBody.betslipTypeSelector .margin-bottom{
+    margin-bottom: 2px;
+}
+
+body.xs  > .margin-top,
+body.sm  > .margin-top{
+    margin-top: 10px;
+}
+
+body.xs  > .margin-bottom,
+body.sm  > .margin-bottom{
+    margin-bottom: 10px;
+}
+
+body.xs .btn-primary,
+body.xs .btn-primary:hover,
+body.xs .btn-primary:focus{
+    height: 45px;
+}
+
+.sort .hidden-xs{
+    
+}
+
+*{
+    outline: 0 !important;
+}
+
+*:not(input){
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select:none;
+}
+
+.panel-default > .pannel-heading-1{
+    background-color: #333333;
+    background-image: none;
+    color: white;
+    filter: none;
+    padding: 3px;
+}
+
+.panel-default > .pannel-heading-1,
+.panel-default > .pannel-heading-2,
+.group .title{
+    background-color: #596368;
+}
+
+body.sm .panel-default.sm-special-open > .pannel-heading-1{
+    /*background-color: #1A20BA;*/
+}
+
+.panel-default > .pannel-heading-2{
+    background-color: #030536;
+    background-image: none;
+    filter: none;
+    padding: 3px;
+}
+.panel-default > .pannel-heading-2,
+.panel-default > .pannel-heading-2 a{
+    color: white;
+    text-decoration: none;
+}
+
+.selection.error .panel-default > .pannel-heading-2{
+    background-color: red;
+}
+
+
+body.xs .panel-default > .pannel-heading-1,
+body.xs .panel-default > .pannel-heading-2{
+    padding: 10px 3px;
+}
+
+
+.mainBanner{
+    margin-bottom: 10px;	
+}
+
+.mainBanner img{
+    width: 100%;
+    max-width: 1000px;
+}
+
+
+.display-table{
+    display: table;
+}
+.display-table-cel{
+    display: table-cell
+}
+
+.backButtonWrap{
+    margin-bottom: 10px; 
+}
+
+.panel{
+    margin-bottom: 10px;
+}
+
+.panel-body{
+    padding: 10px;
+    text-align: left;
+}
+
+.margin-top{
+    margin-top: 10px;
+}
+
+.margin-bottom{
+    margin-bottom: 10px;
+}
+
+.botton-continue-wrap.bottom{
+    margin-top: 7px;
+}
+
+body.sm .botton-continue-wrap.bottom{
+    margin-top: 0;
+}
+
+body.sm .botton-continue-wrap{
+    margin-bottom: 8px;
+}
+body.sm .botton-continue-wrap.margin-top-fix{
+    margin-top: 5px;
+}
+
+.secret{
+    display: none;
+}
+
+.gameHeader{
+    width: 100%;
+    height: 65px;
+}
+
+.gameHeader td{
+    vertical-align: middle;
+}
+
+.gameHeader .backButtonTd{
+    width: 65px;
+}
+
+.gameHeader .backButtonTd .backButtonWrap{
+    margin-bottom: 0;
+}
+
+.gameHeader .dateTd{
+    padding-left: 3px;
+}
+
+.gameHeader .versus{
+    text-align: center;
+    padding: 0 5px;
+    width: 30px;
+}
+.gameHeader .teamsTd{
+    padding-left: 3px;
+    /*width: 30%;*/
+}
+.gameHeader .teamsTd{
+    text-align: center;
+}
+.gameHeader .imageTd{
+    width: 30px;
+    text-align: center;
+}
+.gameHeader .rotNumTd{
+    width: 35px;
+    text-align: center;
+}
+.groupTitle{
+    text-align: center;
+    background-color: #2f3c42;
+    color: white;
+    padding: 4px;
+    position: relative;
+    margin-bottom: 10px;
+}
+body.xs .groupTitle,
+body.sm .groupTitle{
+    padding: 8px 3px;
+}
+.teamImage{
+    width: 25px;
+    height: 25px;
+}
+.toggleContainers,
+.toogleBets{
+    position: absolute;
+    right: 0px;
+    top: -1px;
+    padding: 3px;
+    font-size: 10pt;
+}
+
+body.xs .toggleContainers .openAll {
+    padding-top: 4px;
+}
+
+.toggleContainers .openAll button {
+    color: white;
+    border: 1px solid #419641;
+    background: #5cb85c;
+    background: -moz-linear-gradient(top, #5cb85c 0%, #419641 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5cb85c), color-stop(100%,#419641));
+    background: -webkit-linear-gradient(top, #5cb85c 0%,#419641 100%);
+    background: -o-linear-gradient(top, #5cb85c 0%,#419641 100%);
+    background: -ms-linear-gradient(top, #5cb85c 0%,#419641 100%);
+    background: linear-gradient(to bottom, #5cb85c 0%,#419641 100%);
+}
+
+body.xs .toogleBets,
+body.sm .toogleBets{
+    top: 4px;
+}
+.group{
+    margin-bottom: 3px;
+}
+.navbar-sports{
+    border: 1px solid #ddd;
+    min-height: 1px;
+}
+.navbar-sports > li{
+    padding: 0px;
+}
+.navbar-sports .navbar-nav > li > a{
+    padding: 3px;
+}
+.navbar-sports .navbar-header{
+    padding: 3px;
+}
+.navbar-sports .navbar-header .btn-bar-wrap{
+    margin: 0;
+}
+.navbar-sports .navbar-collapse{
+    padding: 0;
+}
+.navbar-sports .navbar-nav{
+    margin: 0;
+}
+body.xs .maxLengthMainWrap {
+    position: relative;
+    top: -56px;
+}
+.maxLengthMainWrap{
+    /*max-width: 1300px;*/
+    position: relative;
+    top: -103px;
+}
+#betslip .selection .buyPoints .default{
+    color: black;
+    font-weight: bold;
+}
+.mainHeader{
+    /*max-width: 1300px;*/
+}
+#wagersReport .pagination {
+    text-align: center;
+}
+
+#loading{
+    display: none;
+}
+
+#loading .loadingImage {
+    height: 30px;
+    width: 30px;
+}
+
+.table-games .selectGame{
+    padding: 1px 1px 1px 3px;
+}
+.myEllipsis {
+    display: table;
+    table-layout: fixed;
+    white-space: nowrap;
+    width: 100%;
+}
+.myEllipsis > * {
+    display: table-cell;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+body.xs #gamePlayLines .myEllipsis {
+    display: inline-block;
+    table-layout: inherit;
+    white-space: normal;
+    width: 100%;
+}
+body.xs #gamePlayLines .myEllipsis > * {
+    display: inline-block;
+    overflow: visible;
+}
+.ellipsis{
+    display: table;
+    table-layout: fixed;
+    white-space: nowrap;
+    width: 100%;
+}
+.ellipsis > * {
+    display: table-cell;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+body.xs #draw {
+    display: none;
+}
+.wrap-loading-games {
+    position:absolute;
+    right:0;
+    left:0;
+    height:0;
+    z-index: 99;
+}
+.wrap-loading-games.active{
+    height:200px;
+}
+#loading-games {
+    width: 0;
+    opacity: 0;
+}
+#loading-games.active {
+    width: auto;
+    opacity: 1;
+}
+
+/* Modal Setting */
+#lineDisplayTypeModal .sectionSettings{
+    display: inline-block;
+    width:49%;
+}
+#lineDisplayTypeModal .sectionSettings .table{
+    display: table;
+}
+#lineDisplayTypeModal .sectionSettings .table .row{
+    display: table-row;
+}
+#lineDisplayTypeModal .sectionSettings label{
+    width:100px;
+}
+#loader-wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 999999;
+}

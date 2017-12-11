@@ -1,0 +1,72 @@
+
+#rr_headerTable{
+    width: 100% !important;
+    table-layout: fixed;
+}
+#rr_tableHeaderDiv{
+    width: calc(98% - (13px)) !important;
+}
+
+#rr_tableDiv{
+    width: 98% !important;
+    overflow-y: scroll;
+    height: 700px;
+}
+#rr_table{
+    width: 100% !important;
+    table-layout: fixed;
+}
+#rr_table tfoot{
+    background-color: #DDDDDD;
+}
+
+.tdTicket{
+    width: 15%;
+    text-align: center;
+}
+
+.tdTrans{
+    width: 15%;
+    text-align: center;
+}
+
+.tdDate{
+    width: 15%;
+    text-align: center;
+}
+
+
+.tdCuenta{
+    width: 15%;
+    text-align: center;
+}
+
+.tdWon{
+    width: 13%;
+    text-align: center;
+}
+
+.tdTax{
+    width: 13%;
+    text-align: center;
+}
+
+.tdReten{
+    width: 14%;
+    text-align: center;
+}
+
+.totales{
+    border: #EEEEEE 1px solid;
+    border-radius: 5px;
+    margin: 3px;
+    padding: 10px;
+    min-height: 60px;
+    line-height: 40px;
+    width: 240px;
+}
+.radiobutton{
+    width: 32%;
+    height: 48px;
+    font-size: 20px;
+}

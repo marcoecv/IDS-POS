@@ -1,0 +1,96 @@
+@import (reference) "/sportbook/getLessVariables";
+
+#overviewWrap .listOverview{
+    width: 100%;
+    padding:5px;
+    border: 1px solid @color-Buttons-White;
+    background-color: @color-Background-tables;
+}
+#overviewWrap .listOverview  li.itemGame{
+    display: table;
+    width: 100%;
+    list-style-type: none;
+    height: 35px;
+    padding: 5px;
+    color: #222;
+    border-bottom: 1px solid @color-Buttons-White;
+    cursor: pointer;
+}
+#overviewWrap .listOverview li:last-child{
+    border-bottom: 0;
+}
+body.xs #overviewWrap .listOverview  li.itemGame{
+    height: 55px;
+}
+#overviewWrap .listOverview li.itemGame > div{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+#overviewWrap .listOverview  li.itemGame .iconWrap{
+    width: 20px;
+}
+#overviewWrap .listOverview  li.itemGame .iconWrap .iconSport{
+    display: inline-block;
+}
+#overviewWrap .listOverview  li.itemGame .time-game{
+    width: 140px;
+}
+body.xs #overviewWrap .listOverview  li.itemGame .time-game{
+    width: 80px;
+}
+#overviewWrap .listOverview  li.itemGame .teams-game{
+    text-align: left;
+}
+#overviewWrap .listOverview .detailNowInPlay{
+    width:100%;
+}
+#overviewWrap .listOverview .detailNowInPlay > div{
+   display: inline-block;
+   color:@color-MenusHover;
+}
+#overviewWrap .listOverview .detailNowInPlay .gameTime{
+    width:40px;
+}
+#overviewWrap .titleSport{
+    font-size:1.2em;
+    padding: 2px;
+    background: @color-SubHeaders;
+    color:@color-MenusText;
+}
+#overviewWrap .sectionSportLive > ul,
+#overviewWrap .sectionSportPregame > ul{
+    border:0;
+}
+#overviewWrap .listOverview{
+    list-style: none;
+}
+
+#overviewWrap .toggle-icon{
+    background-image: url("/images/less.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    float: right;
+    height: 24px;
+    width: 20px;
+}
+#overviewWrap .collapsed .toggle-icon{
+     background-image: url("/images/plus.png");
+}
+
+#overviewWrap{
+    background-color: @color-Background-tables;
+}
+
+@media screen and (min-width: 1600px) {
+    #overviewWrap .overviewSectionWrap{
+        width:50%;
+    }
+    #overviewWrap .overviewSectionWrap.posLeft{
+        float:left;
+        background-color: @color-Background-tables;
+    }
+    #overviewWrap .overviewSectionWrap.posRight{
+        float:right;
+    }
+}

@@ -1,0 +1,332 @@
+@import url(http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext);
+
+body {
+    font-family: "Lato";
+}
+
+body.xs #navbar{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+#sportsMenu .sportPanel .panel-body,
+#otherEventMenu .sportPanel .panel-body{
+    background-color: white;
+}
+
+#sportsMenu .panel-group,
+#otherEventMenu .panel-group{
+    margin: 0;
+}
+
+#sportsMenu .panel-body,
+#otherEventMenu .panel-body{
+    padding: 0 0 0 4px;
+}
+
+#sportsMenu .list-group,
+#otherEventMenu .list-group{
+    margin: 0;
+}
+
+#sportsMenu .list-group .list-group-item,
+#otherEventMenu .list-group .list-group-item{
+    padding: 0px 0;
+}
+
+#sportsMenu .groupLink .table,
+#otherEventMenu .groupLink .table{
+    width: 100%;
+    display: table;
+    margin: 0;
+}
+#sportsMenu .groupLink .cell,
+#otherEventMenu .groupLink .cell{
+    display: table-cell;
+    text-align: left;
+}
+#sportsMenu .groupLink .checkboxWrap,
+#otherEventMenu .groupLink .checkboxWrap{
+    width: 25px;
+    text-align: center;
+    visibility: hidden;
+}
+
+
+body.xs #sportsMenu .list-group .list-group-item,
+body.sm #sportsMenu .list-group .list-group-item{
+    padding: 10px 5px;
+}
+
+#sportsMenu .panel-heading,
+#otherEventMenu .panel-heading{
+    cursor: pointer;
+}
+
+#sportsMenu .panel-heading .panel-title,
+#otherEventMenu .panel-heading .panel-title{
+    display: table;
+}
+
+#sportsMenu .panel-heading .panel-title .iconWrap,
+#otherEventMenu .panel-heading .panel-title .iconWrap{
+    display: table-cell;
+    vertical-align: middle;
+    width:19px;
+    padding-right: 10px;
+}
+
+body.xs #sportsMenu {
+    position: fixed;
+    top: 60px;
+}
+
+body.sm #sportsMenu .panel-heading .panel-title .iconWrap,
+body.sm #otherEventMenu .panel-heading .panel-title .iconWrap {
+    display: table-cell;
+    vertical-align: middle;
+    width: 19px;
+    padding-right: 5px;
+}
+
+body.sm #sportsMenu .panel-heading .panel-title{
+    width: 35px;
+    height: 30px;
+    padding-left: 8px;
+    border-radius: 3px;
+}
+
+#sportsMenu .panel-heading .panel-title .iconWrap,
+#otherEventMenu .panel-heading .panel-title .iconWrap{
+    text-align: center;
+}
+
+#sportsMenu .panel-heading .panel-title .sportName,
+#otherEventMenu .panel-heading .panel-title .sportName{
+    display: table-cell;
+    vertical-align: middle;
+    width:100%;
+    padding-left: 5px;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+#sportsMenu .groupList .list-group-item,
+#otherEventMenu .groupList .list-group-item{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #DDDDDD;
+    height: 40px;
+}
+
+#sportsMenu .groupList .list-group-item .groupLink,
+#otherEventMenu .groupList .list-group-item .groupLink{
+    display: table-cell;
+    width: 100%;
+    vertical-align: middle;
+}
+
+#sportsMenu .groupList .list-group-item a,
+#otherEventMenu .groupList .list-group-item a{
+    color: black;
+    text-decoration: none;
+}
+
+#sportsMenu .groupList, #sportsMenu .groupList li,
+#otherEventMenu .groupList, #otherEventMenu .groupList li{
+    border-radius: 0;
+    text-align: left;
+}
+
+#sportsMenu .groupList .groupLink:hover,
+#otherEventMenu .groupList .groupLink:hover{
+    background-color: #D3DBE9;
+}
+
+#sportsMenu .panel,
+#otherEventMenu .panel{
+    border: none;
+}
+
+#sportsMenu .groupLink .checkboxWrap input[type=checkbox],
+#otherEventMenu .groupLink .checkboxWrap input[type=checkbox]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    border:1px hidden #2F3C42;
+    width: 12px;
+    height: 12px;
+    margin-right: 8px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+
+#sportsMenu .groupLink .checkboxWrap input[type=checkbox]:after,
+#otherEventMenu .groupLink .checkboxWrap input[type=checkbox]:after{
+    content: " ";
+    background-color: transparent;
+    border-color: transparent;
+    display: inline-block;
+    visibility: visible;
+    width: 14px;
+    height: 14px;
+    border-radius: 4px;
+    border:1px solid #2F3C42;
+    
+}
+
+#sportsMenu .groupLink .checkboxWrap input[type=checkbox]:checked:after,
+#otherEventMenu .groupLink .checkboxWrap input[type=checkbox]:checked:after{
+     -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    
+    content: " ";
+    background-color: #fa5736;
+    width: 14px;
+    height: 14px;
+    border-radius: 4px;
+    border:1px solid #2F3C42;
+}
+
+
+
+
+
+
+body.sm #sportsMenu .sportPanel > .panel-heading{
+    border-radius: 4px
+
+}
+
+body.sm #sportsMenu .sportPanel > .panel-heading .sportName{
+    display: none;
+}
+
+body.sm #sportsMenu .sportPanel > .panel-body{
+    display: none;
+}
+
+body.sm #sportsMenu .sportPanel.sm-special-open{
+    position: relative;
+}
+body.sm #sportsMenu .sportPanel.sm-special-open .panel-body{
+    position: absolute;
+    display: block;
+    top: 0px;
+    left: 51px;
+    visibility: visible;
+    z-index: 500;
+    width: 300px;
+    max-height: 300px;
+    overflow-y: auto;
+    border: 3px solid #313c42;
+    border-radius: 4px;
+}
+body.sm #sportsMenu .sportPanel.sm-special-open .panel-body .panel-group{
+    /*background-color: orange;*/
+}
+body.sm #sportsMenu{
+    padding-left: 3px;
+}
+body.sm #sportsMenu .iconPlus {
+    display: none;
+}
+#sportsMenu .sportPanel{
+    position: relative;
+    padding-left: 1px;
+    padding-bottom: 0px;
+    margin-top: 2px;
+}
+
+#sportsMenu .sportPanel .sportName{
+   text-align: left;
+}
+
+
+#sportsMenu .sportPanel .arrow-left{
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent; 
+    border-right:10px solid #313c42; 
+    position: absolute;
+    left: 42px;
+    top: 8px;
+    display: none;
+}
+
+body.sm #sportsMenu .sportPanel.sm-special-open .arrow-left{
+    display: block;
+
+}
+ 
+/*
+ *body.xs #sportsMenu .groupLink .checkboxWrap,
+body.xs #otherEventMenu .groupLink .checkboxWrap,
+body.sm #sportsMenu .groupLink .checkboxWrap,
+body.sm #otherEventMenu .groupLink .checkboxWrap{
+    display: none;
+}
+
+body.xs #botton-continue-wrap{
+    display: none;
+}
+*/
+
+#sportsMenu .collapsed .panel-title .iconWrap .iconPlus,
+#sportsMenu .collapsed .panel-title .iconWrap .iconPlus,
+#sportsMenu .collapsed .panel-title .iconWrap .iconPlus{
+    background-image: url("/images/plus.png");
+}
+
+#sportsMenu .panel-title .iconWrap .iconPlus,
+#sportsMenu .panel-title .iconWrap .iconPlus,
+#sportsMenu .panel-title .iconWrap .iconPlus{
+    background-image: url("/images/less.png");
+}
+
+/* style leftmenu mobile */
+body.xs #sportsMenu .sportPanel{
+    
+}
+body.xs #sportsMenu .sportPanel .pannel-heading,
+body.xs #sportsMenu .sportPanel .pannel-heading-1,
+body.xs #sportsMenu .sportPanel .pannel-heading-2{
+    border-radius: 4px;
+    margin-top: 2px;
+    border: 1px solid #ccc;
+    height: 48px;
+    color: #FFFFFF;
+    background: none;
+    background: -moz-linear-gradient(top, #313C42 40%, #313C42 100%);  
+    background: -webkit-linear-gradient(top, #313C42 40%, #313C42 100%);  
+    background: -o-linear-gradient(top, #313C42 40%, #313C42 100%);  
+    background: -ms-linear-gradient(top, #313C42 40%, #313C42 100%);  
+    background: linear-gradient(top, #313C42 40%, #313C42 100%);
+}
+body.xs #sportsMenu .sportPanel .pannel-heading:hover,
+body.xs #sportsMenu .sportPanel .pannel-heading-1:hover,
+body.xs #sportsMenu .sportPanel .pannel-heading-2:hover{
+    color: #FFFFFF;
+    background: none;
+    background: -moz-linear-gradient(top, #313C42 40%, #313C42 100%);  
+    background: -webkit-linear-gradient(top, #313C42 40%, #313C42 100%);  
+    background: -o-linear-gradient(top, #313C42 40%, #313C42 100%);  
+    background: -ms-linear-gradient(top, #313C42 40%, #313C42 100%);  
+    background: linear-gradient(top, #313C42 40%, #313C42 100%);
+}
+body.xs #sportsMenu .sportPanel .pannel-heading:active,
+body.xs #sportsMenu .sportPanel .pannel-heading-1:active,
+body.xs #sportsMenu .sportPanel .pannel-heading-2:active{
+    color: #fa5736;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2) inset; 
+}
+
+

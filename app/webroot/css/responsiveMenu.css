@@ -1,0 +1,63 @@
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,700);
+@import url(http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext);
+body {
+    font-family: "Lato";
+}
+
+.responsive-menu{
+    width: 100%;
+    height: 55px;
+    background-color: #E2E2E2;
+    position: fixed;
+    bottom: 0;
+    z-index: 10000;
+    border-top: 1px solid #CECECE;
+    display:none;
+    left:0px;
+    -webkit-backface-visibility:hidden; /*Most Important*/
+}
+
+.responsive-menu-item{
+    width: 20%;
+    display: block;
+    float: left;
+    height: 55px;
+    text-align: center;
+    line-height: 12px;
+}
+
+.responsive-menu-item svg{
+    fill: #333333;
+    width: 30px;
+    margin-left: 3px;
+    margin-top: 5px;
+}
+
+.responsive-menu-item span{
+    font-family: 'Lato';
+    font-size: 10px;
+    margin-top: -5px;
+}
+
+.responsive-menu-item a{
+    color: #333333;
+}
+
+.responsive-menu-item a:active{
+    color: #333333;
+}
+
+@media screen and (max-width: 767px) {
+    .responsive-menu{
+        display: block;
+    }
+    
+    #footer{
+        margin-bottom: 50px;
+    }
+    
+    #main{
+        margin-bottom: 50px;
+    }
+    
+}

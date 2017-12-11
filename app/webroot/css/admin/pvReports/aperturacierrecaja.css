@@ -1,0 +1,67 @@
+
+#ac_headerTable{
+    width: 100% !important;
+    table-layout: fixed;
+}
+#ac_tableHeaderDiv{
+    width: calc(98% - (13px)) !important;
+}
+
+#ac_tableDiv{
+    width: 98% !important;
+    overflow-y: scroll;
+    height: 700px;
+}
+#ac_table{
+    width: 100% !important;
+    table-layout: fixed;
+}
+#ac_table tfoot{
+    background-color: #DDDDDD;
+}
+
+.tdBalance{
+    width: 10%;
+    text-align: center;
+}
+
+.tdFecha{
+    width: 20%;
+    text-align: center;
+}
+
+.tdCaja{
+    width: 10%;
+    text-align: left;
+}
+
+
+.tdTransaccion{
+    width: 10%;
+    text-align: center;
+}
+
+.tdCredito{
+    width: 10%;
+    text-align: center;
+}
+
+.tdDebito{
+    width: 10%;
+    text-align: center;
+}
+
+.totales{
+    border: #EEEEEE 1px solid;
+    border-radius: 5px;
+    margin: 3px;
+    padding: 10px;
+    min-height: 60px;
+    line-height: 40px;
+    width: 240px;
+}
+.radiobutton{
+    width: 32%;
+    height: 48px;
+    font-size: 20px;
+}

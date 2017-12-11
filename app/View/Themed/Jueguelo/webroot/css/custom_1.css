@@ -1,0 +1,577 @@
+/*!
+ * Start Bootstrap - Modern Business HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+
+
+
+/* fonts */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic);
+
+
+/***************************
+************** Global Styles 
+****************************/
+
+html,
+body {
+    height: 100%;
+	color: #dedede;
+	font-family: Roboto, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 1.7em;
+	font-weight: 300;
+    letter-spacing: 0.06em;
+}
+
+/* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+body {
+    padding-top: 90px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+	background-color: #000;
+}
+
+#registro {
+	background-image: url(../img/bg-registro.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+@media(max-width:991px) {
+	body {
+		padding-top: 50px;
+	}
+}
+
+@media screen and (max-width: 640px){
+	body {
+		padding-top: 50px;
+	}
+}
+
+a {
+    color: #e55f36;
+    text-decoration: none;
+}
+
+a:focus, a:hover { 
+	color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	line-height: 1.5em;
+	margin-bottom: 20px;
+	margin-top: 0;
+	font-weight:300;
+}
+
+.h4, h4 { font-size: 24px;}
+
+.page-header {
+    border-bottom: 1px solid #eee;
+    margin: 10px 10px 30px;
+    padding-bottom: 9px;
+}
+
+p {
+	text-align: justify;
+    text-justify: inter-word;
+}
+
+/* main menu active state */
+
+.navbar-right li a.active { border-bottom: 2px solid #F60; background-color: transparent;}
+
+
+/* faq page */
+a.accordion-toggle:hover { color: #e55f36}
+a.accordion-toggle:focus { color: #e55f36}
+.panel-heading h4.panel-title {font-size: 21px}
+.panel-body {color: #444;}
+
+.img-portfolio {
+    margin-bottom: 30px;
+}
+
+
+.img-hover:hover {
+    opacity: 0.8;
+}
+
+.page-container {
+	margin-top: 2em;
+}
+
+.well {
+    background-color: #111;
+	background: -webkit-linear-gradient(#111, #333); /* For Safari 5.1 to 6.0 */
+	background: -moz-linear-gradient(#111, #333); /* For Firefox 3.6 to 15 */
+	background: -moz-linear-gradient(#111, #333); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#111, #333); /* Standard syntax */
+	border: none;
+}
+
+
+.text-danger {
+    color: #cc0000;
+}
+
+
+/* index boxes titles - sample of text with gradient color*/
+.subtitle {
+	text-transform: uppercase; 
+	color: #666; 
+	font-size: 21px;
+	background: -webkit-linear-gradient(#ff3333, #ff0000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+	
+	}
+
+/************* custom margin bottom classes to create vertical space ****************/
+.margin-bottom-20 { margin-bottom: 2.0em; }
+.margin-bottom-30 { margin-bottom: 3.0em; }
+.margin-bottom-40 { margin-bottom: 4.0em; }
+.margin-bottom-50 { margin-bottom: 5.0em; }
+
+.margin-top-20 { margin-top: 2.0em; }
+.margin-top-30 { margin-top: 3.0em; }
+.margin-top-40 { margin-top: 4.0em; }
+.margin-top-50 { margin-top: 5.0em; }
+
+/* body bg for pages */
+
+#homepage {
+		/*background-image: url(../img/bg-symbols.png);*/
+}
+
+#casino {
+		background-image: url(../img/bg-figures.png);
+}
+
+/* add tops space to elements */
+
+.topsmall { margin-top:20px; }
+.topmedium { margin-top:35px; }
+.toplarge { margin-top:50px; }
+
+
+
+
+/****************** buttons ******************/
+.btn-default {
+     border-color: #ffcc00;
+     color: #222;
+	 background-color: #ffd65e; background-image: -webkit-gradient(linear, left top, left bottom, from(#ffd65e), to(#febf04));
+	 background-image: -webkit-linear-gradient(top, #ffd65e, #febf04);
+	 background-image: -moz-linear-gradient(top, #ffd65e, #febf04);
+	 background-image: -ms-linear-gradient(top, #ffd65e, #febf04);
+	 background-image: -o-linear-gradient(top, #ffd65e, #febf04);
+	 background-image: linear-gradient(to bottom, #ffd65e, #febf04);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#ffd65e, endColorstr=#febf04);
+	}
+
+.btn-default:hover {
+	border-color: #ffcc00;
+	color: #222;
+	background-color: #febf04;
+}
+
+.pull-right .btn-primary {
+    background: #e55f36;
+    border-color: #e55f36;
+    color: #fff;
+}
+
+.pull-right .btn-primary:hover {
+    background: #e64b1b; 
+	border-color:  #e64b1b;
+}
+
+/*****************************************************************************
+**************** Home Page Carousel from modern-business bootstrap ***********
+******************************************************************************/
+
+
+.carousel-control { display: none;}
+
+.carousel-indicators li { border: 1px solid #555;}
+.carousel-indicators .active { background-color: #555;}
+
+header.carousel {
+    height: 50%;
+    margin-bottom: 20px;
+}
+
+header.carousel .item,
+header.carousel .item.active,
+header.carousel .carousel-inner {
+    height: 100%;
+}
+
+header.carousel .fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+/**************************
+caption vertically centered on bootstrap slider
+http://jsfiddle.net/n86hLyLu/1/
+**************************/
+.carousel-caption {
+    position: absolute;
+    top: 0;
+	height: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+	margin-bottom: 20px;
+	text-align:center;
+	letter-spacing: 0.3em;
+}
+
+
+/* this style makes homepage carousell vertically taller 70% or whatever you want */
+header.carousel.tallercarousel {height:70%; min-height: 350px;}
+
+
+
+
+/***************
+
+carousel-promo
+
+***************/
+
+#carousel-promo.carousel.slide div.carousel-inner {border-radius: 4px;}
+
+
+
+/* thumbnails */
+
+.thumbnail { 
+	border: none;
+}
+
+.breadcrumb { 
+	font-size: 14px;
+}
+
+/************************
+Forms Custom Styles
+**************************/
+
+label { font-weight: normal;}
+
+/***************************************
+Slots tabs 
+****************************************/
+.tab-content > .tab-pane {
+    background-color: #fff;
+    border-image: none;
+    border-radius: 0 0 4px 4px;
+    border-style: none solid solid;
+    border-width: medium 1px 1px;
+    padding: 2em;
+}
+
+.nav-tabs li a:focus, a:hover { color: #333}
+
+.ic-mobile {
+    margin-left: 4px;
+    position: absolute;
+}
+
+.panel-default > .panel-heading {
+    background-color: #e55f36;
+    color: #fff;
+}
+
+div#panelpadding.panel-heading span img.img-responsive {
+	border-radius: 6px;
+}
+
+
+
+
+
+/* 404 Page Styles */
+
+.error-404 {
+    font-size: 100px;
+}
+
+/* Pricing Page Styles */
+
+.price {
+    display: block;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.price sup {
+    top: -20px;
+    left: 2px;
+    font-size: 20px;
+}
+
+.period {
+    display: block;
+    font-style: italic;
+}
+
+/* Footer Styles */
+
+footer {
+    margin: 50px 0 0 0;
+}
+
+
+
+
+/********************************************
+**************** Navbar *********************
+*********************************************/
+
+
+/* brand logo image needs styles for responsive size and position */
+.navbar-brand {
+	padding: 10px 0 0 0;
+	height: 100px;
+	position: absolute;
+}
+
+@media(max-width:991px) {
+	.navbar-brand {
+		padding: 5px 0 0 5px;
+		height: 45px;
+		position: relative;
+	}
+}
+
+@media screen and (max-width: 640px){
+	.navbar-brand {
+		padding: 5px 0 0 5px;
+		height: 45px;
+		position: relative;
+	}
+}
+
+/* links bar*/
+.navbar-inverse .navbar-nav > li > a { 
+    color: #e55f36;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 4em;
+	padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.navbar-inverse {
+    background-color: #151515;
+}
+
+.navbar-default {
+    text-align: center;
+	background-color: #151515;
+	border:none;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #666;
+}
+
+.navbar-toggle {
+  padding: 10px 5px;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  background-color: #555;
+}
+
+.navbar-login{
+	margin-left: 15px;
+}
+
+.navbar {
+    margin-bottom: 0px;
+}
+
+
+/**********************
+custom same height columns for index
+***********************/
+#equalheight {
+    overflow: hidden; 
+}
+
+/********************************************
+**************** Footer *********************
+*********************************************/
+
+
+/* footer payment logos */
+.payments li {padding-top: 5px;}
+
+
+
+/* footer all */
+.footercontainer { }
+
+footer { padding: 20px 0 60px 0;}
+.footerleft { margin-top:50px; padding:0 36px; }
+.logofooter { margin-bottom:10px; font-size:25px; color:#fff; font-weight:700;}
+
+.footerleft p { color:#fff; font-size:12px !important;}
+.footerleft p i { width:20px; color:#999;}
+
+
+.paddingtop-bottom {  margin-top:50px;}
+.footer-ul { list-style-type:none;  padding-left:0px; margin-left:2px;}
+.footer-ul li { line-height:29px; font-size:12px;}
+.footer-ul li a { color:#a0a3a4; transition: color 0.2s linear 0s, background 0.2s linear 0s; }
+.footer-ul i { margin-right:10px;}
+.footer-ul li a:hover {transition: color 0.2s linear 0s, background 0.2s linear 0s; color:#3cf; }
+
+.social:hover {
+     -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+     -o-transform: scale(1.1);
+ }
+ 
+ 
+ .icon-ul { list-style-type:none !important; margin:0px; padding:0px;}
+ .icon-ul li { line-height:75px; width:100%; float:left;}
+ .icon { float:left; margin-right:5px;}
+ 
+ 
+ .copyright { min-height:40px; padding:20px 0; border-top:1px solid #333;}
+ .copyright p { text-align:left; color:#FFF; padding:10px 0; margin-bottom:0px;}
+ .heading7 { font-size:21px; font-weight:700; color:#d9d6d6; margin-bottom:22px;}
+ .post p { font-size:12px; color:#FFF; line-height:20px;}
+ .post p span { display:block; color:#8f8f8f;}
+ .bottom_ul { list-style-type:none; float:right; margin-bottom:0px;}
+ .bottom_ul li { float:left; line-height:40px;}
+ .bottom_ul li:after { content:"/"; color:#FFF; margin-right:8px; margin-left:8px;}
+ .bottom_ul li a { color:#FFF;  font-size:12px;}
+
+.modal-header{
+    background-color: #ccc;
+}
+.close{
+    color: #000000;
+    font-weight: 900;
+}
+#modalLogin .modal-content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 340px;
+}
+#modalLogin .modal-content label {
+    width: 100px;
+}
+#modalLogin .modal-content .form-inline {
+    text-align: center;
+}
+#modalLogin .modal-content .input-group-addon {
+}
+#modalLogin .modal-content .input-group-addon .fa {
+}
+#modalLogin .modal-header, #modalLogin .modal-body, #modalLogin .modal-footer {
+    padding: 10px;
+}
+#modalLogin .modal-footer {
+    text-align: center;
+}
+#modalLogin .modal-title {
+    font-size: 1.5em;
+}
+#modalLogin .close {
+    font-size: 3em;
+    margin-top: -12px;
+    opacity: 1;
+}
+#modalLogin .modal-title {
+    text-align: center;
+}
+#modalLogin .modal-footer .btn {
+    border-radius: 3px;
+    font-size: 14px;
+    height: 45px;
+    line-height: 1.5;
+    padding: 5px 10px;
+    width: 100%;
+}
+#modalLogin .well {
+    background: none;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+#modalLogin .well.pw {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+}
+#modalLogin .left {
+    float: left;
+}
+#modalLogin .right {
+    float: right;
+}
+#modalLogin .extra-info {
+    padding: 0 20px 10px;
+}
+#modalLogin .extra-info a {
+}
+.loginError {
+    display: none;
+}
+.loginError label {
+    color: red;
+    font-weight: 300;
+    text-align: center;
+    width: 100% !important;
+}
+#divEmail {
+    margin-bottom: 0;
+}
+.errorEmail {
+    color: red;
+    display: none;
+    margin-left: 5px;
+}
+
+
+/* Responsive Styles */
+
+@media(max-width:991px) {
+    .customer-img,
+    .img-related {
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:767px) {
+    .img-portfolio {
+        margin-bottom: 15px;
+    }
+
+    header.carousel {
+        height: 30%;
+    }
+	
+	.center-block h3 {display: none;}
+	
+	
+}

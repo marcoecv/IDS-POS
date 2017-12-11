@@ -1,0 +1,785 @@
+@import url(http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext);
+
+body {
+    font-family: "Lato";
+}
+
+.page-header{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-header .btn-bar-wrap{
+    padding: 0;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+body.lg #userbar,
+body.md #userbar,
+body.sm #userbar {
+    display:none;
+}
+
+body.lg #navbar,
+body.md #navbar,
+body.sm #navbar{
+    width: 100%;
+}
+
+body.lg .mainHeader .navbar-nav,
+body.md .mainHeader .navbar-nav,
+body.sm .mainHeader .navbar-nav {
+    width: 100%;
+    position:relative;
+    top: -53px;
+}
+
+body.xs .mainHeader .navbar-header .btn-bar-wrap button{
+    margin: 1px 1px;
+    height: 50px;
+    width: 50px;
+    background-color: #333333;
+    border-color: #333333;
+}
+
+.mainHeader .navbar-header .btn-bar-wrap button{
+    display: none;
+    visibility: hidden;
+}
+
+body.xs .mainHeader .navbar-header .btn-bar-wrap button {
+    margin: 0 1px;
+    
+    display: block;
+    visibility: visible;
+}
+
+.userMenu {
+    background: #f6f6f6; /* Old browsers */
+    background: -moz-linear-gradient(top, #f6f6f6 0%, #d6d6d6 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f6f6f6), color-stop(100%,#d6d6d6)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #f6f6f6 0%,#d6d6d6 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #f6f6f6 0%,#d6d6d6 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #f6f6f6 0%,#d6d6d6 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #f6f6f6 0%,#d6d6d6 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#d6d6d6',GradientType=0 ); /* IE6-9 */
+}
+
+.mainHeader .userMenu div{
+    padding-left: 5px;
+    text-align: left;
+    white-space: nowrap;
+}
+body.lg .mainHeader .userMenu div{
+    text-align: center;
+}
+
+body.xs .mainHeader .glyphicon-th:before{
+    content:"";
+}
+
+body.xs .mainHeader .glyphicon-th{
+    background-image: url("../../images/ico_top_menu.png");
+    background-size: 25px 25px;
+    display: inline-block;
+    width: 25px; 
+    height: 25px;
+}
+
+body.xs .mainHeader .glyphicon-user{
+    background-image: url("../../images/ico_top_menu_user.png");
+    background-size: 25px 25px;
+    display: inline-block;
+    width: 25px; 
+    height: 25px;
+}
+
+body.xs .mainHeader .glyphicon-user:before{
+    content:"";
+}
+
+body.xs .mainHeader .glyphicon-menu-hamburger{
+    background-image: url("../../images/ico_top_menu_user_ham.png");
+    background-size: 25px 25px;
+    display: inline-block;
+    width: 25px; 
+    height: 25px;
+}
+
+body.xs .mainHeader .glyphicon-menu-hamburger:before{
+    content:"";
+}
+
+body.xs .mainHeader .glyphicon-shopping-cart{
+    background-image: url("../../images/ico_top_menu_user_shopping.png");
+    background-size: 30px 30px;
+    display: inline-block;
+    width: 30px; 
+    height: 30px;
+    position: relative;
+    top: -3px;
+    left: -5px;
+}
+
+body.xs .mainHeader .glyphicon-shopping-cart:before{
+    content:"";
+}
+
+body.xs .mainHeader #shopping-cart{
+    position: relative;
+    top: 22px;
+    left: 22px;
+    background-color: #E2231C;
+    color: #FFFFFF;
+    width: 15px;
+    height: 15px;
+    font-size: 8px;
+    font-weight: 300;
+    border-radius: 50%;
+    padding-top: 2px;
+    text-align: center;
+}
+
+#userbar{
+    margin-top: 3px;
+    margin-bottom: 3px;
+    width: 100%;
+    max-height: 100%;
+
+    background: #f6f6f6; /* Old browsers */
+    background: -moz-linear-gradient(top, #f6f6f6 0%, #d6d6d6 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f6f6f6), color-stop(100%,#d6d6d6)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #f6f6f6 0%,#d6d6d6 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #f6f6f6 0%,#d6d6d6 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #f6f6f6 0%,#d6d6d6 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #f6f6f6 0%,#d6d6d6 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#d6d6d6',GradientType=0 ); /* IE6-9 */
+}
+
+
+#userbar .nav li{
+    color:#fff;
+    padding: 5px 12px;
+    border-right: 1px solid #848484;
+}
+#userbar .nav li:hover{
+    background-color: #d6d6d6;
+}
+#userbar .nav li.info{
+    color:#fa5736;
+    background-color: #c1c1c1;
+}
+body.xs #userbar .nav li.dropdown ul.dropdown-menu{
+    position: relative;
+    width: 100%;
+    background-color: #313c42;
+    z-index: 999;
+    top:-10px;
+}
+body.xs #userbar .nav li.dropdown ul.dropdown-menu > li{
+    width: 100%;
+}
+#userbar .mainHeader .nav .dropdown-menu{
+    background-color: #313c42;
+}
+#userbar .mainHeader .nav #dropdownMenu1{
+    border: none;
+}
+
+body.xs .mainHeader .nav{
+    text-transform: uppercase;
+}
+
+body.xs #userbar{
+    background: none;
+}
+body.xs #userbar .nav{
+    border-top: 1px solid #848484;
+}
+body.xs #userbar .nav li{
+    height: 48px;
+    padding: 10px 0;
+    margin-top: 2px;
+    
+    border-radius: 4px;
+    border-bottom: 1px solid #848484;
+    border: 1px solid #ccc;
+    
+    color:#FFFFFF;
+    background: none;
+    background: -moz-linear-gradient(top, #313C42 40%, #313C42 100%);
+    background: -webkit-linear-gradient(top, #313C42 40%, #313C42 100%);
+    background: -o-linear-gradient(top, #313C42 40%, #313C42 100%);
+    background: -ms-linear-gradient(top, #313C42 40%, #313C42 100%);
+    background: linear-gradient(top, #313C42 40%, #313C42 100%);
+    text-align: center;
+}
+body.xs #userbar .nav li a{
+    color:#FFFFFF;
+    padding: 5px 20px;
+    height: 48px;
+}
+body.xs #userbar .nav li.link:hover,
+body.xs #userbar .nav li.link a:hover{
+    background: none;
+    background: -moz-linear-gradient(top, #f8f8f8 40%, #cacaca 100%);
+    background: -webkit-linear-gradient(top, #f8f8f8 40%, #cacaca 100%);
+    background: -o-linear-gradient(top, #f8f8f8 40%, #cacaca 100%);
+    background: -ms-linear-gradient(top, #f8f8f8 40%, #cacaca 100%);
+    background: linear-gradient(top, #f8f8f8 40%, #cacaca 100%);
+    color: #2f3c42;
+}
+
+#navbar .nav .mainMenu a .icoSportbook{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoSportbookDark.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+#navbar .nav .mainMenu a:hover .icoSportbook{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoSportbookLight.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+#navbar .nav .active a .icoSportbook{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoSportbookLight.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+#navbar .nav .mainMenu a .icoLive{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoLiveDark.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+#navbar .nav .mainMenu a:hover .icoLive{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoLiveLight.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+#navbar .nav .active a .icoLive{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoLiveLight.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+#navbar .nav .mainMenu a .icoRace{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoRaceDark.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+#navbar .nav .mainMenu a:hover .icoRace{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoRaceLight.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+#navbar .nav .active a .icoRace{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoRaceLight.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+#navbar .nav .mainMenu a .icoCasino{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoCasinoDark.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+#navbar .nav .mainMenu a:hover .icoCasino{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoCasinoLight.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+#navbar .nav .active a .icoAgent{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoAgentLight.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+#navbar .nav .mainMenu a .icoAgent{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoAgentDark.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+#navbar .nav .mainMenu a:hover .icoAgent{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoAgentLight.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+#navbar .nav .active a .icoAgent{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoAgentLight.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+body.xs #navbar .nav .mainMenu a .icoSportbook{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoSportbookLight.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+body.xs #navbar .nav .mainMenu a:hover .icoSportbook{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoSportbookLight.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+body.xs #navbar .nav .active a .icoSportbook{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoSportbookLight.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+body.xs #navbar .nav .mainMenu a .icoLive{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoLiveLight.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+body.xs #navbar .nav .mainMenu a:hover .icoLive{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoLiveLight.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+body.xs #navbar .nav .active a .icoLive{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoLiveLight.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+body.xs #navbar .nav .mainMenu a .icoRace{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoRaceLight.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+body.xs #navbar .nav .mainMenu a:hover .icoRace{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoRaceLight.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+body.xs #navbar .nav .active a .icoRace{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoRaceLight.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+body.xs #navbar .nav .mainMenu a .icoCasino{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoCasinoLight.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+body.xs #navbar .nav .mainMenu a .icoCasino{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoCasinoLight.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+body.xs #navbar .nav .mainMenu a:hover .icoLiveDealer{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/liveDealer.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+body.xs #navbar .nav .active a .icoAgent{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoAgentLight.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+body.xs #navbar .nav .mainMenu a .icoAgent{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoAgentLight.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+body.xs #navbar .nav .mainMenu a:hover .icoAgent{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoAgentLight.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+body.xs #navbar .nav .active a .icoAgent{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoAgentLight.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+.mainHeader::before {
+    
+}
+
+
+
+
+
+
+
+body.xs #userbar .nav li.link:active{
+    color: #fa5736;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2) inset; 
+}
+body.xs #userbar.navbar-collapse.in{
+    overflow-y: hidden;
+    position: fixed;
+    background-color: #FFFFFF;
+}
+body.xs .divBalance{
+    background-color: #8A8A8A;
+    border-color: #8A8A8A;
+    color: #FFFFFF;
+    border-radius: 4px;
+    height: 50px;
+    margin-top: 0px;
+    display: block;
+    visibility: visible;
+    font-size: 12px;
+    font-weight: 300;
+}
+.divBalance {
+    display: none;
+    visibility: hidden;
+}
+body.xs .divBalance hr {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border: 0;
+    border-top: 1px solid #FFFFFF;
+}
+#userbar .nav li a{
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    background: none;
+    color: #fff;
+    filter: none;
+}
+.navbar-custom {
+    background-color: #FFFFFF;
+    /* padding-right: 20px; */
+}
+body.xs .navbar-custom{
+    position: fixed;
+    margin-bottom: 0px;
+    background-color: #FFFFFF;
+    /*padding-right: 20px;*/
+}
+
+.navbar-custom .nav li{
+    padding-right: 2px;
+}
+
+.navbar-custom .nav li a{
+    padding: 0;
+    background: none;
+    background-color: transparent
+}
+
+.navbar-custom .nav .logo{
+    /*background-image: url('/img/home_site/logoTransp.png');*/
+    background-repeat: no-repeat;
+    background-size: contain;
+    float: left;
+    
+    width: 14.28%;
+    height: 50px;
+    
+    /*left: 10px;
+    bottom: 3px;*/
+}
+
+.navbar-custom .nav li a .mainMenuLi{
+    width: 100%;
+    height: 35px;
+    padding: 8px 10px;
+    /*border: 1px solid green;*/
+
+    margin: 0 2px;
+    border-radius: 4px 4px 0 0;
+    margin-top: 6px;
+    color: #fff;
+
+    background: #eb7501; /* Old browsers */
+    background: -moz-linear-gradient(top, #c05900 0%, #eb7501 50%, #c05900 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c05900), color-stop(50%,#eb7501), color-stop(100%,#c05900)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #c05900 0%,#eb7501 50%,#c05900 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #c05900 0%,#eb7501 50%,#c05900 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #c05900 0%,#eb7501 50%,#c05900 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #c05900 0%,#eb7501 50%,#c05900 100%); /* W3C */
+    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c05900', endColorstr='#eb7501',GradientType=0 );*/ /* IE6-9 */
+}
+body.xs .navbar-custom.mobile.navbar-fixed-top .navbar-collapse,
+body.xs .navbar-custom.mobile.navbar-fixed-bottom .navbar-collapse{
+    max-height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: #FFFFFF;
+}
+.navbar-custom .nav li a:hover{
+    width: 100%;
+    background: none;
+    background-color: transparent
+}
+.navbar-custom .nav li a .mainMenuLi:hover,
+.navbar-custom .nav li.active a .mainMenuLi{
+    width: 100%;
+    height: 35px;
+    color: #333333;
+
+    background: #f8f6f6; /* Old browsers */
+    background: -moz-linear-gradient(top, #dadada 0%, #f8f6f6 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dadada), color-stop(100%,#f8f6f6)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #dadada 0%,#f8f6f6 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #dadada 0%,#f8f6f6 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #dadada 0%,#f8f6f6 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #dadada 0%,#f8f6f6 100%); /* W3C */
+    
+    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dadada', endColorstr='#f8f6f6',GradientType=0 );*/ /* IE6-9 */
+}
+
+body.xs .navbar-custom.mobile .nav li a .mainMenuLi{
+    border-radius: 4px;
+    margin-top: 2px;
+    height: 48px;
+    border: 1px solid #ccc;
+    color: #FFFFFF;
+    background: none;
+    background: -moz-linear-gradient(top, #313C42 40%, #313C42 100%);  
+    background: -webkit-linear-gradient(top, #313C42 40%, #313C42 100%);  
+    background: -o-linear-gradient(top, #313C42 40%, #313C42 100%);  
+    background: -ms-linear-gradient(top, #313C42 40%, #313C42 100%);  
+    background: linear-gradient(top, #313C42 40%, #313C42 100%); 
+}
+
+body.xs .navbar-custom.mobile .nav li a .mainMenuLi .mainMenuContent{
+    width: 125px;
+    text-align: left;
+    /*margin-left: calc((100% - 125px)/2);*/
+}
+
+body.xs .navbar-custom.mobile .nav li a:hover .mainMenuLi{
+    /*background: none;
+    background: -moz-linear-gradient(top, #f8f8f8 40%, #cacaca 100%);
+    background: -webkit-linear-gradient(top, #f8f8f8 40%, #cacaca 100%);
+    background: -o-linear-gradient(top, #f8f8f8 40%, #cacaca 100%);
+    background: -ms-linear-gradient(top, #f8f8f8 40%, #cacaca 100%);
+    background: linear-gradient(top, #f8f8f8 40%, #cacaca 100%);
+    color: #2f3c42;*/
+    
+    background: none;
+    background-color: #313C42;
+    color: white;
+}
+
+body.xs .navbar-custom.mobile .nav .active .mainMenuLi{
+    background: none;
+    background-color: #FA5736;
+    color: white;
+}
+
+body.xs .navbar-custom.mobile .nav li a:active .mainMenuLi{
+    /*color: #fa5736;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2) inset; */
+}
+
+

@@ -1,0 +1,88 @@
+.depositButton{
+    border: 1px solid #2F3C42;
+    background: #2F3C42;
+    width: 264px !important;
+    height: 70px;
+}
+
+#transactionHeaderTableDiv{
+    width: 100%;
+}
+
+#transactionHeaderTable{
+    width: calc(100% - 13px);
+}
+
+#transactionTableDiv{
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.tdDepDate{
+    width: 15%;
+    text-align: center;
+}
+
+.tdDedTrans{
+    width: 15%;
+    text-align: center;
+}
+
+.tdDepDesc{
+    width: 40%;
+    text-align: left;
+}
+
+.tdDepDebits{
+    width: 10%;
+    text-align: center;
+}
+
+.tdDepCredits{
+    width: 10%;
+    text-align: center;
+}
+
+.tdDepBalance{
+    width: 10%;
+    text-align: center;
+}
+
+.kbDep_button{
+    width: 100%;
+    height: 74px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#dep_keyboard{
+    text-align: center;
+    width: 100%;
+    height: 300px;
+}
+
+#dep_keyboardTable{
+    width: 100%;
+    height: 100%
+}
+#dep_keyboardTable tr td{
+    width: 33.3%;
+    height: 100%
+}
+
+#dep_keyboardValue{
+    height: 65px;
+    font-size: 35px;
+    width: 360px;
+    text-align: center;
+}
+
+#sendDeposit{
+    width: 100%;
+    margin: 3px 0 3px 0
+}
+
+#sendRet{
+    width: 100%;
+    margin: 3px 0 3px 0
+}

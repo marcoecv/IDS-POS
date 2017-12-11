@@ -1,0 +1,77 @@
+
+#eb_headerTable{
+    width: 100% !important;
+    table-layout: fixed;
+}
+#eb_tableHeaderDiv{
+    width: calc(98% - (13px)) !important;
+}
+
+#eb_tableDiv{
+    width: 98% !important;
+    overflow-y: scroll;
+    height: 700px;
+}
+#eb_table{
+    width: 100% !important;
+    table-layout: fixed;
+}
+#eb_table tfoot{
+    background-color: #DDDDDD;
+}
+
+.tdFecha{
+    width: 10%;
+    text-align: left;
+}
+
+.tdTicket{
+    width: 7%;
+    text-align: center;
+}
+
+.tdDescription{
+    width: 35%;
+    text-align: left;
+}
+
+.tdRiesgo{
+    width: 7%;
+    text-align: center;
+}
+
+.tdJugador{
+    width: 7%;
+    text-align: center;
+}
+
+.tdTipo{
+    width: 10%;
+    text-align: center;
+}
+
+.tdEstado{
+    width: 6%;
+    text-align: center;
+}
+
+.tdCaja{
+    width: 6%;
+    text-align: center;
+}
+
+.tdPagado{
+    width: 6%;
+    text-align: center;
+}
+
+.tdPagar{
+    width: 6%;
+    text-align: center;
+}
+
+.radiobutton{
+    width: 32%;
+    height: 48px;
+    font-size: 20px;
+}

@@ -1,0 +1,7 @@
+<?php
+class Constants {
+	const ODDS_STYLE_DECIMAL = "DECIMAL";
+	const ODDS_STYLE_FRACTIONAL = "FRACTIONAL";
+	const ODDS_STYLE_US = "US";
+	const ODDS_STYLE_HONGKONG = "HONGKONG";
+}

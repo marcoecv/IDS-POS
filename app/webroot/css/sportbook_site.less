@@ -1,0 +1,622 @@
+@import url(http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext);
+@import (reference) "/sportbook/getLessVariables";
+
+body {
+    font-family: "Lato";
+    /*background-image: url("/images/backSportbook.png");*/
+      background-color: @color-Background-body;
+}
+body.xs #tableHeaderButton .betTypeSelector .spreadSelectorLi,
+body.xs #tableHeaderButton .betTypeSelector .moneylineSelectorLi,
+body.xs #tableHeaderButton .betTypeSelector .totalSelectorLi,
+body.xs #tableHeaderButton .betTypeSelector .teamtotalSelectorLi{
+    float: left;
+    margin-right: 2px;
+}
+body.xs #tableHeaderButton{
+    width: 100%;
+}
+body.xs #trNameHeaderButton label{
+    float: right;
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-right: 10px;
+    font-size: 12px;
+    font-weight: 900;
+}
+body.xs,
+body.sm
+{
+    overflow-y: scroll; /* has to be scroll, not auto */
+    overflow-x: hidden; /* has to be scroll, not auto */
+    -webkit-overflow-scrolling: touch;
+}
+body.xs #btnBackTop,
+body.sm #btnBackTop{
+    width: 100%;
+    height: 50px;
+}
+body.xs #betslipPanelBody{
+    padding: 2px;
+}
+body.xs #addOpenBetWrap{
+    margin-bottom: 2px;
+}
+body.xs #addOpenBet{
+    height: 50px;
+}
+body.xs #openTeaserSelector{
+    height: 50px;
+    width: 100%;
+}
+body.xs #betslipPanelBody.betslipTypeSelector .margin-bottom{
+    margin-bottom: 2px;
+}
+body.xs  > .margin-top,
+body.sm  > .margin-top{
+    margin-top: 10px;
+}
+body.xs  > .margin-bottom,
+body.sm  > .margin-bottom{
+    margin-bottom: 10px;
+}
+body.xs .btn-primary,
+body.xs .btn-primary:hover,
+body.xs .btn-primary:focus{
+    height: 45px;
+}
+.errorMessage{
+    color: #FF0000;
+    font-size: 18px;
+    width: 85%;
+    margin: auto;
+    padding: 10px 0px 10px 0px;
+}
+*{
+    outline: 0 !important;
+}
+*:not(input){
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select:none;
+}
+.panel-default > .pannel-heading-1{
+    background-color: #2F3C42;
+    background-image: none;
+    color: white;
+    filter: none;
+    padding: 3px;
+}
+.panel-default > .pannel-heading-1,
+.panel-default > .pannel-heading-2,
+.group .title{
+    background-color: #2F3C42;
+}
+body.sm .panel-default.sm-special-open > .pannel-heading-1{
+    /*background-color: #1A20BA;*/
+}
+.panel-default > .pannel-heading-2{
+    background-color: #2F3C42;
+    background-image: none;
+    filter: none;
+    padding: 3px;
+}
+.panel-default > .pannel-heading-2,
+.panel-default > .pannel-heading-2 a{
+    color: white;
+    text-decoration: none;
+}
+.selection.error .panel-default > .pannel-heading-2{
+    background-color: red;
+}
+body.xs .panel-default > .pannel-heading-1,
+body.xs .panel-default > .pannel-heading-2{
+    padding: 10px 3px;
+}
+.mainBanner{
+    margin-bottom: 10px;	
+}
+.mainBanner img{
+    width: 100%;
+    max-width: 1000px;
+}
+.display-table{
+    display: table;
+}
+.display-table-cel{
+    display: table-cell
+}
+.backButtonWrap{
+    margin-bottom: 10px; 
+}
+.panel{
+    margin-bottom: 10px;
+}
+.panel-body{
+    padding: 10px;
+    text-align: left;
+}
+.margin-top{
+    margin-top: 10px;
+}
+.margin-bottom{
+    margin-bottom: 10px;
+}
+.botton-continue-wrap.bottom{
+    margin-top: 7px;
+}
+body.sm .botton-continue-wrap.bottom{
+    margin-top: 0;
+}
+body.sm .botton-continue-wrap{
+    margin-bottom: 8px;
+}
+body.sm .botton-continue-wrap.margin-top-fix{
+    margin-top: 5px;
+}
+.secret{
+    display: none;
+}
+.gameHeader{
+    width: 100%;
+    height: 65px;
+}
+.gameHeader td{
+    vertical-align: middle;
+}
+.gameHeader .backButtonTd{
+    width: 65px;
+}
+.gameHeader .backButtonTd .backButtonWrap{
+    margin-bottom: 0;
+}
+.gameHeader .dateTd{
+    padding-left: 3px;
+}
+.gameHeader .versus{
+    text-align: center;
+    padding: 0 5px;
+    width: 30px;
+}
+.gameHeader .teamsTd{
+    padding-left: 3px;
+    /*width: 30%;*/
+}
+.gameHeader .teamsTd{
+    text-align: center;
+}
+.gameHeader .imageTd{
+    width: 30px;
+    text-align: center;
+}
+.gameHeader .rotNumTd{
+    width: 35px;
+    text-align: center;
+}
+.groupTitle{
+    text-align: center;
+    padding: 4px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.teamImage{
+    width: 25px;
+    height: 25px;
+}
+.toggleContainers,
+.toogleBets{
+    position: absolute;
+    right: 0px;
+    top: -1px;
+    padding: 3px;
+    font-size: 10pt;
+}
+body.xs .toggleContainers .openAll {
+    padding-top: 4px;
+}
+.toggleContainers .openAll button {
+    color: white;
+    border: 1px solid @color-Buttons;
+    background: @color-Buttons;
+    background: -moz-linear-gradient(top, @color-Buttons 0%, @color-Buttons 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@color-Buttons), color-stop(100%,@color-Buttons));
+    background: -webkit-linear-gradient(top, @color-Buttons 0%,@color-Buttons 100%);
+    background: -o-linear-gradient(top, @color-Buttons 0%,@color-Buttons 100%);
+    background: -ms-linear-gradient(top, @color-Buttons 0%,@color-Warning 100%);
+    background: linear-gradient(to bottom, @color-Buttons 0%,@color-Buttons 100%);
+}
+body.xs .toogleBets,
+body.sm .toogleBets{
+    top: 4px;
+}
+.group{
+    margin-bottom: 3px;
+}
+.navbar-sports{
+    border: 1px solid @color-Buttons-White;
+    min-height: 1px;
+}
+.navbar-sports > li{
+    padding: 0px;
+}
+.navbar-sports .navbar-nav > li > a{
+    padding: 3px;
+}
+.navbar-sports .navbar-header{
+    padding: 3px;
+}
+.navbar-sports .navbar-header .btn-bar-wrap{
+    margin: 0;
+}
+.navbar-sports .navbar-collapse{
+    padding: 0;
+}
+.navbar-sports .navbar-nav{
+    margin: 0;
+}
+body.xs .maxLengthMainWrap {
+    position: relative;
+    top: -56px;
+}
+body.lg .banner{
+    display: block;
+}
+body.sm .banner,
+body.md .banner,
+body.xs .banner{
+    display: none;
+}
+.maxLengthMainWrap{
+
+    position: relative;
+    background-color: @color-Background-body;
+    /*margin-top: 35px;*/
+}
+#betslip .selection .buyPoints .default{
+    color: black;
+    font-weight: bold;
+}
+.mainHeader{
+    max-width: 1300px;
+}
+#wagersReport .pagination {
+    text-align: center;
+}
+#loading{
+    display: none;
+}
+#loading .loadingImage {
+    height: 40px;
+    width: 40px;
+}
+.table-games .selectGame{
+    padding: 0px 1px 0px 3px;
+}
+.myEllipsis {
+    display: table;
+    table-layout: fixed;
+    white-space: nowrap;
+    width: 100%;
+}
+.myEllipsis > * {
+    display: table-cell;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+body.xs #gamePlayLines .myEllipsis {
+    display: inline-block;
+    table-layout: inherit;
+    white-space: normal;
+    width: 100%;
+}
+body.xs #gamePlayLines .myEllipsis > * {
+    display: inline-block;
+    overflow: visible;
+}
+.ellipsis{
+    display: table;
+    table-layout: fixed;
+    white-space: nowrap;
+    width: 100%;
+}
+.ellipsis > * {
+    display: table-cell;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+body.xs #draw {
+    display: none;
+}
+.wrap-loading-games {
+    position:absolute;
+    right:0;
+    left:0;
+    height:0;
+    z-index: 99;
+}
+.wrap-loading-games.active{
+    height:200px;
+}
+#loading-games {
+    width: 0;
+    opacity: 0;
+}
+#loading-games.active {
+    width: auto;
+    opacity: 1;
+}
+/* Modal Setting */
+#lineDisplayTypeModal .sectionSettings {
+    display: inline-block;
+    width:49%;
+}
+#lineDisplayTypeModal .sectionSettings .table{
+    display: table;
+}
+#lineDisplayTypeModal .sectionSettings .table .row{
+    display: table-row;
+}
+#lineDisplayTypeModal .sectionSettings label{
+    width:100px;
+}
+.headersOverview{
+    font-style: italic;
+    background-color: @color-Notes;
+    height: 8px;
+}
+.btn-danger {
+    background-image: -webkit-linear-gradient(top,@color-Warning 0,@color-Warning 100%);
+    background-image: -o-linear-gradient(top,#d9534f 0,#c12e2a 100%);
+    background-image: -webkit-gradient(linear,left top,left bottom,from(@color-Warning),to(@color-Warning));
+    background-image: linear-gradient(to bottom,@color-Warning 0,@color-Warning 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@color-Warning', endColorstr='@color-Warning', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    background-repeat: repeat-x;
+    border-color: @color-Warning;
+}
+.btn-danger:hover {
+    background-image: -webkit-linear-gradient(top,@color-Warning 0,@color-Warning 100%);
+    background-image: -o-linear-gradient(top,#d9534f 0,#c12e2a 100%);
+    background-image: -webkit-gradient(linear,left top,left bottom,from(@color-Warning),to(@color-Warning));
+    background-image: linear-gradient(to bottom,@color-Warning 0,@color-Warning 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@color-Warning', endColorstr='@color-Warning', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    background-repeat: repeat-x;
+    border-color: @color-Warning;
+}
+.navbar{
+    background-color: @color-Background-header;
+    /*background-image: url("/images/backSportbook.png");*/
+}
+footer{
+    /*background-image: url("/images/backSportbook.png");*/
+    background-color: @color-Background-footer;
+    padding-top: 20px;
+}
+body.xs .buttonsWrap{
+    cursor: move;
+    /*z-index: 999;*/
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    overflow: hidden;
+    float:left;
+}
+body.xs .buttonsWrap button{
+    float:left;
+    margin-right: 2px;
+    padding: 0px 0px;
+}
+.pull-center {
+    text-align: center;
+}
+footer {
+  padding-bottom: 20px;
+}
+body.xs .buttonsWrap .btn-success{
+    border: 1px solid @color-MenusHover;
+    background: @color-MenusHover; 
+}
+body.xs .btn-primary-orange,
+body.xs .btn-primary-orange:hover,
+body.xs .btn-primary-orange:focus {
+    height: 45px;
+    width: 70px;
+    background-image: none;
+    background-color: @color-MenusHover;
+    border-color: @color-MenusHover;
+    color: @color-MenusText;
+    border-radius: 5px;
+}
+body.xs .btn-primary-white,
+body.xs .btn-primary-white:hover,
+body.xs .btn-primary-white:focus {
+    height: 45px;
+    width: 66px;
+    position: relative;
+    background-image: none;
+    background-color: @color-Buttons-White;
+    border-color: @color-Buttons-White;
+    border-left-color: @color-Buttons-White;
+    border-right-color: @color-Buttons-White;
+    border-bottom-color: @color-Buttons-White;
+    color: @color-SubHeaders;
+    font-weight: 300;
+}
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:focus{
+    background-image:none;
+    background-color: @color-dropdown;
+    border-color: @color-dropdown;
+}
+body.xs .btn-success-white,
+body.xs .btn-success-white:focus,
+body.xs .btn-success-white:hover{
+    position: relative;
+    height: 45px;
+    background-image:none;
+    background-color: @color-MenusText;
+    border-color: @color-MenusText;
+    color: @color-betslip-selections-messages;
+    font-weight: 800;
+}
+body.xs .btn-success-white:before,
+body.xs .btn-success-white:focus:before,
+body.xs .btn-success-white:hover:before
+{
+    content: url("/images/icon_arrow_orange.png");
+}
+.acceptChangesSelection{
+    float: right;
+}
+.btn-success,
+.btn-success:focus,
+.btn-success:hover{
+    background-image:none;
+    background-color: @color-Buttons;
+    border-color: @color-Buttons;
+}
+body.xs .group .title .label {
+    width: 90%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+body.xs .panel-title {
+    font-size: 12px;
+    padding-top: 3px;
+}
+.panel-default > .pannel-heading-1,
+.panel-default > .pannel-heading-2,
+.group .title{
+    background-color: #2F3C42;
+}
+#sportsMenu .btn-continue{
+    background: none;
+    background-color: @color-Buttons-White;
+    border-color: @color-Buttons-White;
+    filter: none;
+}
+#sportsMenu .btn-continue:hover{
+    background: none;
+    background-color: @color-MenusHover;
+    border-color: @color-MenusHover;
+    color: white;
+}
+#sportsMenu .showLines{
+    height: 32px;
+    font-size: 13px;
+    font-weight: 900;
+    text-transform: uppercase;
+    background-image: none;
+    color: #777777;
+    border: 1px solid #ECF0F5;
+    background: #F4F4F4;
+
+}
+#sportsMenu .showLines:hover{
+    height: 32px;
+    font-size: 13px;
+    font-weight: 900;
+    text-transform: uppercase;
+    background-image: none;
+    color: white;
+    border: 1px solid @color-Buttons;
+    background: #2F3C42;
+
+}
+.table-games tbody tr.odd{
+    background-color: @color-betslip-panel-default;
+}
+.table-games tbody tr.odd .border-right,
+.table-games tbody tr.odd .border-bottom{
+    border-color: @color-MenusText;
+}
+body.xs .table-games tbody tr.odd {
+    background-color: @color-MenusText;
+}
+#betslip .betslipTypeSelector .option{
+    background-color: @color-betslip-panel-default;
+    border-color: @color-betslip-panel-default;
+}
+#userbar{
+    background: none;
+    background-color: @color-Menus;
+    filter: none;
+}
+#userbar .nav li:hover{
+    background-color: @color-menubetslip;
+}
+#userbar .nav li.info{
+    background-color: @color-betslip-selections-messages;
+}
+.btn-primary.disabled,
+.btn-primary.disabled:focus{
+    background-color: @color-betslip-panel-default;
+    border-color: @color-betslip-panel-default;
+    color: @color-menubetslip;
+}
+.navbar-custom .nav li a .mainMenuLi{
+    width: 100%;
+    background: none;
+    background-color: @color-Buttons-White;
+    color: @color-betslip-selections-messages;
+    margin-top: 15px;
+}
+.navbar-custom .nav li a .mainMenuLi .mainMenuContent{
+    text-align: center;
+}
+.navbar-custom .nav li a .mainMenuLi:hover, 
+.navbar-custom .nav li.active a .mainMenuLi{
+    width: 100%;
+    background: none;
+    background-color: @color-MenusHover;
+    color: white;
+    margin-top: 15px;
+}
+#content{
+    position: relative;
+}
+
+body.lg .scroller,
+body.md .scroller,
+body.sm .scroller{
+    margin-top: 5px;
+    margin-left: 2px;
+}
+
+.copy-rights{
+    color: @color-betslip-selections-messages;
+}
+
+
+/* Home Page Carousel */
+
+header.carousel {
+    height: 200px;
+}
+
+header.carousel .item,
+header.carousel .item.active,
+header.carousel .carousel-inner {
+    height: 100%;
+}
+
+header.carousel .fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+body.xs header.carousel{
+    display: none;
+}
+

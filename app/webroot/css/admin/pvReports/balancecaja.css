@@ -1,0 +1,131 @@
+
+#bc_headerTable{
+    width: 100% !important;
+    table-layout: fixed;
+}
+#bc_tableHeaderDiv{
+    width: 100% !important;
+}
+
+#bc_headerTable{
+    width: calc(100% - 13px) !important;
+}
+
+#bc_tableDiv{
+    width: 100% !important;
+    overflow-y: scroll;
+    height: 700px;
+}
+#bc_table{
+    width: 100% !important;
+}
+#bc_table tfoot{
+    background-color: #DDDDDD;
+}
+
+.tdFecha{
+    width: 10%;
+    text-align: center;
+}
+
+.tdCaja{
+    width: 10%;
+    text-align: center;
+}
+
+
+.tdTransaccion{
+    width: 10%;
+    text-align: center;
+}
+
+.tdUsuario{
+    width: 10%;
+    text-align: center;
+}
+
+.tdDescription{
+    width: 20%;
+    text-align: center;
+}
+
+.tdTicket{
+    width: 10%;
+    text-align: center;
+}
+
+.tdCredito{
+    width: 10%;
+    text-align: center;
+}
+
+.tdDebito{
+    width: 10%;
+    text-align: center;
+}
+
+.tdBalance{
+    width: 10%;
+    text-align: center;
+}
+
+
+#bc_table .tdFecha{
+    width: 10%;
+    text-align: center;
+}
+
+#bc_table .tdCaja{
+    width: 10%;
+    text-align: center;
+}
+
+
+#bc_table .tdTransaccion{
+    width: 10%;
+    text-align: center;
+}
+
+#bc_table .tdUsuario{
+    width: 10%;
+    text-align: center;
+}
+
+#bc_table .tdDescription{
+    width: 20%;
+    text-align: center;
+}
+
+#bc_table .tdTicket{
+    width: 10%;
+    text-align: center;
+}
+
+#bc_table .tdCredito{
+    width: 10%;
+    text-align: center;
+}
+
+#bc_table .tdDebito{
+    width: 10%;
+    text-align: center;
+}
+
+#bc_table .tdBalance{
+    width: 10%;
+    text-align: center;
+}
+.totales{
+    border: #EEEEEE 1px solid;
+    border-radius: 5px;
+    margin: 3px;
+    padding: 10px;
+    min-height: 60px;
+    line-height: 40px;
+    width: 240px;
+}
+.radiobutton{
+    width: 32%;
+    height: 48px;
+    font-size: 20px;
+}

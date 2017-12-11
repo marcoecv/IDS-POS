@@ -1,0 +1,194 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700,100&subset=latin,latin-ext);
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: #ededed;
+  font-size:16px;
+  background-color: #000;
+}
+
+.pull-center {
+    text-align: center;
+}
+
+.section {
+  padding: 30px 0;
+}
+
+.btn-default {
+    background: #f49715;
+    border-color: #f49715;
+    color: #fff;
+}
+.btn-default:hover,
+.btn-default:active {
+     color: #000;
+}
+
+.thumbnail {
+    background-color: #000;
+    border: 0px;
+    display: block;
+    padding: 0px;
+}
+
+/* This style specifically for Abrir una cuenta on main nav */
+
+li a.text-primary:link {color: #f49715;}
+li a.text-primary:visited {color: #f49715;}
+li a.text-primary:hover {color: #ffffff;}
+li a.text-primary:active {color: #f49715;}
+
+/* hover on all text links */
+a:hover { color: #fff !important; }
+
+/*btn primary color*/
+.btn-primary {
+    background-color: #f49715;
+    border-color: #f49715;
+    color: #fff;
+}
+
+
+.text-primary {
+    color: #f49715;
+}
+
+a {color: #f49715;}
+
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    line-height: 1.5em;
+	margin-top: 1.5em;
+	margin-bottom: 1em;
+	font-family: 'Lato', sans-serif;
+  	font-weight: 700;
+}
+
+
+/* make logo on top correctly display*/
+.navbar {
+  margin-bottom: 0px;
+  margin-top: 20px;
+}
+
+.navbar-inverse {
+    background: #000;
+    border-color: #000;
+}
+
+.loginform {  
+	margin-bottom: 20px;
+    margin-top: 20px;
+	text-align:right;
+}
+.navbar-brand {
+    float: left;
+    height:auto;
+    padding: 0px;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #f49715;
+	font-size: 21px;
+	line-height: 60px;
+}
+
+.registrese {
+	padding: 10px 0;
+	
+}
+
+
+/*back to top button*/
+.back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display:none;
+    border: none;
+}
+
+footer {
+  padding-bottom: 20px;
+}
+
+
+/* carousel */
+
+.carousel-caption {
+    bottom: 40%;
+	top: 40%;
+	left: auto;
+	right: 5%;
+	padding: 0;
+}
+
+.carousel-control.left {
+    background-image: none;
+}
+
+.carousel-control.right {
+    background-image: none;
+}
+
+.btn-default.orange {
+    border:1px solid #FED60F; display:inline-block; color: #000000; padding: 13px 30px;
+    
+    background: #fff708; /* Old browsers */
+    background: -moz-linear-gradient(top, #fff708 0%, #fed60f 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #fff708 0%,#fed60f 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #fff708 0%,#fed60f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff708', endColorstr='#fed60f',GradientType=0 ); /* IE6-9 */
+    color:#000;
+}
+
+.btn-default.orange:hover, .btn-default.orange:active{
+    border:1px solid #FEED00;
+    
+    background: #fcff9c; /* Old browsers */
+    background: -moz-linear-gradient(top, #fcff9c 0%, #feed00 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #fcff9c 0%,#feed00 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #fcff9c 0%,#feed00 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcff9c', endColorstr='#feed00',GradientType=0 ); /* IE6-9 */
+    color:#000;
+}
+
+
+/* Extra small devices (phones, up to 480px) */
+@media screen and (max-width: 767px) {
+	.carousel-indicators {
+		display: none;
+	}
+	
+	.carousel-caption {
+    display: none;
+	}
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+	
+	
+}
+
+/* tablets/desktops and up ----------- */
+@media (min-width: 992px) and (max-width: 1199px) {
+	
+	.navbar-inverse .navbar-nav > li > a {
+		font-size: 16px;
+		line-height: 40px;
+	}
+}
+/* large desktops and up ----------- */
+@media screen and (min-width: 1200px) {
+}
+
+
+
+
+
+
+/*# sourceMappingURL=main.css.map */

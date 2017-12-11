@@ -1,0 +1,68 @@
+#dw_headerTable{
+    width: 100% !important;
+    table-layout: fixed;
+}
+#dw_tableHeaderDiv{
+    width: calc(98% - (13px)) !important;
+}
+
+#dw_tableDiv{
+    width: 98% !important;
+    overflow-y: scroll;
+    height: 700px;
+}
+#dw_table{
+    width: 100% !important;
+    table-layout: fixed;
+}
+#dw_table tfoot{
+    background-color: #DDDDDD;
+}
+
+.tdTicket{
+    width: 8%;
+    text-align: center;
+}
+
+.tdCuenta{
+    width: 8%;
+    text-align: center;
+}
+.tdDeletedBy{
+    width: 8%;
+    text-align: center;
+}
+.tdDescription{
+    width: 33%;
+    text-align: left;
+}
+
+.tdRiesgo{
+    width: 5%;
+    text-align: center;
+}
+
+.tdGanar{
+    width: 5%;
+    text-align: center;
+}
+
+.tdTipo{
+    width: 5%;
+    text-align: center;
+}
+
+.tdEstado{
+    width: 8%;
+    text-align: center;
+}
+
+.tdfechaCreacion{
+    width: 10%;
+    text-align: center;
+}
+
+.tdFechaBorrado{
+    width: 10%;
+    text-align: center;
+}

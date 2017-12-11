@@ -1,0 +1,1035 @@
+@import url(http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext);
+/*
+* REPORTE HOME
+*/
+body {
+    font-family: "Lato";
+}
+
+#content.reports-home {
+    margin-left: 10px;
+    margin-right: 15px;
+}
+#content.reports-home .square-report {
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-bottom: 5px;
+    padding: 10px;
+    margin-right: 4px;
+    text-align: center;
+    background: #ddd;
+    -webkit-transition: all 200ms ease-in-out 0s;
+    -moz-transition: all 200ms ease-in-out 0s;
+    -o-transition: all 200ms ease-in-out 0s;
+    transition: all 200ms ease-in-out 0s;
+}
+#content.reports-home .square-report:hover {
+    background: #ccc;
+}
+
+body.xs,
+body.sm
+{
+    overflow-y: scroll; /* has to be scroll, not auto */
+    -webkit-overflow-scrolling: touch;
+}
+
+body.xs #content.reports-home .square-report,
+body.sm #content.reports-home .square-report {
+    /*width: 100%;
+    height: 65px;
+    float: none;
+    text-align: left;*/
+    
+    width: 100%;
+    height: 65px;
+    background-image: -moz-linear-gradient(top, #ffffff, #dbdbdb);
+    background-image: -webkit-gradient(linear,left top,left bottom,
+        color-stop(0, #ffffff),color-stop(1, #A8A6A6));
+    filter: progid:DXImageTransform.Microsoft.gradient
+        (startColorStr='#ffffff', EndColorStr='#A8A6A6');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient
+        (startColorStr='#ffffff', EndColorStr='#A8A6A6')";
+    border: 1px solid #fff;
+    -moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    text-decoration: none;
+    text-shadow: #fff 0 1px 0;
+    display: block;
+    color: #597390;
+    line-height: 24px;
+}
+#content.reports-home .lnk-home {
+    display: inline-block;
+    /*margin-top: 45px;*/
+    text-decoration: none;
+}
+
+#content.reports-home .lnk-home .icon-report {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    float:left;
+}
+
+
+
+#content.reports-home .lnk-home .icon-report.report1Light {
+    background-image: url("../../images/icon_report_01_light.png");
+}
+#content.reports-home .lnk-home .icon-report.report2Light {
+    background-image: url("../../images/icon_report_02_light.png");
+}
+#content.reports-home .lnk-home .icon-report.report3Light {
+    background-image: url("../../images/icon_report_03_light.png");
+}
+#content.reports-home .lnk-home .icon-report.report4Light {
+    background-image: url("../../images/icon_report_04_light.png");
+}
+#content.reports-home .lnk-home .icon-report.report5Light {
+    background-image: url("../../images/icon_report_05_light.png");
+}
+#content.reports-home .lnk-home .icon-report.report6Light {
+    background-image: url("../../images/icon_report_06_light.png");
+}
+#content.reports-home .lnk-home .icon-report.report7Light {
+    background-image: url("../../images/icon_report_07_light.png");
+}
+#content.reports-home .lnk-home .icon-report.report8Light {
+    background-image: url("../../images/icon_report_08_light.png");
+}
+#content.reports-home .lnk-home .icon-report.report9Light {
+    background-image: url("../../images/icon_report_09_light.png");
+}
+#content.reports-home .lnk-home .icon-report.report10Light {
+    background-image: url("../../images/icon_report_10_light.png");
+}
+#content.reports-home .lnk-home .icon-report.report11Light {
+    background-image: url("../../images/icon_report_11_light.png");
+}
+
+#content.reports-home .lnk-home .icon-report.report1 {
+    background-image: url("../../images/icon_report_01.png");
+}
+#content.reports-home .lnk-home .icon-report.report2 {
+    background-image: url("../../images/icon_report_02.png");
+}
+#content.reports-home .lnk-home .icon-report.report3 {
+    background-image: url("../../images/icon_report_03.png");
+}
+#content.reports-home .lnk-home .icon-report.report4 {
+    background-image: url("../../images/icon_report_04.png");
+}
+#content.reports-home .lnk-home .icon-report.report5 {
+    background-image: url("../../images/icon_report_05.png");
+}
+#content.reports-home .lnk-home .icon-report.report6 {
+    background-image: url("../../images/icon_report_06.png");
+}
+#content.reports-home .lnk-home .icon-report.report7 {
+    background-image: url("../../images/icon_report_07.png");
+}
+#content.reports-home .lnk-home .icon-report.report8 {
+    background-image: url("../../images/icon_report_08.png");
+}
+#content.reports-home .lnk-home .icon-report.report9 {
+    background-image: url("../../images/icon_report_09.png");
+}
+#content.reports-home .lnk-home .icon-report.report10 {
+    background-image: url("../../images/icon_report_10.png");
+}
+#content.reports-home .lnk-home .icon-report.report11 {
+    background-image: url("../../images/icon_report_11.png");
+}
+#content.reports-home .lnk-home .title-report {
+    font-size: 1.5em;
+    line-height: 1em;
+    color: #FFFFFF;
+    float:left;
+    padding-left: 5px;
+    margin: auto;
+    position: relative;
+    top: 10px;
+}
+
+#content.reports-home .lnk-home .title-report label {
+    font-size: 1.5em;
+    line-height: 1em;
+    color: #FFFFFF;
+}
+body.xs #content.reports-home .lnk-home,
+body.sm #content.reports-home .lnk-home {
+    margin: 0;
+    /*margin-left: 10px;
+    margin-top: 5px;
+    height: 50px;*/
+    height: inherit;
+    width: inherit;
+}
+body.xs #content.reports-home .lnk-home .icon-report-arrow,
+body.sm #content.reports-home .lnk-home .icon-report-arrow {
+    /*display: inline-block;*/
+    display: none;
+    float: left;
+    margin-top: 6px;
+    width: 30px;
+    height: 30px;
+    margin-bottom: -8px;
+    background-size: 30px 30px;
+    background-image: url("../../images/icoArrowGray.png");
+}
+
+body.xs #content.reports-home .lnk-home .icon-report,
+body.sm #content.reports-home .lnk-home .icon-report {
+    /*display: inline-block;*/
+    float: left;
+    margin-top: 6px;
+    width: 30px;
+    height: 30px;
+    margin-bottom: -8px;
+    background-size: 30px 30px;
+}
+body.xs #content.reports-home .lnk-home .title-report,
+body.sm #content.reports-home .lnk-home .title-report {
+    width: 60%;
+    float: left;
+    margin-left: 40px;
+    padding-bottom: 20px;
+    text-align: left;
+}
+/*
+ REPORTS
+*/
+
+#reports {
+    /*margin-top: 60px;*/
+}
+#reports .title {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #1462FC;
+}
+#reports table {
+    border: none;
+    margin: 10px auto;
+}
+
+#reports #handle{
+    padding-left: 0px;
+}
+
+#reports #handledetail{
+    margin-left: 3px;
+}
+
+#reports table th {
+    text-align: center;
+    height: 34px;
+    min-height: 30px;
+}
+body.xs #reports table th,
+body.sm #reports table th {
+    text-align: left;
+}
+#reports table tr.subTotalReport {
+    background: #ddd;
+    font-weight: 700;
+}
+#reports table tr.totalReport {
+    background: #ccc;
+    font-weight: 700;
+}
+#reports table tr.totalReport td:before {
+    font-weight: 700;
+}
+#reports table tr .agent-id {
+    background: #fff;
+    border-bottom: 2px solid #2F3C42;
+}
+#reports table tr .agent-id:before {
+    font-weight: 700;
+}
+#reports table tr .customer-id {
+    background: #eee;
+}
+#reports table td {
+    text-align: center;
+    vertical-align: middle;
+    height: 42px;
+}
+
+body.xs #reports {
+    margin-top: 10px;
+}
+
+body.xs #reports table td,
+body.sm #reports table td {
+    text-align: left;
+}
+#reports table td.description {
+    text-align: left;
+}
+body.xs #reports table thead,
+body.sm #reports table thead {
+    display: none;
+}
+#reports table.responsive-data {
+    /* for safari 5.1 Ipad */
+}
+#reports table.responsive-data td::before {
+    width: auto;
+    /*width: 100px;*/
+}
+#reports table.responsive-data .one-row,
+#reports table.responsive-data .agent-id,
+#reports table.responsive-data .customer-id,
+#reports table.responsive-data .cell-data,
+#reports table.responsive-data .subTotalReport td,
+#reports table.responsive-data .totalReport td,
+#reports table.responsive-data .headerReport td,
+#reports table.responsive-data .headerReport2 td,
+#reports table.responsive-data .subheaderReport td {
+    display: table-cell;
+}
+#reports table.responsive-data td.cell-data::before {
+    width: 130px;
+}
+body.sm #reports table.responsive-data th {
+    display: none;
+}
+body.sm #reports table.responsive-data td:before {
+    display: inline-block;
+}
+#reports #btnDetailsClose,
+#reports #btnDetailsOpen {
+    display: none;
+    background: #25313c;
+    color: #fff;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.42857;
+    margin-bottom: 0;
+    padding: 12px 12px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    z-index: 99;
+    width: 100%;
+    height: 45px;
+}
+body.xs #reports #btnDetailsClose,
+body.sm #reports #btnDetailsClose,
+body.xs #reports #btnDetailsOpen,
+body.sm #reports #btnDetailsOpen {
+    display: inline-block;
+}
+#reports #btnSave,
+#reports #btnSubmit {
+    background: #25313c;
+    color: #fff;
+    padding: 6px 20px;
+}
+#reports #btnSave:hover,
+#reports #btnSave:focus,
+#reports #btnSubmit:hover,
+#reports #btnSubmit:focus {
+    background: #384b5c;
+    color: #fff;
+}
+body.xs #reports #btnSave,
+body.sm #reports #btnSave,
+body.xs #reports #btnSubmit,
+body.sm #reports #btnSubmit {
+    width: 100%;
+    height: 45px;
+}
+body.xs #reports .customerbanner2 th,
+body.sm #reports .customerbanner2 th {
+    display: table-cell;
+}
+#reports a.togglePlayerdetail,
+#reports a.togglePlayerdetail2,
+#reports a.togglePlayerdetail3,
+#reports a.togglePlayerdetail4,
+#reports a.toggleReportDetail,
+#reports a.toggleReportDetail2,
+#reports a.toggleReportDetail3,
+#reports a.toggleReportDetail4,
+#reports a.toggleTicketdetail,
+#reports a.toggleTicketdetail2,
+#reports a.toggleTicketdetail3 {
+    display: none;
+}
+body.xs #reports a.togglePlayerdetail,
+body.sm #reports a.togglePlayerdetail,
+body.xs #reports a.togglePlayerdetail2,
+body.sm #reports a.togglePlayerdetail2,
+body.xs #reports a.togglePlayerdetail3,
+body.sm #reports a.togglePlayerdetail3,
+body.xs #reports a.togglePlayerdetail4,
+body.sm #reports a.togglePlayerdetail4,
+body.xs #reports a.toggleReportDetail,
+body.sm #reports a.toggleReportDetail,
+body.xs #reports a.toggleReportDetail2,
+body.sm #reports a.toggleReportDetail2,
+body.xs #reports a.toggleReportDetail3,
+body.sm #reports a.toggleReportDetail3,
+body.xs #reports a.toggleReportDetail4,
+body.sm #reports a.toggleReportDetail4,
+body.xs #reports a.toggleTicketdetail,
+body.sm #reports a.toggleTicketdetail,
+body.xs #reports a.toggleTicketdetail2,
+body.sm #reports a.toggleTicketdetail2,
+body.xs #reports a.toggleTicketdetail3,
+body.sm #reports a.toggleTicketdetail3 {
+    display: inline-block;
+    font-size: 1.5em;
+    padding: 5px;
+    float: right;
+}
+body.xs #reports table.responsive-data .one-row,
+body.sm #reports table.responsive-data .one-row {
+    text-align: left;
+    display: block;
+    font-size: 14px;
+    height: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    /* !important */
+}
+body.xs #reports table.responsive-data .one-row a.togglePlayerdetail,
+body.xs #reports table.responsive-data .one-row a.togglePlayerdetail2,
+body.xs #reports table.responsive-data .one-row a.togglePlayerdetail3,
+body.xs #reports table.responsive-data .one-row a.toggleReportDetail,
+body.xs #reports table.responsive-data .one-row a.toggleReportDetail2,
+body.xs #reports table.responsive-data .one-row a.toggleReportDetail3,
+body.xs #reports table.responsive-data .one-row a.toggleReportDetail4,
+body.xs #reports table.responsive-data .one-row a.toggleTicketdetail,
+body.xs #reports table.responsive-data .one-row a.toggleTicketdetail2,
+body.xs #reports table.responsive-data .one-row a.toggleTicketdetail3,
+body.sm #reports table.responsive-data .one-row a.togglePlayerdetail,
+body.sm #reports table.responsive-data .one-row a.togglePlayerdetail2,
+body.sm #reports table.responsive-data .one-row a.togglePlayerdetail3,
+body.sm #reports table.responsive-data .one-row a.toggleReportDetail,
+body.sm #reports table.responsive-data .one-row a.toggleReportDetail2,
+body.sm #reports table.responsive-data .one-row a.toggleReportDetail3,
+body.sm #reports table.responsive-data .one-row a.toggleReportDetail4,
+body.sm #reports table.responsive-data .one-row a.toggleTicketdetail,
+body.sm #reports table.responsive-data .one-row a.toggleTicketdetail2,
+body.sm #reports table.responsive-data .one-row a.toggleTicketdetail3 {
+    padding: 0;
+}
+body.xs #reports table.responsive-data .cell-data.hide-data,
+body.sm #reports table.responsive-data .cell-data.hide-data {
+    display: none;
+}
+body.xs #reports table.responsive-data .cell-data,
+body.sm #reports table.responsive-data .cell-data {
+    display: block;
+    /* !important */
+}
+body.xs #reports .data-agent.hide-data,
+body.sm #reports .data-agent.hide-data,
+body.xs #reports .data-customer.hide-data,
+body.sm #reports .data-customer.hide-data {
+    display: none;
+}
+body.xs #reports .agent-id,
+body.sm #reports .agent-id {
+    text-align: left;
+}
+#reports .agent-id .glyphicon {
+    color: #777;
+}
+#reports .not-data-th:before {
+    padding: 15px 7px;
+    content: "";
+    width: 0;
+}
+#reports .playerdetail .wrap-icon,
+#reports .trReportDetail .wrap-icon {
+    margin-top: 7px;
+    margin-right: 5px;
+}
+#reports .wrap-info {
+    display: none;
+}
+body.xs #reports .wrap-info,
+body.sm #reports .wrap-info {
+    display: block;
+    position: relative;
+    vertical-align: top;
+    float: right;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+body.xs #reports .wrap-info.wrap-info-1col,
+body.sm #reports .wrap-info.wrap-info-1col {
+    width: 68px;
+}
+body.xs #reports .wrap-info.wrap-info-2col,
+body.sm #reports .wrap-info.wrap-info-2col {
+    width: 116px;
+}
+body.xs #reports .wrap-info.wrap-info-3col,
+body.xs #reports .wrap-info.wrap-info-4col,
+body.sm #reports .wrap-info.wrap-info-3col,
+body.sm #reports .wrap-info.wrap-info-4col {
+    width: 164px;
+}
+body.xs #reports .wrap-info .info-col1,
+body.xs #reports .wrap-info .info-col2,
+body.xs #reports .wrap-info .info-col3,
+body.xs #reports .wrap-info .info-col4,
+body.sm #reports .wrap-info .info-col1,
+body.sm #reports .wrap-info .info-col2,
+body.sm #reports .wrap-info .info-col3,
+body.sm #reports .wrap-info .info-col4 {
+    text-align: right;
+    width: 70px;
+    height: 20px;
+    padding: 2px;
+    color: black;
+    font: 13px Arial, sans-serif;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    
+    /*padding-right:10px;*/
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+body.xs #reports .wrap-info .title-info,
+body.sm #reports .wrap-info .title-info {
+    color: #222;
+    width: 55px;
+    padding: 4px 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+body.xs #reports .wrap-info .info-col1,
+body.sm #reports .wrap-info .info-col1 {
+    /*left: -60px;*/
+    right: 150px;
+}
+body.xs #reports .wrap-info .info-col2,
+body.sm #reports .wrap-info .info-col2 {
+    /*left: 5px;*/
+    right: 90px;
+}
+body.xs #reports .wrap-info .info-col3,
+body.sm #reports .wrap-info .info-col3 {
+    /*left: 70px;*/
+    right: 20px;
+}
+body.xs #reports .wrap-info .info-col4,
+body.sm #reports .wrap-info .info-col4 {
+    display: none;
+    left: 144px;
+}
+body.xs #reports .wrap-info .glyphicon,
+body.sm #reports .wrap-info .glyphicon {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+body.xs #reports .wrap-info .icon-subtotal-circle,
+body.sm #reports .wrap-info .icon-subtotal-circle {
+    display: none;
+}
+body.xs body.xs #reports .wrap-info .icon-subtotal-circle,
+body.sm body.xs #reports .wrap-info .icon-subtotal-circle,
+body.xs body.sm #reports .wrap-info .icon-subtotal-circle,
+body.sm body.sm #reports .wrap-info .icon-subtotal-circle {
+    border-radius: 50%;
+    behavior: url(PIE.htc);
+    width: 30px;
+    height: 20px;
+    padding: 2px;
+    background: #fff;
+    border: 2px solid black;
+    color: black;
+    text-align: center;
+    font: 11px Arial, sans-serif;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+body.sm #reports .wrap-info.wrap-info-4col {
+    width: 212px;
+}
+body.sm #reports .wrap-info .info-col4 {
+    display: inline-block;
+}
+body.xs #reports .adaptive-height,
+body.sm #reports .adaptive-height {
+    display: inline-block;
+    float: right;
+    width: calc(100% - 110px);
+}
+#reports .modal table.responsive-data td:before {
+    width: 100px;
+}
+#reports .modal table.responsive-data td.description {
+    position: relative;
+}
+body.xs #reports .modal table .adaptive-height,
+body.sm #reports .modal table .adaptive-height {
+    width: calc(100% - 110px);
+}
+body.xs #reports.agent-distribution .headerReport,
+body.sm #reports.agent-distribution .headerReport {
+    display: none;
+}
+#reports.agent-distribution table.responsive-data td.cell-data:before {
+    width: 150px;
+}
+#reports.agent-distribution #btnAllInfo {
+    float: right;
+}
+body.xs #reports.agent-position .props,
+body.sm #reports.agent-position .props {
+    display: none;
+}
+#reports.agent-position table {
+    min-width: 310px;
+}
+#reports.agent-position table tr {
+    height: 36px;
+}
+#reports.agent-position table td.cell-spread,
+#reports.agent-position table td.cell-money,
+#reports.agent-position table td.cell-tpoints,
+#reports.agent-position td.cell-team {
+    overflow: hidden;
+}
+@media screen and (max-width: 414px) {
+    #reports.agent-position td.cell-spread,
+    #reports.agent-position td.cell-money,
+    #reports.agent-position td.cell-tpoints,
+    #reports.agent-position th.cell-spread,
+    #reports.agent-position th.cell-money,
+    #reports.agent-position th.cell-tpoints {
+        overflow: hidden;
+        width: 26px;
+        max-width: 26px;
+    }
+    #reports.agent-position td.cell-team,
+    #reports.agent-position th.cell-team {
+        overflow: hidden;
+        width: 23px;
+        max-width: 23px;
+    }
+    #reports.agent-position td.name-teams {
+        text-align: left;
+        max-width: 80px;
+        overflow: hidden;
+    }
+}
+#reports.agent-position #titlesreport th:nth-child(1) {
+    width: 5%;
+}
+#reports.agent-position #titlesreport th:nth-child(2) {
+    width: 3%;
+}
+#reports.agent-position #titlesreport th:nth-child(3) {
+    width: 15%;
+}
+#reports.agent-position #titlesreport th:nth-child(4) {
+    width: 5%;
+}
+#reports.agent-position #titlesreport th.cell-spread,
+#reports.agent-position #titlesreport th.cell-money,
+#reports.agent-position #titlesreport th.cell-tpoints,
+#reports.agent-position #titlesreport th.cell-team {
+    width: 2.4827%;
+    text-align: center;
+    vertical-align: middle;
+}
+body.xs #reports.agent-position #titlesreport th.cell-spread,
+body.xs #reports.agent-position #titlesreport th.cell-money,
+body.xs #reports.agent-position #titlesreport th.cell-tpoints {
+    width: 10.2857%;
+}
+body.xs #reports.agent-position #titlesreport th.cell-team {
+    width: 9%;
+}
+#reports.agent-position td.cell-spread,
+#reports.agent-position td.cell-money,
+#reports.agent-position td.cell-tpoints,
+#reports.agent-position td.cell-team {
+    text-align: center;
+}
+body.sm #reports.agent-position .cell-money,
+body.sm #reports.agent-position .cell-tpoints,
+body.sm #reports.agent-position .cell-team,
+body.xs #reports.agent-position .cell-money,
+body.xs #reports.agent-position .cell-tpoints,
+body.xs #reports.agent-position .cell-team {
+    display: none;
+}
+#reports.agent-position .select-section {
+    border: none;
+}
+#reports.agent-position .select-section .section-data li {
+    float: left;
+    width: 25%;
+}
+#reports.agent-position .select-section .section-data li a {
+    border-radius: 0;
+    border-right: 1px solid #384b5c;
+}
+body.xs #reports.agent-position .select-section .section-data li a {
+    padding: 10px 3px;
+    font-size: 13px;
+}
+body.xs #reports.agent-position #reporttable,
+body.sm #reports.agent-position #reporttable {
+    font-size: 13px;
+}
+body.xs #reports.agent-position #reporttable tr,
+body.sm #reports.agent-position #reporttable tr {
+    height: 20px;
+}
+#reports.agent-position #reporttable {
+    text-align: center;
+    width: 100%;
+}
+#reports.agent-position table .title-sport {
+    background: #ccc;
+    text-align: center;
+    padding: 6px;
+    font-weight: bold;
+}
+#reports.agent-position #detailPositionOpenWagersModal table,
+#reports.agent-position #detailPositionLineModal table {
+    min-width: 0;
+}
+#reports.agent-position #detailPositionOpenWagersModal table.responsive-data td::before,
+#reports.agent-position #detailPositionLineModal table.responsive-data td::before {
+    width: 100px;
+}
+body.xs #reports.agent-position #detailPositionLineModal table.responsive-data td,
+body.sm #reports.agent-position #detailPositionLineModal table.responsive-data td {
+    display: block;
+}
+#reports.agent-position table#PosDetRow td::before {
+    width: 165px;
+}
+#reports.player-list .togglePlayerdetail .glyphicon.active {
+    display: inline-block;
+}
+#reports.player-list table.responsive-data td#PendingTotal::before {
+    width: 200px;
+}
+#reports.action-player a.togglePlayerdetail,
+#reports.action-player a.togglePlayerdetail2 {
+    padding: 0;
+}
+body.xs #reports.interface a.togglePlayerdetail4,
+body.sm #reports.interface a.togglePlayerdetail4 {
+    padding: 0;
+}
+body.md #reports.open-wager .agent-id,
+body.lg #reports.open-wager .agent-id {
+    font-weight: bold;
+}
+body.md #reports.open-wager .customer-id,
+body.lg #reports.open-wager .customer-id {
+    font-weight: bold;
+    color: #1462FC;
+    background: none;
+}
+body.xs #reports.daily-figure .headerReport th,
+body.sm #reports.daily-figure .headerReport th {
+    display: none;
+    background: #fff;
+}
+body.xs #reports.daily-figure a.togglePlayerdetail4,
+body.sm #reports.daily-figure a.togglePlayerdetail4 {
+    padding: 0;
+}
+body.xs #reports.weekly-balance .headerReport th,
+body.sm #reports.weekly-balance .headerReport th {
+    display: none;
+    background: #fff;
+}
+body.xs #reports.weekly-balance .modal table .one-row a.toggleReportDetail3 {
+    padding-top: 10px;
+    padding-right: 5px;
+}
+body.xs #reports.handle .tdColorLine,
+body.sm #reports.handle .tdColorLine {
+    background: #c64848;
+    color: #fff;
+}
+#reports.handle table.responsive-data td::before {
+    width: 140px;
+}
+#reports.handle table.responsive-data td.not-data-th::before {
+    width: 0;
+}
+#reports.handle table tr.subTotalReport td.cell-data {
+    font-weight: normal;
+}
+#reports.delete-game-wager table th:first-child {
+    min-width: 100px;
+}
+body.xs #reports.delete-game-wager .headerReport th,
+body.sm #reports.delete-game-wager .headerReport th {
+    display: none;
+    background: #fff;
+}
+body.xs #reports.delete-game-wager a.toggleReportDetail,
+body.sm #reports.delete-game-wager a.togglePlayerdetail4 {
+    padding: 0;
+}
+body.xs #reports.delete-game-wager table.responsive-data .one-row a.toggleReportDetail,
+body.sm #reports.delete-game-wager table.responsive-data .one-row a.toggleReportDetail {
+    padding-top: 10px;
+    padding-right: 5px;
+}
+#reports.delete-game-wager table.responsive-data td.description {
+    position: relative;
+}
+#reports.delete-game-wager table.responsive-data td.description2 {
+    position: relative;
+}
+#reports.delete-game-wager table.responsive-data td.description2 .adaptive-height {
+    text-align: left;
+}
+
+body.lg #reports #interfacedetail,
+body.sm #reports #interfacedetail,
+body.md #reports #interfacedetail{
+    margin-left: 5px;
+}
+
+
+body.lg #reports #openwagerdetail,
+body.sm #reports #openwagerdetail,
+body.md #reports #openwagerdetail{
+    margin-left: 5px;
+}
+
+body.xs #reports.delete-game-wager table.responsive-data td.description2 .adaptive-height,
+body.sm #reports.delete-game-wager table.responsive-data td.description2 .adaptive-height {
+    display: inline-block;
+    float: right;
+    width: calc(100% - 135px);
+}
+body.xs #reports.delete-game-wager .wrap-description,
+body.sm #reports.delete-game-wager .wrap-description {
+    margin-right: 30px;
+    padding: 5px 0 5px 110px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+body.lg .col-lg-2,
+body.lg .col-md-2,
+body.lg .col-sm-2,
+body.lg .col-xs-2,
+body.lg .col-lg-3,
+body.lg .col-md-3,
+body.lg .col-sm-3,
+body.lg .col-xs-3,
+body.lg .col-lg-4,
+body.lg .col-md-4,
+body.lg .col-sm-4,
+body.lg .col-xs-4,
+body.lg .col-lg-5,
+body.lg .col-md-5,
+body.lg .col-sm-5,
+body.lg .col-xs-5
+{
+    padding: 0px;
+    text-align: center;
+}
+
+body.xs .col-lg-6,
+body.xs .col-md-6,
+body.xs .col-sm-6,
+body.xs .col-xs-6,
+body.xs .col-lg-5,
+body.xs .col-md-5,
+body.xs .col-sm-5,
+body.xs .col-xs-5,
+body.xs .col-lg-4,
+body.xs .col-md-4,
+body.xs .col-sm-4,
+body.xs .col-xs-4,
+body.xs .col-lg-3,
+body.xs .col-md-3,
+body.xs .col-sm-3,
+body.xs .col-xs-3,
+body.xs .col-lg-2,
+body.xs .col-md-2,
+body.xs .col-sm-2,
+body.xs .col-xs-2
+{
+    padding: 0px;
+    text-align: center;
+}
+
+body.lg .col-lg-2 label,
+body.lg .col-md-2 label,
+body.lg .col-sm-2 label,
+body.lg .col-xs-2 label,
+body.lg .col-lg-3 label,
+body.lg .col-md-3 label,
+body.lg .col-sm-3 label,
+body.lg .col-xs-3 label,
+body.lg .col-lg-4 label,
+body.lg .col-md-4 label,
+body.lg .col-sm-4 label,
+body.lg .col-xs-4 label,
+body.lg .col-lg-5 label,
+body.lg .col-md-5 label,
+body.lg .col-sm-5 label,
+body.lg .col-xs-5 label,
+body.lg .col-md-6 label,
+body.lg .col-sm-6 label,
+body.lg .col-xs-6 label
+{
+    /*padding: 6px 12px;*/
+    padding-top: 7px;
+    padding-right: 5px;
+    height: 34px;
+    line-height: 1;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    border-right: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+body.xs .col-lg-6 label,
+body.xs .col-md-6 label,
+body.xs .col-sm-6 label,
+body.xs .col-xs-6 label,
+body.xs .col-lg-5 label,
+body.xs .col-md-5 label,
+body.xs .col-sm-5 label,
+body.xs .col-xs-5 label
+body.xs .col-lg-4 label,
+body.xs .col-md-4 label,
+body.xs .col-sm-4 label,
+body.xs .col-xs-4 label
+body.xs .col-lg-3 label,
+body.xs .col-md-3 label,
+body.xs .col-sm-3 label,
+body.xs .col-xs-3 label,
+body.xs .col-lg-2 label,
+body.xs .col-md-2 label,
+body.xs .col-sm-2 label,
+body.xs .col-xs-2 label
+{
+    padding-top: 7px;
+    padding-right: 5px;
+    
+    height: 34px;
+    padding: 8px 12px;
+    line-height: 1;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    border-right: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#reports #actionplayerdiv{
+    padding-left: 0px;
+}
+
+body.lg .reports-home .btn,
+body.md .reports-home .btn{
+    width: 260px;
+    height: 60px;
+    float: left;
+    margin-bottom: 5px;
+    padding: 10px;
+    margin-right: 4px;
+    text-align: center;
+    border-radius: 4px;
+    /*background: #ddd;*/
+    -webkit-transition: all 200ms ease-in-out 0s;
+    -moz-transition: all 200ms ease-in-out 0s;
+    -o-transition: all 200ms ease-in-out 0s;
+    transition: all 200ms ease-in-out 0s;
+}
+
+body.xs .reports-home .btn,
+body.sm .reports-home .btn{
+    width: 100%;
+    margin-bottom: 3px;
+    border-radius: 4px;
+}
+
+body.xs .reports-home .hover_effect,
+body.sm .reports-home .hover_effect,
+body.lg .reports-home .btn:hover,
+body.sm .reports-home .btn:hover,
+body.md .reports-home .btn:hover,
+body.xs .reports-home .btn:hover{
+    background-color: #FA5736;
+}
+
+#reports .overlay{
+    background-color: black;
+    opacity: 0.2;
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    background-size: 60px 60px;
+    background-image: url("/images/loading.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 9999 !important;
+}
+
+body.xs .container-fluid{
+    padding: 5px;
+    padding-bottom: 0px;
+}
+
+/*  Transaction report */
+
+body.xs  #reports #btnExecut{
+     width: 100%;
+}
+#trasactionsReportWrap{
+    margin-top: 30px;
+}
+#reports .chosen-select{
+    width:150px;
+    max-width:150px;
+}
+#reports .chosen-container-single .chosen-single {
+    width:100%;
+    height:33px;
+    padding-top: 5px;
+    display:inline-block;
+    border-radius: 2px;
+    text-align: center;
+}
+
+#reports .chosen-container-single .chosen-single span{
+    margin: 0;
+    padding-left:20px;
+    padding-right: 20px;
+}

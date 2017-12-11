@@ -1,0 +1,73 @@
+
+#mc_headerTable{
+    width: 100% !important;
+    table-layout: fixed;
+}
+#mc_tableHeaderDiv{
+    width: calc(98% - (13px)) !important;
+}
+
+#mc_tableDiv{
+    width: 98% !important;
+    overflow-y: scroll;
+    height: 700px;
+}
+#mc_table{
+    width: 100% !important;
+    table-layout: fixed;
+}
+#mc_table tfoot{
+    background-color: #DDDDDD;
+}
+
+.tdFecha{
+    width: 10%;
+    text-align: left;
+}
+
+.tdTicket{
+    width: 10%;
+    text-align: center;
+}
+
+.totales{
+    border: #EEEEEE 1px solid;
+    border-radius: 5px;
+    margin: 3px;
+    padding: 10px;
+    min-height: 60px;
+    line-height: 40px;
+    width: 215px;
+}
+.tdDescription{
+    width: 15%;
+    text-align: left;
+}
+
+
+.tdUsuario{
+    width: 10%;
+    text-align: center;
+}
+
+.tdMonto{
+    width: 5%;
+    text-align: center;
+}
+
+.tdCaja{
+    width: 5%;
+    text-align: center;
+}
+
+.tdDoc{
+    width: 10%;
+    text-align: center;
+}
+
+
+.radiobutton{
+    width: 32%;
+    height: 48px;
+    font-size: 20px;
+}

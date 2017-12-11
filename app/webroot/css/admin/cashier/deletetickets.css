@@ -1,0 +1,63 @@
+#dt_headerTableDiv{
+    width: 100%;
+}
+
+#dt_headerTable{
+    width: calc(100% - 13px)
+}
+
+#dt_tableDiv{
+    width: 100%;
+    max-height: 620px;
+    overflow-y: scroll;
+}
+
+#dt_table{
+    width: 100%;
+}
+
+.td_dtCuenta{
+    width: 10%;
+    text-align: center;
+}
+
+.td_dtTicket{
+    width: 10%;
+    text-align: center;
+}
+
+.td_dtDate{
+    width: 15%;
+    text-align: center;
+}
+.td_dtDesc{
+    width: 40%;
+    text-align: left;
+}
+
+.td_dtRisk{
+    width: 10%;
+    text-align: center;
+}
+
+.td_dtWin{
+    width: 10%;
+    text-align: center;
+}
+
+.td_dtDelete{
+    width: 5%;
+    text-align: center;
+}
+
+
+#searchTicket{
+    font-size:35px;
+    width: 100%;
+}
+
+#dt_findTicketId{
+    border-radius: 5px;
+    font-size: 30px;
+    height: 40px;
+}

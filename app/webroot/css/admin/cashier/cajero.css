@@ -1,0 +1,15 @@
+.cajeroBoxes{
+    min-height: 680px;
+    max-height: 680px
+}
+
+.rightMenuButton{
+    margin: auto;
+    min-height: 85px;
+    font-size: 13px;
+    padding: 1px;
+}
+
+.buttonsMenuDiv{
+    padding: 1px;
+}

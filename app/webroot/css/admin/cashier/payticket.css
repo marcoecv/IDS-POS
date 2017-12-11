@@ -1,0 +1,82 @@
+#pt_tableDiv{
+    max-height: 550px;
+    overflow-y: scroll;
+}
+
+#pt_tableHeader{
+    width: calc(100% - 13px)
+}
+
+.tdTicket{
+    text-align: center;
+    width: 10%;
+}
+.tdFecha{
+    text-align: center;
+    width: 10%;
+}
+
+.tdSeleccion{
+    text-align: left;
+    width: 50%;
+}
+.tdRiesgo{
+    text-align: center;
+    width: 5%;
+}
+.tdGanar{
+    text-align: center;
+    width: 5%;
+}
+
+.tdPagar{
+    text-align: center;
+    width: 5%;
+}
+
+.tdTipo{
+    text-align: center;
+    width: 8%;
+}
+
+.tdButton{
+    text-align: center;
+    width: 7%;
+}
+
+.tdBorrar{
+    text-align: center;
+    width: 17%;
+}
+
+.tdTiquete{
+    text-align: center;
+    width: 32%;
+}
+
+.tdSubTotal{
+    text-align: center;
+    width: 17%;
+}
+
+.tdRetention{
+    text-align: center;
+    width: 17%;
+}
+
+.tdGanado{
+    text-align: center;
+    width: 17%;
+}
+
+
+
+.resumenSpan{
+    padding: 5px;
+    text-align: center;
+    height: 50px;
+    line-height: 30px;
+    font-size: 25px;
+    margin-top: 0px;
+    border-radius: 3%;
+}

@@ -1,0 +1,646 @@
+@import url(http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext);
+/* LINE ENTRY */
+body {
+    font-family: "Lato";
+}
+
+#line-entry {
+    margin-top: 10px;
+    margin-bottom: 60px;
+    /* Button */
+}
+#line-entry.container-fluid {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#line-entry .btn {
+    background: #25313c;
+    color: #fff;
+    padding: 1px 5px;
+    text-align: center;
+    vertical-align: middle;
+    margin: 5px 0;
+    text-shadow: none;
+}
+body.xs #line-entry #details-line .detail-line.hideElement,
+#line-entry button#backGames.hideElement{
+    display: none;
+}
+body.xs #line-entry #details-line .detail-line.showElement,
+#line-entry button#backGames.showElement{
+    display: block;
+}
+body.xs #line-entry .hideSubSport {
+    display: none;
+}
+body.xs #line-entry .showSubSport{
+    display: row-cell;
+}
+#line-entry #h4TitleSport {
+    margin-top: 15px;
+}
+body.xs #line-entry #h4TitleSport {
+    text-align: center;
+}
+body.sm #line-entry .form-control,
+body.md #line-entry .form-control,
+body.lg #line-entry .form-control {
+    padding: 4px;
+    height: 30px;
+}
+#line-entry button#btn-show-line,
+#line-entry button#backGames {
+    background: #fa5736;
+    box-shadow: none;
+    color: #eee;
+    text-shadow: none;
+    font-size: 1.2em;
+    width: 100%;
+    padding: 10px;
+    -webkit-transition: all 200ms ease-in-out 0s;
+    -moz-transition: all 200ms ease-in-out 0s;
+    -o-transition: all 200ms ease-in-out 0s;
+    transition: all 200ms ease-in-out 0s;
+}
+#line-entry button#btn-show-line:hover,
+#line-entry button#backGames:hover {
+    background: #f72f06;
+    color: #fff;
+}
+#line-entry button#backGames {
+    background: #25313c;
+    color: #fff;
+}
+#line-entry button#backGames:hover {
+    background: #384b5c;
+    color: #fff;
+}
+#line-entry button#btn-show-line.btn-showline {
+    background: #25313c;
+    color: #fff;
+}
+#line-entry button#btn-show-line.btn-cancel {
+    background: #25313c;
+    color: #fff;
+}
+#line-entry button.toggle_bettype {
+    background: #25313c;
+    box-shadow: none;
+    color: #fff;
+    text-shadow: none;
+    font-size: 1.2em;
+    padding: 6px;
+    -webkit-transition: all 200ms ease-in-out 0s;
+    -moz-transition: all 200ms ease-in-out 0s;
+    -o-transition: all 200ms ease-in-out 0s;
+    transition: all 200ms ease-in-out 0s;
+}
+body.xs #line-entry button.toggle_bettype {
+    font-size: 1em;
+    padding: 5px;
+}
+#line-entry button.toggle_bettype:hover {
+    background: #384b5c;
+    color: #fff;
+}
+#line-entry #periods {
+    padding: 10px 0;
+    margin: 5px;
+    height: 37px;
+}
+#line-entry #menuSports .title-sport {
+    font-weight: 700px;
+    text-transform: uppercase;
+}
+#line-entry #menuSports .input-group {
+    margin: 0;
+    padding: 0;
+}
+#line-entry #menuSports .input-group-addon,
+#line-entry #menuSports .form-control {
+    border-radius: 0;
+}
+#line-entry #menuSports .wrap-sport {
+    padding-top: 5px;
+}
+body.sm #line-entry #menuSports .panel,
+body.md #line-entry #menuSports .panel {
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+#line-entry #menuSports .panel-body {
+    padding: 0;
+}
+#line-entry #menuSports .panel-group {
+    margin-bottom: 0;
+}
+#line-entry #menuSports .panel-heading {
+    background: #25313c;
+    color: #fff;
+    padding: 10px 5px;
+    margin-bottom: 5px;
+}
+#line-entry #menuSports .iconWrap {
+    display: left;
+}
+#line-entry #menuSports .panel-heading .panel-title .iconWrap {
+    vertical-align: middle;
+}
+body.sm #line-entry #menuSports .panel-heading,
+body.md #line-entry #menuSports .panel-heading {
+    width: 47px;
+}
+body.sm #line-entry #menuSports .panel-heading .panel-title,
+body.md #line-entry #menuSports .panel-heading .panel-title {
+    width: 35px;
+    height: 30px;
+    padding-left: 8px;
+    border-radius: 3px;
+    display: table;
+}
+#line-entry #menuSports .panel-heading .panel-title .iconWrap {
+    text-align: center;
+    display: table-cell;
+}
+#line-entry #menuSports .panel-heading .panel-title .sportName {
+    vertical-align: middle;
+    padding-left: 3px;
+    display: table-cell;
+}
+body.sm #line-entry #menuSports .sportPanel > .panel-heading,
+body.md #line-entry #menuSports .sportPanel > .panel-heading {
+    border-radius: 4px;
+}
+body.sm #line-entry #menuSports .sportPanel > .panel-heading .sportName,
+body.md #line-entry #menuSports .sportPanel > .panel-heading .sportName {
+    display: none;
+}
+body.sm #line-entry #menuSports .sportPanel .panel-body,
+body.md #line-entry #menuSports .sportPanel .panel-body {
+    display: none;
+}
+body.sm #line-entry #menuSports .panel-collapse.sm-special-open,
+body.md #line-entry #menuSports .panel-collapse.sm-special-open {
+    position: relative;
+}
+body.sm #line-entry #menuSports .panel-collapse.sm-special-open .panel-body,
+body.md #line-entry #menuSports .panel-collapse.sm-special-open .panel-body {
+    position: absolute;
+    display: block;
+    top: 0px;
+    left: 59px;
+    visibility: visible;
+    z-index: 500;
+    width: 300px;
+    max-height: 300px;
+    overflow-y: auto;
+    border: 3px solid #1A20BA;
+    border-radius: 4px;
+}
+#line-entry #menuSports .sportPanel {
+    padding-left: 1px;
+    padding-bottom: 3px;
+}
+#line-entry #menuSports .sportPanel .arrow-left.sm-special-open {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #1A20BA;
+    position: absolute;
+    left: 50px;
+    top: 10px;
+    display: block;
+}
+#line-entry #details-line .detail-line,
+#line-entry #details-line .label-detail-line,
+#line-entry #details-line .label-lineTtp{
+    display: table;
+}
+#line-entry #details-line .secLine,
+#line-entry #details-line .lineDesc,
+#line-entry #details-line .label-detail-line > div,
+#line-entry #details-line .label-lineTtp > div{
+    display: table-cell;
+}
+#line-entry #details-line .secLineDetail{
+    display: table;
+    margin-right:4px;
+    margin-left:4px;
+}
+#line-entry #details-line .secLineDetail .secLineDetailRow{
+    display: table-row;
+}
+
+#line-entry #details-line .secLineDetail .secLineDetailCell{
+    display: table-cell;
+    padding: 2px;
+    margin: 0 auto;
+}
+
+#line-entry #details-line .lineDesc{
+    width: 200px;
+}
+#line-entry #details-line .secLine{
+    padding-top: 22px;
+}
+#line-entry #details-line .secInstructions{
+     width: 60px;
+     background-color: #fa5736;
+}
+#line-entry #details-line .secLineDetail .secLineDetailCell label{
+    margin: 0;
+}
+#line-entry #details-line .detail-line{
+    border: 1px solid #ddd;
+    padding: 4px 0;
+}
+#line-entry #details-line .label-detail-line{
+    width:100%;
+}
+#line-entry #details-line .label-detail-line > div{
+     text-align: center;
+}
+#line-entry #details-line .label-detail-line > div:nth-child(1){
+    width:180px;
+    min-width:180px;
+}
+#line-entry #details-line .label-detail-line > div:nth-child(2){
+     width:20%;
+}
+#line-entry #details-line .label-detail-line > div:nth-child(3){
+     width:8%;
+}
+#line-entry #details-line .label-detail-line > div:nth-child(4){
+     width:20%;
+}
+#line-entry #details-line .label-detail-line > div:nth-child(5){
+     width:34%;
+}
+#line-entry #details-line .label-detail-line > div:nth-child(6){
+    width:50px;
+    min-width:50px;
+}
+#line-entry #details-line .label-lineTtp{
+    width:100%;
+}
+#line-entry #details-line .label-lineTtp > div{
+    width:50%;
+    text-align: center;
+}
+
+
+body.xs #line-entry #details-line .detail-line{
+    display: block;
+}
+body.xs #line-entry #details-line .secLine,
+body.xs #line-entry #details-line .lineDesc{
+    display: block;
+}
+body.xs #line-entry #details-line .lineDesc{
+    width:100%;
+}
+   
+body.xs #line-entry #details-line .secLineDetail,
+body.xs #line-entry #details-line .secLineDetail .secLineDetailRow{
+    width:100%;
+}
+body.xs #line-entry #details-line .secLineDetail .secLineDetailRow[data-th]:before {
+    content: attr(data-th) ": ";
+    color: #222;
+    width: 25%;
+    display: inline-block;
+    border-radius: 0;
+    padding: 10px 7px;
+    margin-right: 5px;
+}
+body.xs #line-entry #details-line .lineSpread .secLineDetail .secLineDetailCell{
+    width:37.5%;
+}
+body.xs #line-entry #details-line .lineMoney .secLineDetail .secLineDetailCell{
+    width:75%;
+}
+body.xs #line-entry #details-line .lineTotal .secLineDetail .secLineDetailCell{
+    width:37.5%;
+}
+body.xs #line-entry #details-line .lineTtp .secLineDetail .secLineDetailCell{
+    width:18.75%;
+}
+body.xs #line-entry #details-line  .secLineDetail.secInstructions .radio{
+    display: inline-block;
+    width:33%;
+}
+
+
+/**********************************************/
+#line-entry #details-line .teamDesc,
+#line-entry #details-line .gameDate{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 22px;
+   
+}
+#line-entry #details-line .teamDesc > span{
+    text-align: left;
+}
+#line-entry #details-line .teamDesc {
+    overflow: hidden;
+}
+#line-entry #details-line .gameDate {
+    color: #fa5736;
+}
+#line-entry #details-line .teamDesc {
+    margin: 4px 0;
+}
+#line-entry #details-line .secLine {
+    margin-top: 22px;
+}
+/*
+#line-entry #details-line .secLine .col-lg-1,
+#line-entry #details-line .secLine .col-md-1,
+#line-entry #details-line .secLine .col-sm-1 {
+    padding: 0 1px;
+}
+#line-entry #details-line .secLine .col-lg-2,
+#line-entry #details-line .secLine .col-md-2,
+#line-entry #details-line .secLine .col-sm-2 {
+    padding: 0 1px;
+}
+#line-entry #details-line .secLine .col-lg-3,
+#line-entry #details-line .secLine .col-md-3,
+#line-entry #details-line .secLine .col-sm-3 {
+    padding: 0 1px;
+}
+#line-entry #details-line .secLine .col-lg-4,
+#line-entry #details-line .secLine .col-md-4,
+#line-entry #details-line .secLine .col-sm-4 {
+    padding: 0 1px;
+}
+#line-entry #details-line .secLine .col-lg-5,
+#line-entry #details-line .secLine .col-md-5,
+#line-entry #details-line .secLine .col-sm-5 {
+    padding: 0 1px;
+}
+#line-entry #details-line .secLine .col-lg-6,
+#line-entry #details-line .secLine .col-md-6,
+#line-entry #details-line .secLine .col-sm-6 {
+    padding: 0 1px;
+}
+#line-entry #details-line .secLine .col-lg-7,
+#line-entry #details-line .secLine .col-md-7,
+#line-entry #details-line .secLine .col-sm-7 {
+    padding: 0 1px;
+}
+#line-entry #details-line .secLine .col-lg-8,
+#line-entry #details-line .secLine .col-md-8,
+#line-entry #details-line .secLine .col-sm-8 {
+    padding: 0 1px;
+}
+#line-entry #details-line .secLine .col-lg-9,
+#line-entry #details-line .secLine .col-md-9,
+#line-entry #details-line .secLine .col-sm-9 {
+    padding: 0 1px;
+}
+#line-entry #details-line .secLine .col-lg-10,
+#line-entry #details-line .secLine .col-md-10,
+#line-entry #details-line .secLine .col-sm-10 {
+    padding: 0 1px;
+}
+#line-entry #details-line .secLine .col-lg-11,
+#line-entry #details-line .secLine .col-md-11,
+#line-entry #details-line .secLine .col-sm-11 {
+    padding: 0 1px;
+}
+#line-entry #details-line .secLine .col-lg-12,
+#line-entry #details-line .secLine .col-md-12,
+#line-entry #details-line .secLine .col-sm-12 {
+    padding: 0 1px;
+}
+*/
+#line-entry #details-line .form-group {
+    margin-bottom: 0;
+}
+body.xs #line-entry #details-line .detail-line,
+body.sm #line-entry #details-line .detail-line {
+    background: none;
+}
+body.xs #line-entry #details-line .lineDesc,
+body.sm #line-entry #details-line .lineDesc {
+    text-align: center;
+    background: #eee;
+}
+body.xs #line-entry #details-line .secLine,
+body.sm #line-entry #details-line .secLine {
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+#line-entry #details-line .teamDetail {
+    height: 34px;
+    width: 100%;
+    margin-bottom: 5px;
+    background: #eee;
+}
+#line-entry #details-line .action-detail-line {
+    height: 34px;
+    margin-bottom: 5px;
+    background: #eee;
+}
+#line-entry #details-line .action {
+    margin-top: 5px;
+}
+#line-entry #details-line .action .btn-success {
+    padding: 7px 10px 5px 12px;
+}
+#line-entry #details-line .action .btn-action {
+    background: #25313c;
+    color: #fff;
+    border-radius: 2px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.42857;
+    margin-bottom: 0;
+    padding: 6px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 100%;
+}
+#line-entry #details-line .info-error {
+    color: #E94545;
+    position: relative;
+    overflow: visible;
+}
+#line-entry #details-line .info-error > span {
+    font-size: 16px;
+}
+#line-entry #details-line .tooltip {
+    overflow: hidden;
+}
+#line-entry #details-line .tooltip-inner {
+    max-width: 350px;
+    width: 400px;
+}
+#line-entry #details-line .soft-color,
+#line-entry #details-line .hard-color{
+    background-color: #eee;
+}
+#line-entry #details-line .soft-color {
+    border: 4px solid #888;
+}
+#line-entry #details-line .hard-color {
+    border: 4px solid #222;
+}
+#line-entry #details-line input[type="text"]{
+   display:inline-block;
+}
+#line-entry #details-line input[type="text"][disabled] {
+    background-color: #25313c;
+    color:#fff;
+    text-align: center;
+    border:none;
+    border-radius: 4px;
+}
+#line-entry #details-line input[type="text"][disabled].data-shade{
+    background-color: #fa5736;
+}
+#line-entry #games .table-games th:nth-child(n+2) {
+    width: 70px;
+}
+#line-entry #games .table-games .gameInfo,
+#line-entry #games .table-games .gameTime {
+    color: black;
+    padding: 5px;
+    text-align: left;
+    vertical-align: middle;
+}
+#line-entry #games .table-games .teamInfo {
+    padding-left: 5px;
+    text-align: left;
+}
+#line-entry #games .table-games .teamInfo div {
+    display: inline-block;
+}
+#line-entry #games .table-games .teamInfo .listedPitcher {
+    display: block;
+    font-size: 9pt;
+    padding-left: 5px;
+}
+#line-entry #games .table-games .selectionWrap {
+    padding: 1px;
+}
+body.xs #line-entry #games .table-games .selectionWrap,
+body.sm #line-entry #games .table-games .selectionWrap {
+    width: 70px;
+}
+body.xs #line-entry #games .table-games .selectionWrapz {
+    padding: 2px;
+}
+#line-entry #games .table-games .selection {
+    height: 45px;
+    text-shadow: none;
+    width: 100%;
+}
+#line-entry #games .table-games .selection,
+#line-entry #games .table-games .btn-continue {
+    background: #25313c;
+    color: #fff;
+    text-shadow: none;
+    width: 100%;
+}
+#line-entry #games .table-games .selection.onBetslip {
+    background: #25313c;
+    color: #fff;
+}
+#line-entry #games .table-games .selection:hover,
+#line-entry #games .table-games .btn-continue:hover {
+    background: none repeat scroll 0 0 #1462FC;
+}
+#line-entry #games .table-games .selection.onBetslip:hover {
+    background: none repeat scroll 0 0 #1462FC;
+}
+body.xs #line-entry #games .table-games .selection {
+    height: 45px;
+}
+#line-entry #games .table-games .headerMin {
+    font-size: 8pt;
+    font-weight: bold;
+}
+body.lg #line-entry #games .table-games .selectionWrap {
+    width: 100px;
+}
+body.lg #line-entry #games .table-games .selection {
+    height: 30px;
+}
+#line-entry #games .table-games .gameDate {
+    width: 75px;
+}
+#line-entry #games .table-games .propsLink {
+    width: 60px;
+}
+#line-entry #games .table-games .gameDate {
+    font-weight: bold;
+}
+#line-entry #games .table-games .betDesc {
+    background-color: #2e64fe;
+    color: white;
+    padding-left: 5px;
+    text-align: left;
+}
+#line-entry #games .table-games.upcomming {
+    table-layout: auto;
+}
+#line-entry #games .table-games.upcomming .team {
+    padding: 5px;
+    text-align: left;
+}
+#line-entry #games .table-games.upcomming .iconSportWrap {
+    padding: 3px 10px;
+    text-align: center;
+    width: 25px;
+}
+#line-entry #games .table-games.upcomming .date {
+    padding: 0 10px;
+    text-align: center;
+    width: 100px;
+}
+#line-entry #games .table-games .selectionList {
+    list-style-type: none;
+    padding: 0;
+}
+#line-entry #games .table-games .selectionList li {
+    padding: 2px;
+}
+#line-entry #games .table-games .selectionList li .selectionTable {
+    background-color: #e6eefb;
+    border: 1px solid #ddd;
+    display: table;
+    height: 30px;
+    width: 100%;
+}
+body.xs #line-entry #games .table-games .selectionList li .selectionTable,
+body.sm #line-entry #games .table-games .selectionList li .selectionTable,
+body.md #line-entry #games .table-games .selectionList li .selectionTable {
+    height: 50px;
+}
+#line-entry #games .table-games .selectionList li .selectionTable .selectionFix {
+    display: table-cell;
+    padding-left: 3px;
+    text-align: left;
+    vertical-align: middle;
+}
+#line-entry #games .table-games .selectionList li .selectionTable .selectionOdds {
+    color: #df7401;
+}
+#line-entry #games .table-games .selectionList li.onBetslip .selectionTable,
+#line-entry #games .table-games .selectionList li .selectionTable:hover {
+    background-color: #b6becb;
+    border: 1px solid #b5b9c1;
+}
+#line-entry #games .noWrap {
+    white-space: nowrap;
+}
+body.sm #line-entry #games .btn-continue {
+    height: 36px;
+}

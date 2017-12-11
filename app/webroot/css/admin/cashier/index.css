@@ -1,0 +1,41 @@
+#ct_tableHeaderDiv{
+    width: 100%;
+}
+
+#ct_tableHeader{
+    width: calc(98% - 13px);
+}
+
+#ct_tableDiv{
+    width: 100%;
+    overflow-y: scroll;
+}
+
+#ct_table{
+    width: 98%;
+}
+
+.ct_tdTran{
+    width: 15%;
+    text-align: center;
+}
+
+.ct_tdDate{
+    width: 25%;
+    text-align: center;
+}
+
+.ct_tdDesc{
+    width: 30%;
+    text-align: center;
+}
+
+.ct_tdCredit{
+    width: 15%;
+    text-align: center;
+}
+
+.ct_tdDebit{
+    width: 15%;
+    text-align: center;
+}

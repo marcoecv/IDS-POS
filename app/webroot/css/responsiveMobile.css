@@ -1,0 +1,100 @@
+@import url(http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext);
+
+body {
+    font-family: "Lato";
+}
+
+.container-global-customer{
+    z-index: 999; 
+    /*position: relative;*/
+    width: 450px;
+    padding-left: 3px;
+    /*top:-45px;*/
+    margin-bottom: -100px;
+}
+
+.container-global-customer input{
+    width: 300px;
+    height: 42px;
+    display:inline;
+    border-radius: 0px;
+    position: relative;
+    top:-54px;
+    z-index: 999;
+}
+
+.container-global-customer button,
+.container-global-customer a.btn{
+    display:inline-block;
+    left: -4px;
+    height: 42px;
+    position: relative;
+    top:-56px;
+    z-index: 999;
+    padding-top: 10px;
+}
+
+
+@media screen and (max-width: 767px) {
+    #header {
+        display: none;
+    }
+    
+    #nav-admin{
+        display: block;
+    }
+    
+    a.nav-expander-left.fixed{
+        display: none;
+    }
+    
+    a.nav-expander-right.fixed{
+        display: block;
+    }
+    
+    #home{
+        margin-top:0px !important;
+    }
+    #content{
+        margin-top:0px !important;
+    }
+    #agent{
+         margin-top:0px !important;
+    }
+    .nav-left{
+        display:none !important;
+    }
+    
+    #main{
+        padding-left: 0px !important;
+    }
+    
+    #agent-mail{
+         margin-top:0px !important;
+    }
+    
+    .row-comment-send{
+        margin-top:0px !important;        
+    }
+    
+    #main .row{
+        margin-left: 5px !important;
+    }
+    
+    .container-global-customer{
+        width: 100%;
+        padding-left: 15px;
+        top:70px;
+        position: relative;
+        margin-bottom: 0px;
+    }
+    
+    #content {
+        position: relative;
+        top: -30px;
+    }
+    
+    .container-global-customer input{
+        width: 200px;
+    }
+}

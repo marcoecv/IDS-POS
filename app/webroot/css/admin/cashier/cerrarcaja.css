@@ -1,0 +1,50 @@
+.cerrarCajaButon{
+    font-size: 40px;
+    width: 100%;
+    height: 100px;
+}
+
+
+#cc_tableHeader{
+    width: calc(100% - 13px);
+}
+
+#cc_tableDiv{
+    width: 100%;
+    overflow-y: scroll;
+    height: 615px;
+}
+
+#cc_table{
+    width: 100%;
+}
+
+.tdDateTime{
+    width: 15%;
+    text-align: center;
+}
+
+.tdTransaction{
+    width: 10%;
+    text-align: center;
+}
+
+.tdTransaction{
+    width: 10%;
+    text-align: center;
+}
+
+.tdDesc{
+    width: 45%;
+    text-align: left;
+}
+
+.tdCredit{
+    width: 10%;
+    text-align: center;
+}
+
+tdDebit{
+    width: 10%;
+    text-align: center;
+}

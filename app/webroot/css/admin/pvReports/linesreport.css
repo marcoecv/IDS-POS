@@ -1,0 +1,81 @@
+
+#lr_headerTable{
+    width: 100% !important;
+}
+#lr_tableHeaderDiv{
+    width: calc(98% - (13px)) !important;
+}
+
+#lr_tableDiv{
+    width: 98% !important;
+    overflow-y: scroll;
+    height: 700px;
+}
+#lr_table{
+    width: 100% !important;
+}
+#lr_table tfoot{
+    background-color: #DDDDDD;
+}
+
+.tdSubSport{
+    width: 10%;
+    text-align: center;
+}
+
+.tdFecha{
+    width: 10%;
+    text-align: center;
+}
+
+.tdRot{
+    width: 10%;
+    text-align: center;
+}
+
+
+.tdEquipo{
+    width: 20%;
+    text-align: left;
+}
+
+.tdSpread{
+    width: 10%;
+    text-align: center;
+}
+
+.tdTeamTotal{
+    width: 10%;
+    text-align: center;
+}
+
+.tdMoney{
+    width: 10%;
+    text-align: center;
+}
+.tdTotal{
+    width: 10%;
+    text-align: center;
+}
+
+.tdSportTitle{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.trIni{
+    border-top: solid black 2px;
+    border-left: solid black 2px;
+    border-right: solid black 2px;
+}
+.trMed{
+    border-left: solid black 2px;
+    border-right: solid black 2px;
+}
+.trFin{
+    border-left: solid black 2px;
+    border-right: solid black 2px;
+    border-bottom: solid black 2px;
+}

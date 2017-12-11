@@ -1,0 +1,51 @@
+@import url(http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext);
+/**************************
+ * CUSTOM CSS - HOME PAGE *
+ * colors: #fff #111
+ * background: #ff003a
+ **************************/
+
+body {
+    color: #83939c;
+    font-family: "Lato";
+    font-size: 14px;
+    font-weight: 400;
+}
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: #111;
+}
+.dmtop {
+    background-image: url(../img/home_site/arrow.png);
+    background-color: #ff003a !important;
+    border-radius: 0;
+}
+.dmtop:hover {
+    background-color: #111111 !important;
+}
+.header.affix {
+    background-color: #ffffff;
+    border-bottom: 1px solid #efefef;
+}
+.topbar {
+    border-bottom: 1px solid #f2f2f2;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary {
+    background: #ff003a;
+    border-color: #ff003a;
+    border-radius: 0;
+}
+.miniicon {
+    background: #ff003a;
+    color: #ffffff;
+}
+.miniicon:before {
+    border-bottom-color: #ff003a;
+}
+.miniicon:after {
+    border-top-color: #ff003a;
+}

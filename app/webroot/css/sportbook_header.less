@@ -1,0 +1,1075 @@
+@import url(http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext);
+@import (reference) "/sportbook/getLessVariables";
+
+body {
+    font-family: "Lato";
+}
+
+body.lg #userbar,
+body.md #userbar,
+body.sm #userbar,
+body.lg #navbar,
+body.md #navbar,
+body.sm #navbar
+{
+    display:none !important;
+}
+
+.page-header{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-header .btn-bar-wrap{
+    padding: 0;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+body.lg #navbar,
+body.md #navbar,
+body.sm #navbar{
+    width: 100%;
+}
+
+.navbar-header {
+    height: 50px;
+}
+
+body.lg .mainHeader .navbar-nav,
+body.md .mainHeader .navbar-nav,
+body.sm .mainHeader .navbar-nav {
+    width: 100%;
+    position:relative;
+    top: 46px;
+}
+
+body.lg .mainHeader .navbar-nav > li > .dropdown-menu ,
+body.md .mainHeader .navbar-nav > li > .dropdown-menu ,
+body.sm .mainHeader .navbar-nav > li > .dropdown-menu {
+    background-color: @color-Menus;
+}
+
+body.xs .mainHeader .navbar-header .btn-bar-wrap button{
+    margin: 1px 1px;
+    height: 50px;
+    width: 50px;
+    background-color: @color-betslip-selections-messages;
+    border-color: @color-betslip-selections-messages;
+    background-image: -webkit-linear-gradient(top,@color-betslip-selections-messages 0,@color-betslip-selections-messages 100%);
+    background-image: -o-linear-gradient(top,@color-betslip-selections-messages 0,@color-betslip-selections-messages 100%);
+    background-image: -webkit-gradient(linear,left top,left bottom,from(@color-betslip-selections-messages),to(@color-betslip-selections-messages));
+    background-image: linear-gradient(to bottom,@color-betslip-selections-messages 0,@color-betslip-selections-messages 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@color-betslip-selections-messages', endColorstr='@color-betslip-selections-messages', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    background-repeat: repeat-x;
+    border-color: @color-betslip-selections-messages;
+}
+
+.mainHeader .navbar-header .btn-bar-wrap button{
+    display: none;
+    visibility: hidden;
+}
+
+body.xs .mainHeader .navbar-header .btn-bar-wrap button {
+    margin: 0 1px;
+    
+    display: block;
+    visibility: visible;
+}
+
+.userMenu {
+    background: @color-betslip-panel-default; /* Old browsers */
+    background: -moz-linear-gradient(top, @color-betslip-panel-default 0%, @color-betslip-panel-default 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@color-betslip-panel-default), color-stop(100%,@color-betslip-panel-default)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, @color-betslip-panel-default 0%,@color-betslip-panel-default 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, @color-betslip-panel-default 0%,@color-betslip-panel-default 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, @color-betslip-panel-default 0%,@color-betslip-panel-default 100%); /* IE10+ */
+    background: linear-gradient(to bottom, @color-betslip-panel-default 0%,@color-betslip-panel-default 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@color-betslip-panel-default', endColorstr='@color-betslip-panel-default',GradientType=0 ); /* IE6-9 */
+}
+
+.mainHeader .userMenu div{
+    padding-left: 5px;
+    text-align: left;
+    white-space: nowrap;
+}
+body.lg .mainHeader .userMenu div{
+    text-align: center;
+}
+
+body.xs .mainHeader .glyphicon-th:before{
+    content:"";
+}
+
+body.xs .mainHeader .glyphicon-th{
+    background-image: url("/images/ico_top_menu.png");
+    background-size: 25px 25px;
+    display: inline-block;
+    width: 25px; 
+    height: 25px;
+}
+
+body.xs .mainHeader .glyphicon-user{
+    background-image: url("/images/ico_top_menu_user.png");
+    background-size: 25px 25px;
+    display: inline-block;
+    width: 25px; 
+    height: 25px;
+}
+
+body.xs .mainHeader .glyphicon-user:before{
+    content:"";
+}
+
+body.xs .mainHeader .glyphicon-menu-hamburger{
+    background-image: url("/images/ico_top_menu_user_ham.png");
+    background-size: 25px 25px;
+    display: inline-block;
+    width: 25px; 
+    height: 25px;
+}
+
+body.xs .mainHeader .glyphicon-menu-hamburger:before{
+    content:"";
+}
+
+body.xs .mainHeader .glyphicon-shopping-cart{
+    background-image: url("/images/ico_top_menu_user_shopping.png");
+    background-size: 30px 30px;
+    display: inline-block;
+    width: 30px; 
+    height: 30px;
+    position: relative;
+    top: -3px;
+    left: -5px;
+}
+
+body.xs .mainHeader .glyphicon-shopping-cart:before{
+    content:"";
+}
+
+body.xs .mainHeader #shopping-cart{
+    position: relative;
+    top: 22px;
+    left: 22px;
+    background-color: @color-Warning;
+    color: @color-MenusText;
+    width: 15px;
+    height: 15px;
+    font-size: 8px;
+    font-weight: 300;
+    border-radius: 50%;
+    padding-top: 2px;
+    text-align: center;
+}
+
+#userbar{
+    margin-top: 3px;
+    margin-bottom: -1px;
+    width: 100%;
+    max-height: 100%;
+
+    background: @color-Menus; /* Old browsers */
+    background: -moz-linear-gradient(top, @color-Menus 0%, @color-Menus 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@color-Menus), color-stop(100%,@color-Menus)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, @color-Menus 0%,@color-Menus 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, @color-Menus 0%,@color-Menus 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, @color-Menus 0%,@color-Menus 100%); /* IE10+ */
+    background: linear-gradient(to bottom, @color-Menus 0%,@color-Menus 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@color-Menus', endColorstr='@color-Menus',GradientType=0 ); /* IE6-9 */
+}
+
+
+#userbar .nav li{
+    color:@color-MenusText;
+    padding: 5px 12px;
+    border-right: 1px solid @color-menubetslip;
+    background-color: @color-Menus;
+}
+#userbar .nav li:hover{
+    background-color: @color-betslip-selections-messages;
+}
+#userbar .nav li.info{
+    color:@color-MenusTextBold;
+    background-color: @color-betslip-selections-messages;
+}
+body.xs #userbar .nav li.dropdown ul.dropdown-menu{
+    position: relative;
+    width: 100%;
+    background-color: @color-Menus;
+    z-index: 999;
+    top:-10px;
+}
+body.xs #userbar .nav li.dropdown ul.dropdown-menu > li{
+    width: 100%;
+}
+#userbar .mainHeader .nav .dropdown-menu{
+    background-color: @color-dropdown;
+}
+#userbar .mainHeader .nav #dropdownMenu1{
+    border: none;
+}
+
+body.xs .mainHeader .nav{
+    text-transform: uppercase;
+}
+
+body.xs #userbar{
+    background: none;
+}
+body.xs #userbar .nav{
+    border-top: 1px solid @color-menubetslip;
+}
+body.xs #userbar .nav li{
+    height: 48px;
+    padding: 10px 0;
+    margin-top: 2px;
+    
+    border-radius: 4px;
+    border-bottom: 1px solid @color-Menus;
+    border: 1px solid @color-Menus;
+    
+    color:@color-MenusText;
+    background: none;
+    background: -moz-linear-gradient(top, @color-Menus 40%, @color-Menus 100%);
+    background: -webkit-linear-gradient(top, @color-Menus 40%, @color-Menus 100%);
+    background: -o-linear-gradient(top, @color-Menus 40%, @color-Menus 100%);
+    background: -ms-linear-gradient(top, @color-Menus 40%, @color-Menus 100%);
+    background: linear-gradient(top, @color-Menus 40%, @color-Menus 100%);
+    text-align: center;
+}
+body.xs #userbar .nav li a{
+    color:@color-MenusText;
+    padding: 5px 20px;
+    height: 48px;
+}
+body.xs #userbar .nav li.link:hover,
+body.xs #userbar .nav li.link a:hover{
+    background: none;
+    background: -moz-linear-gradient(top, @color-SubHeaders 40%, @color-SubHeaders 100%);
+    background: -webkit-linear-gradient(top, @color-SubHeaders 40%, @color-SubHeaders 100%);
+    background: -o-linear-gradient(top, @color-SubHeaders 40%, @color-SubHeaders 100%);
+    background: -ms-linear-gradient(top, @color-SubHeaders 40%, @color-SubHeaders 100%);
+    background: linear-gradient(top, @color-SubHeaders 40%, @color-SubHeaders 100%);
+    color: @color-Menus;
+}
+
+#navbar .nav .mainMenu a .icoSportbook{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoSportbookDark.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+#navbar .nav .mainMenu a:hover .icoSportbook{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoSportbookLight.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+#navbar .nav .active a .icoSportbook{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoSportbookLight.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+#navbar .nav .mainMenu a .icoLive{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoLiveDark.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+#navbar .nav .mainMenu a:hover .icoLive{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoLiveLight.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+#navbar .nav .active a .icoLive{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoLiveLight.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+#navbar .nav .mainMenu a .icoRace{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoRaceDark.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+#navbar .nav .mainMenu a:hover .icoRace{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoRaceLight.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+#navbar .nav .active a .icoRace{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoRaceLight.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+#navbar .nav .mainMenu a .icoLiveCasino{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoCasinoDark.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+#navbar .nav .mainMenu a:hover .icoLiveCasino{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoCasinoLight.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+#navbar .nav .mainMenu a .icoSupport{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoMessagesDark.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+#navbar .nav .mainMenu a:hover .icoMessage{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoMessagesLight.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+#navbar .nav .mainMenu a .icoMessage{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoMessagesDark.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+#navbar .nav .mainMenu a:hover .icoSupport{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoMessagesLight.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+#navbar .nav .mainMenu a:hover .icoMessage{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoMessagesLight.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+#navbar .nav .mainMenu a .icoLiveDealer{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoCasinoDark.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+#navbar .nav .mainMenu a:hover .icoLiveDealer{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoCasinoLight.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+#navbar .nav .mainMenu a .icoCasino{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoCasinoDark.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+#navbar .nav .mainMenu a .icoLiveCasino{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoCasinoDark.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+#navbar .nav .mainMenu a .icoSupport{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoMessagesDark.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+#navbar .nav .mainMenu a:hover .icoLiveDealer{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoCasinoLight.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+#navbar .nav .mainMenu a:hover .icoCasino{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoCasinoLight.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+#navbar .nav .mainMenu a .icoCashier{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoCashierDark.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+#navbar .nav .mainMenu a:hover .icoCashier{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoCashierLight.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+#navbar .nav .active a .icoCashier{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoCashierLight.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+#navbar .nav .mainMenu a .icoAgent{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoAgentDark.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+#navbar .nav .mainMenu a:hover .icoAgent{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoAgentLight.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+#navbar .nav .active a .icoAgent{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoAgentLight.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+body.xs #navbar .nav .mainMenu a .icoSportbook{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoSportbookLight.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+body.xs #navbar .nav .mainMenu a:hover .icoSportbook{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoSportbookLight.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+body.xs #navbar .nav .active a .icoSportbook{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoSportbookLight.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+body.xs #navbar .nav .mainMenu a .icoLive{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoLiveLight.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+body.xs #navbar .nav .mainMenu a:hover .icoLive{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoLiveLight.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+body.xs #navbar .nav .active a .icoLive{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoLiveLight.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+body.xs #navbar .nav .mainMenu a .icoRace{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoRaceLight.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+body.xs #navbar .nav .mainMenu a:hover .icoRace{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoRaceLight.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+body.xs #navbar .nav .active a .icoRace{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoRaceLight.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+body.xs #navbar .nav .mainMenu a .icoCasino{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoCasinoLight.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+body.xs #navbar .nav .mainMenu a:hover .icoCasino{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoCasinoLight.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+body.xs #navbar .nav .mainMenu a .icoLiveCasino{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoCasinoLight.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+body.xs #navbar .nav .mainMenu a:hover .icoLiveCasino{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoCasinoLight.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+body.xs #navbar .nav .mainMenu a .icoLiveDealer{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoCasinoLight.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+body.xs #navbar .nav .mainMenu a:hover .icoLiveDealer{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoCasinoLight.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+body.xs #navbar .nav .mainMenu a .icoMessage{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoMessagesLight.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+body.xs #navbar .nav .mainMenu a:hover .icoMessage{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoMessagesLight.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+body.xs #navbar .nav .mainMenu a .icoCashier{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoCashierLight.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+body.xs #navbar .nav .mainMenu a:hover .icoCashier{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoCashierLight.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+body.xs #navbar .nav .active a .icoAgent{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoAgentLight.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+body.xs #navbar .nav .mainMenu a .icoAgent{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoAgentLight.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+body.xs #navbar .nav .mainMenu a:hover .icoAgent{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoAgentLight.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+body.xs #navbar .nav .active a .icoAgent{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    
+    height: 14px;
+    width: 14px;
+    background-image: url("/images/icoAgentLight.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+.mainHeader::before {
+    
+}
+
+
+
+
+
+
+
+body.xs #userbar .nav li.link:active{
+    color: @color-MenusHover;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2) inset; 
+}
+body.xs #userbar.navbar-collapse.in{
+    overflow-y: hidden;
+    position: fixed;
+    background-color: @color-MenusText;
+}
+body.xs .divBalance{
+    background-color: @color-SubHeaders;
+    border-color: @color-SubHeaders;
+    color: @color-MenusText;
+    border-radius: 4px;
+    height: 50px;
+    margin-top: 0px;
+    display: block;
+    visibility: visible;
+    font-size: 12px;
+    font-weight: 300;
+}
+.divBalance {
+    display: none;
+    visibility: hidden;
+}
+body.xs .divBalance hr {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border: 0;
+    border-top: 1px solid @color-MenusText;
+}
+#userbar .nav li a{
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    background: none;
+    color: @color-MenusText;
+    filter: none;
+}
+.navbar-custom {
+    background-color: @color-Background-header;
+    /*background-color: #CAD2E1;*/
+    /* padding-right: 20px; */
+}
+body.xs .navbar-custom{
+    position: fixed;
+    margin-bottom: 0px;
+    background-color: @color-MenusText;
+    /*padding-right: 20px;*/
+}
+
+.navbar-custom .nav li{
+    padding-right: 2px;
+}
+
+.navbar-custom .nav li a{
+    padding: 0;
+    background: none;
+    background-color: transparent
+}
+
+.navbar-custom .nav .logo{
+    /*background-image: url('/img/home_site/logoTransp.png');*/
+    background-repeat: no-repeat;
+    background-size: contain;
+    float: left;
+    
+    width: 14.28%;
+    height: 50px;
+    
+    /*left: 10px;
+    bottom: 3px;*/
+    
+    top: -55px;
+}
+
+.navbar-custom .nav li a .mainMenuLi{
+    width: 100%;
+    height: 35px;
+    padding: 8px 10px;
+    /*border: 1px solid green;*/
+
+    margin: 0 2px;
+    border-radius: 4px 4px 0 0;
+    margin-top: 6px;
+    color: @color-betslip-selections-messages;
+
+    background: @color-betslip-panel-default; /* Old browsers */
+    background: -moz-linear-gradient(top, @color-betslip-panel-default 0%, @color-betslip-panel-default 50%, @color-betslip-panel-default 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@color-betslip-panel-default), color-stop(50%,@color-betslip-panel-default), color-stop(100%,@color-Menus)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, @color-betslip-panel-default 0%,@color-betslip-panel-default 50%,@color-betslip-panel-default 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, @color-betslip-panel-default 0%,@color-betslip-panel-default 50%,@color-betslip-panel-default 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, @color-betslip-panel-default 0%,@color-betslip-panel-default 50%,@color-betslip-panel-default 100%); /* IE10+ */
+    background: linear-gradient(to bottom, @color-betslip-panel-default 0%,@color-betslip-panel-default 50%,@color-betslip-panel-default 100%); /* W3C */
+    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c05900', endColorstr='#eb7501',GradientType=0 );*/ /* IE6-9 */
+}
+body.xs .navbar-custom.mobile.navbar-fixed-top .navbar-collapse,
+body.xs .navbar-custom.mobile.navbar-fixed-bottom .navbar-collapse{
+    max-height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: @color-MenusText;
+    margin-top: 10px;
+}
+.navbar-custom .nav li a:hover{
+    width: 100%;
+    background: none;
+    background-color: transparent
+}
+.navbar-custom .nav li a .mainMenuLi:hover,
+.navbar-custom .nav li.active a .mainMenuLi{
+    width: 100%;
+    height: 35px;
+    color: @color-MenusText;
+
+    background: @color-MenusHover; /* Old browsers */
+    background: -moz-linear-gradient(top, @color-MenusHover 0%, @color-MenusHover 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@color-MenusHover), color-stop(100%,@color-MenusHover)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, @color-MenusHover 0%,@color-MenusHover 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, @color-MenusHover 0%,@color-MenusHover 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, @color-MenusHover 0%,@color-MenusHover 100%); /* IE10+ */
+    background: linear-gradient(to bottom, @color-MenusHover 0%,@color-MenusHover 100%); /* W3C */
+    
+    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dadada', endColorstr='#f8f6f6',GradientType=0 );*/ /* IE6-9 */
+}
+
+body.sm .navbar-custom.mobile .nav li a .mainMenuLi .mainMenuContent .textItem {
+    display: none; 
+}
+    
+body.xs .navbar-custom.mobile .nav li a .mainMenuLi{
+    border-radius: 4px;
+    margin-top: 2px;
+    height: 48px;
+    border: 1px solid @color-Buttons-White;
+    color: @color-MenusText;
+    background: none;
+    background: -moz-linear-gradient(top, @color-Menus 40%, @color-Menus 100%);  
+    background: -webkit-linear-gradient(top, @color-Menus 40%, @color-Menus 100%);  
+    background: -o-linear-gradient(top, @color-Menus 40%, @color-Menus 100%);  
+    background: -ms-linear-gradient(top, @color-Menus 40%, @color-Menus 100%);  
+    background: linear-gradient(top, @color-Menus 40%, @color-Menus 100%); 
+}
+
+body.xs .navbar-custom.mobile .nav li a .mainMenuLi .mainMenuContent{
+    width: 125px;
+    text-align: left;
+    /*margin-left: calc((100% - 125px)/2);*/
+}
+
+body.xs .navbar-custom.mobile .nav li a:hover .mainMenuLi{
+    /*background: none;
+    background: -moz-linear-gradient(top, #f8f8f8 40%, #cacaca 100%);
+    background: -webkit-linear-gradient(top, #f8f8f8 40%, #cacaca 100%);
+    background: -o-linear-gradient(top, #f8f8f8 40%, #cacaca 100%);
+    background: -ms-linear-gradient(top, #f8f8f8 40%, #cacaca 100%);
+    background: linear-gradient(top, #f8f8f8 40%, #cacaca 100%);
+    color: #2f3c42;*/
+    
+    background: none;
+    background-color: @color-Menus;
+    color: white;
+}
+
+body.xs .navbar-custom.mobile .nav .active .mainMenuLi{
+    background: none;
+    background-color: @color-MenusHover;
+    color: white;
+}
+
+body.xs .navbar-custom.mobile .nav li a:active .mainMenuLi{
+    /*color: #fa5736;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2) inset; */
+}
+
+body.md,
+body.xs,
+body.md #divHeader,
+body.xs #divHeader{
+ background-image: none !important;
+}

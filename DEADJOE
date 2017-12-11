@@ -1,0 +1,126 @@
+
+*** These modified files were found in JOE when it aborted on Tue Dec 13 14:17:39 2016
+*** JOE was aborted because the terminal closed
+
+*** File 'app/Config/wsConfig.php'
+<?php
+
+$config['service']['PreGameSiteService'] ="http://10.0.66.76:9008/Services/PreGameSiteProxyEndPoint?wsdl";
+$config['service']['PreGameSiteBetService'] ="http://10.0.66.76:9009/Services/PreGameSiteBetProxyEndPoint?wsdl";
+$config['service']['PreGameSiteTeaserService'] ="http://10.0.66.76:9010/Services/PreGameSiteTeaserProxyEndPoint?wsdl";
+$config['service']['PreGameSiteLimitsService'] ="http://10.0.66.76:9013/Services/PreGameSiteLimitsProxyEndPoint?wsdl";
+$config['service']['PreGameSiteWagersReportService'] ="http://10.0.66.76:9012/Services/PreGameSiteWagersReportProxyEndPoint?wsdl";
+$config['service']['PreGameSiteRestrictionsService'] ="http://10.0.66.76:9014/Services/PreGameSiteRestrictionsProxyEndPoint?wsdl";
+$config['service']['PreGameSiteSellPointsService'] ="http://10.0.66.76:9015/Services/PreGameSiteSellPointsProxyEndPoint?wsdl";
+$config['service']['PreGameSiteLinesService'] ="http://10.0.66.76:9016/Services/PreGameSiteLinesProxyEndPoint?wsdl";
+
+
+$config['service']['accounts'] = 'http://10.0.66.76:9993/Services/AccountProxyEndPoint?wsdl';
+//$config['service']['accounts'] = 'http://10.0.65.60:9000/Services/AccountProxyEndPoint?wsdl';
+$config['service']['info'] = 'http://10.0.66.76:9000/Services/GeneralInfoProxyEndPoint?wsdl';
+$config['service']['teaser'] = 'http://10.0.66.76:9000/Services/TeaserProxyEndPoint?wsdl';
+$config['service']['transactionService'] = 'http://10.0.66.76:9998/Services/TransactionProxyEndPoint?wsdl';
+$config['service']['wager'] = 'http://10.0.66.76:9970/Services/WagersProxyEndPoint?wsdl';
+$config['service']['agents'] = 'http://10.0.66.76:9000/Services/AgentsProxyEndPoint?wsdl';
+$config['service']['shade'] = 'http://10.0.66.76:9000/Services/ShadeProxyEndPoint?wsdl';
+$config['service']['reports'] = 'http://10.0.66.76:9000/Services/CustomerReportProxyEndPoint?wsdl';
+$config['service']['lineEntry'] = 'http://10.0.66.76:9000/Services/LineEntryProxyEndPoint?wsdl';
+$config['service']['preLine'] = 'http://10.0.66.76:9000/Services/PreLineProxyEndPoint?wsdl';
+$config['service']['preGame'] = 'http://10.0.66.76:9000/Services/PregameProxyEndPoint?wsdl';
+$config['service']['ldapService'] = 'http://10.0.66.62:9000/Services/LDAPProxyEndPoint?wsdl';
+$config['service']['AgentAdminChat'] = 'http://10.0.66.62:9000/Services/AgentAdminChatProxyEndPoint?wsdl';
+$config['service']['chat'] = 'http://10.0.66.62:9000/Services/AgentAdminRTChat2ProxyEndPoint?wsdl';
+$config['service']['permission'] = 'http://10.0.66.62:9000/Services/AgentAdminPermissionProxyEndPoint?wsdl';
+$config['service']['zeroOut'] = 'http://10.0.66.76:9000/Services/ZeroOutProxyEndPoint?wsdl';
+$config['service']['companyService'] ="http://10.0.66.76:9985/Services/CompanyProxyEndPoint?wsdl";
+$config['service']['userService']="http://10.0.66.76:9981/Services/UserProxyEndPoint?wsdl";
+$config['service']['permissionService'] ="http://10.0.66.76:9984/Services/PermissionProxyEndPoint?wsdl";
+$config['service']['cashierService'] ="http://10.0.66.76:9022/Services/CashierTransactionProxyEndPoint?wsdl";
+$config['service']['cashierSecurity'] ="http://10.0.66.76:9021/Services/CashierSecurityProxyEndPoint?wsdl";
+
+$config['service']['pvReports'] ="http://10.0.66.61:9000/Services/PvReportProxyEndPoint?wsdl";
+
+
+$config['service']['liveDealer'] = 'http://test.golivedealer.com/masterclientwebservice/masterclientwebservice.asmx?wsdl';
+$config['service']['mail'] = 'http://10.0.65.60:9000/Services/MailProxyEndPoint?wsdl';
+$config['service']['betgamestv'] = 'http://10.0.65.60:9000/Services/BetGamesAPIProxyEndPoint?wsdl';
+
+//////////////Produccion//////////
+
+
+/*
+$config['service']['PreGameSiteService'] ="http://10.0.65.221:9000/Services/PreGameSiteProxyEndPoint?wsdl";
+$config['service']['PreGameSiteBetService'] ="http://10.0.65.60:9000/Services/PreGameSiteBetPvProxyEndPoint?wsdl";
+$config['service']['PreGameSiteTeaserService'] ="http://10.0.65.221:9000/Services/PreGameSiteTeaserProxyEndPoint?wsdl";
+$config['service']['PreGameSiteLimitsService'] ="http://10.0.65.221:9000/Services/PreGameSiteLimitsProxyEndPoint?wsdl";
+$config['service']['PreGameSiteWagersReportService'] ="http://10.0.65.221:9000/Services/PreGameSiteWagersReportProxyEndPoint?wsdl";
+$config['service']['PreGameSiteRestrictionsService'] ="http://10.0.65.221:9000/Services/PreGameSiteRestrictionsProxyEndPoint?wsdl";
+$config['service']['PreGameSiteSellPointsService'] ="http://10.0.65.221:9000/Services/PreGameSiteSellPointsProxyEndPoint?wsdl";
+$config['service']['PreGameSiteLinesService'] ="http://10.0.65.60:9000/Services/PreGameSiteLinesProxyEndPoint?wsdl";
+
+
+
+$config['service']['accounts'] = 'http://10.0.65.60:9000/Services/AccountProxyEndPoint?wsdl';
+//$config['service']['accounts'] = 'http://10.0.65.60:9000/Services/AccountProxyEndPoint?wsdl';
+$config['service']['info'] = 'http://10.0.65.60:9000/Services/GeneralInfoProxyEndPoint?wsdl';
+$config['service']['teaser'] = 'http://10.0.65.60:9000/Services/TeaserProxyEndPoint?wsdl';
+$config['service']['transactionService'] = 'http://10.0.65.60:9000/Services/TransactionProxyEndPoint?wsdl';
+$config['service']['wager'] = 'http://10.0.65.60:9000/Services/WagersProxyEndPoint?wsdl';
+$config['service']['agents'] = 'http://10.0.65.60:9000/Services/AgentsProxyEndPoint?wsdl';
+$config['service']['shade'] = 'http://10.0.66.76:9000/Services/ShadeProxyEndPoint?wsdl';
+$config['service']['reports'] = 'http://10.0.65.60:9000/Services/CustomerReportProxyEndPoint?wsdl';
+$config['service']['lineEntry'] = 'http://10.0.66.76:9000/Services/LineEntryProxyEndPoint?wsdl';
+$config['service']['preLine'] = 'http://10.0.66.76:9000/Services/PreLineProxyEndPoint?wsdl';
+$config['service']['preGame'] = 'http://10.0.66.76:9000/Services/PregameProxyEndPoint?wsdl';
+$config['service']['ldapService'] = 'http://10.0.66.62:9000/Services/LDAPProxyEndPoint?wsdl';
+$config['service']['AgentAdminChat'] = 'http://10.0.65.60:9000/Services/AgentAdminChatProxyEndPoint?wsdl';
+$config['service']['chat'] = 'http://10.0.65.60:9000/Services/AgentAdminRTChat2ProxyEndPoint?wsdl';
+$config['service']['permission'] = 'http://10.0.65.60:9000/Services/AgentAdminPermissionProxyEndPoint?wsdl';
+$config['service']['zeroOut'] = 'http://10.0.66.76:9000/Services/ZeroOutProxyEndPoint?wsdl';
+$config['service']['companyService'] ="http://10.0.66.76:9985/Services/CompanyProxyEndPoint?wsdl";
+$config['service']['userService']="http://10.0.66.76:9981/Services/UserProxyEndPoint?wsdl";
+$config['service']['permissionService'] ="http://10.0.66.76:9984/Services/PermissionProxyEndPoint?wsdl";
+$config['service']['cashierService'] ="http://10.0.65.60:9000/Services/CashierTransactionProxyEndPoint?wsdl";
+$config['service']['cashierSecurity'] ="http://10.0.65.60:9000/Services/CashierSecurityProxyEndPoint?wsdl";
+
+$config['service']['pvReports'] ="http://10.0.65.60:9000/Services/PvReportProxyEndPoint?wsdl";
+$config['service']['cmReports'] = 'http://10.0.65.60:9000/Services/CustomerReportProxyEndPoint?wsdl';
+
+$config['service']['liveDealer'] = 'http://test.golivedealer.com/masterclientwebservice/masterclientwebservice.asmx?wsdl';
+$config['service']['mail'] = 'http://10.0.65.60:9000/Services/MailProxyEndPoint?wsdl';
+$config['service']['betgamestv'] = 'http://10.0.65.60:9000/Services/BetGamesAPIProxyEndPoint?wsdl';
+*/
+*** File '(Unnamed)'
+wq
+save
+
+*** File '(Unnamed)'
+q
+q
+save
+exit
+save
+
+*** File '(Unnamed)'
+CASABLANCA
+selectionChanged
+19565986
+moveProp
+setPropOpen
+alert
+
+*** File '(Unnamed)'
+wsConfig.php
+app/Config/wsConfig.php
+app/Config/wsConfig.php
+app/Config/wsConfig.php
+app/Config/core.php
+app/Config/core.php
+app/Config/wsConfig.php
+app/Controller/Component/LiveHelperComponent.php
+app/Config/wsConfig.php
+app/Config/wsConfig.php
+app/Config/wsConfig.php
+
+*** These modified files were found in JOE when it aborted on Thu Dec 22 17:06:09 2016
+*** JOE was aborted because the terminal closed

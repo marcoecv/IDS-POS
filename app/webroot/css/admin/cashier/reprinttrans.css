@@ -1,0 +1,60 @@
+#rtran_headerTableDiv{
+    width: 100%;
+}
+
+#rtran_headerTable{
+    width: calc(100% - 13px)
+}
+
+
+#rtran_tableDiv{
+    width: 100%;
+    max-height: 619px;
+    overflow-y: scroll;
+}
+
+#rtran_table{
+    width: 100%;
+}
+
+
+.rtran_tdDateTime{
+    width: 15%;
+    text-align: center;
+}
+
+.rtran_tdTransaction{
+    width: 10%;
+    text-align: center;
+}
+
+.rtran_tdDesc{
+    width: 40%;
+    text-align: left;
+}
+
+.rtran_tdCredit{
+    width: 15%;
+    text-align: center;
+}
+
+.rtran_tdDebit{
+    width: 15%;
+    text-align: center;
+}
+
+.rtran_tdPrint{
+    width: 5%;
+    text-align: center;
+}
+
+#rtran_searchTicket{
+    font-size:35px;
+    width: 100%;
+}
+
+#rtran_findTicketId{
+    border-radius: 5px;
+    font-size: 30px;
+    height: 40px;
+}

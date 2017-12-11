@@ -1,0 +1,145 @@
+.headerSelect{
+    width: 100%;
+    height: 40px;
+    border-radius: 3px;
+}
+
+.inner-addon { 
+    position: relative; 
+    width: 250px;
+}
+
+/* style icon */
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+/* align icon */
+.left-addon .glyphicon  { left:  0px;}
+.right-addon .glyphicon { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
+
+.addToBetslip{
+    height: 45px !important;
+    font-size: 12px;
+}
+.selectGame{
+    height: 45px !important;
+    font-size: 13px;
+}
+.selectGameEUR{
+    height: 600px !important;
+    font-size: 13px;
+}
+.buttonsWrap button{
+    height: 40px !important;
+}
+
+.buttonsWrap{
+    height: 40px !important;
+}
+
+.subGroupSelector{
+    height: 40px !important;
+}
+#headerTable{
+    width: 50%
+}
+#sp_TimeFilterDiv{
+    width: 180px;
+}
+#bs_keyboardTable button{
+    font-size: 35px;
+}
+#sp_DateFilterDiv{
+    width: 180px;
+}
+#headerTable tr td{
+    
+}
+#bs_keyboard{
+    text-align: center
+}
+#bs_keyboardTable tr td{
+    padding: 5px
+}
+#sp_keyboardValue{
+    height: 65px;
+    font-size: 35px;
+    width: 360px;
+    text-align: center;
+}
+.availableSpan{
+    font-size: 20px;
+}
+
+/*Keyboard buttons Style*/
+.kb_button{
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    font-size: 20px;
+}
+#bs_keyboardTable{
+    width: 100%;
+    height: 360px;
+}
+
+#bs_keyboardTable tr td{
+    width: 33%;
+    height: 20%
+}
+
+.leftFloat{
+    width: 60%;
+    float: left;
+}
+
+.rigntFloat{
+    text-align: right;
+    width: 40%;
+    float: right;
+}
+/*PRINT VIEW*/
+
+#pr_tickets{
+    width: 100%;
+    height: 700px;
+    overflow-y: scroll;
+}
+
+.pv_ticketHeader{
+    background-color: #2F3C42;
+    color: white;
+    font-weight: bold;
+    text-align: right;
+    padding: 5px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+#groupsWrap #groupsWrapShort{
+    height: 800px;
+    overflow-y: scroll
+}
+
+.sp_nav{
+    width: 49%;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#sp_basic{
+    background-color: #96C5E0;
+}
+
+#content{
+    max-height: 850px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}

@@ -1,0 +1,154 @@
+body {
+    font-family: "Lato";
+}
+#header .btn.principal,
+#header input.principal{
+    height: 42px;
+}
+#header .dropdown-menu .input-group{
+    width:250px;
+}
+#header .dropdown-menu .input-group > *{
+     border-radius: 0;
+}
+.dropdown-menu
+#header .btn.filtre{
+    background-color: red;
+}
+#header #word{
+    width: 300px;
+}
+#header .btn-action-search{
+    float:left;
+}
+body.xs #header{
+    display: block;
+}
+body.xs #header #word{
+    width: 150px;     
+}
+body.xs #header .btn{
+     width: 60px;
+}
+body.xs #header .navbar-inverse{
+    padding-left: 0;
+}
+body.xs #header .input-group{
+    margin-left: auto;
+    margin-right: auto;
+}
+body.xs #header .dropdown-menu{
+    left:-45px;
+}
+body.xs #header .dropdown-menu .input-group{
+   width:160px;
+}
+#header #btn_search_customer {
+    background-color: #25313c;
+    color: #fff;
+    border-radius: 2px;
+    border-color: #c05900;
+    width: 42px;
+    height: 42px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 1px 1px rgba(0, 0, 0, 0.075);
+    -o-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+    -moz-text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+    -o-text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 300ms ease-in-out 0s;
+    -moz-transition: all 300ms ease-in-out 0s;
+    -o-transition: all 300ms ease-in-out 0s;
+    transition: all 300ms ease-in-out 0s;
+}
+#header #btn_search_customer:hover {
+    background-color: #384b5c;
+    color: #fff;
+}
+#header #frmLinks {
+    margin: 0;
+}
+#header #selectAgent {
+    width: 200px;
+    z-index: 999;
+}
+#header .navbar-agent {
+    padding: 10px;
+    padding-left: 10px;
+    z-index: 998;
+}
+#header .bloc-select-navbar {
+    display: inline-block;
+    z-index: 998;
+}
+#header #selectAgent {
+    height: 45px;
+    z-index: 998;
+}
+#header #selectAgentRole {
+    width: 200px;
+    z-index: 998;
+}
+#header .btn.filtre{
+    opacity: 0.8;
+}
+#search .table{
+    display: table;
+    padding:0;
+}
+#search .table-row{
+    display: table-row;
+     height:35px;
+}
+#search .table-row:nth-child(2n+2) {
+   background-color: #eee;
+}
+#search .table-cell{
+    display: table-cell;
+    border: 1px solid #ccc;
+    padding: 2px;
+    vertical-align: middle;
+}
+
+/* Code for Chrome, Safari and Opera */
+@-webkit-keyframes animColorLetter {
+    0% {opacity:1}
+    50% {opacity:0.2}
+    100% {opacity:1}
+}
+
+/* Standard syntax */
+@keyframes animColorLetter {
+    0% {opacity:1}
+    50% {opacity:0.2}
+    100% {opacity:1}
+}
+#search .wait{
+    font-size: 1.2em;
+    width:100%;
+    text-align: center;
+    -webkit-animation: animColorLetter 3s infinite; /* Chrome, Safari, Opera */
+    animation: animColorLetter 3s infinite;
+}
+#search .btn-action-search{
+    float:left;
+}
+body.xs #search .table-row.th{
+    display: none;
+}
+body.xs #search .table-cell:before{
+    content: attr(data-th) ": ";
+    color: #222;
+    font-weight: 900;
+    width: 100px;
+    display: inline-block;
+    border-radius: 0;
+    padding: 10px 7px;
+}
+body.xs #search .table-cell{
+    display: block;
+    width:100%;
+    text-align: left;
+}

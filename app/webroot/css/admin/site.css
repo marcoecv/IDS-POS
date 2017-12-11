@@ -1,0 +1,39 @@
+#status{
+    display:none;
+}
+
+#contentPanel{
+    margin-top: 45px;
+}
+
+#btn-status table td {
+    text-align: center;
+    width: 33%;
+}
+#btn-status table td > .btn{
+    border-radius: 4px;
+    width:150px;
+    padding: 6px 12px;
+}
+#btn-status table td > .btn .indicator-status{
+   background: #33cc00;
+    display: inline-block;
+    width:10px;
+    height:10px;
+    margin-left: 60px;
+    border-radius: 5px;
+}
+#btn-status table td > .btn.checked .indicator-status{
+    background: #f35958;
+}
+#btn-status input[type=checkbox] {
+	display:none;
+}
+#btn-status input[type=checkbox] + label > .icon-btn-status{
+   width:15px;  height:15px;
+   display: inline-block;
+}
+#btn-status input[type=checkbox]  + label {
+	color:#000;
+    margin: 0;
+}
